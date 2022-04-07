@@ -1,0 +1,25 @@
+.Text {
+    margin: 1;
+    margin-left: 25px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #C4C4C4;
+}
+
+/***********/
+/* 	VIEWS  */
+/***********/
+
+/* LARGE PHONES  */
+
+@media only screen and (min-width: 425px) {
+	.Text {
+        margin-left: 40px;
+        font-size: 15px;
+    }    
+}
