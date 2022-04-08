@@ -7,6 +7,9 @@ import styles from "./Home.module.css";
 // IMAGES
 import Planet from "../../assets/images/planet.png";
 
+// COMPONENTS
+import { CtaButton } from "../../components";
+
 const Home = () => {
   ///////////////
   // ANIMATORS //
@@ -67,6 +70,10 @@ const Home = () => {
           <br />
           We create experiences.
         </p>
+
+        <div style={{ zIndex: 10 }}>
+          <CtaButton text={"Get Started"} />
+        </div>
       </div>
     </section>
   );
