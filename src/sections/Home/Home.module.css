@@ -106,7 +106,7 @@
     right: calc(-50vw / 2);
     border-radius: 50%;
     z-index: 9;
-    background-color: rgba(2, 23, 255, 0.5);
+    background-color: rgba(2, 23, 255, 0.3);
     filter: blur(50px);
     -webkit-filter: blur(50px);
 }
