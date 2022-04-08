@@ -17,6 +17,8 @@ const Home = () => {
       // Get Elements Ref
       const CFX = document.getElementById("Planet_CFX");
       const RedBall = document.getElementById("Planet_RedBall");
+      const BlueBall_A = document.getElementById("Planet_BlueBall_A");
+      const BlueBall_B = document.getElementById("Planet_BlueBall_B");
 
       // Get Scroll Value
       var scrolled = window.scrollY;
@@ -27,8 +29,10 @@ const Home = () => {
       var large = scrolled * 0.3;
 
       // Animate
-      CFX.style.transform = "translate3d(0px," + large + "px, 0px)";
-      RedBall.style.transform = "translate3d(0px," + mid + "px, 0px)";
+      CFX.style.transform = "translateY(" + large + "px)";
+      RedBall.style.transform = "translateY(" + mid + "px)";
+      BlueBall_A.style.transform = "translateY(" + large + "px)";
+      BlueBall_B.style.transform = "translateY(" + mid + "px)";
     });
   }, []);
 
@@ -50,6 +54,8 @@ const Home = () => {
           <div className={styles.BFX} />
           <div className={styles.CFX} id="Planet_CFX" />
           <div className={styles.RedBall} id="Planet_RedBall" />
+          <div className={styles.BlueBall_A} id="Planet_BlueBall_A" />
+          <div className={styles.BlueBall_B} id="Planet_BlueBall_B" />
           {/* 888888888 */}
 
           <h3>WELCOME TO ASTRONAUT PENGUIN</h3>
