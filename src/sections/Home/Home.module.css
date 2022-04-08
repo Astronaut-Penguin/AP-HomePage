@@ -162,7 +162,7 @@
     font-size: 12px;
 
     color: white;
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0px 0px 5px #0000;
 }
 
 .PlanetContainer > h2{
@@ -174,7 +174,7 @@
     margin: 0px;
 
     color: white;
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0px 0px 10px rgba(242, 65, 48, 0.7);
 }
 
 .MiddleContainer > p{
