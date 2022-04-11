@@ -22,6 +22,11 @@ const Home = () => {
       const RedBall = document.getElementById("Planet_RedBall");
       const BlueBall_A = document.getElementById("Planet_BlueBall_A");
       const BlueBall_B = document.getElementById("Planet_BlueBall_B");
+      // Get Other Planets Ref
+      const OtherPlanet_A = document.getElementById("Other_Planet_A");
+      const OtherPlanet_B = document.getElementById("Other_Planet_B");
+      const OtherPlanet_C = document.getElementById("Other_Planet_C");
+      const OtherPlanet_D = document.getElementById("Other_Planet_D");
 
       // Get Scroll Value
       var scrolled = window.scrollY;
@@ -36,6 +41,11 @@ const Home = () => {
       RedBall.style.transform = "translateY(" + mid + "px)";
       BlueBall_A.style.transform = "translateY(" + large + "px)";
       BlueBall_B.style.transform = "translateY(" + mid + "px)";
+      // Other Planets Animate
+      OtherPlanet_A.style.transform = "translateY(" + mid + "px)";
+      OtherPlanet_B.style.transform = "translateY(" + scrolled * 0.5 + "px)";
+      OtherPlanet_C.style.transform = "translateY(" + scrolled * 0.15 + "px)";
+      OtherPlanet_D.style.transform = "translateY(" + scrolled * 0.15 + "px)";
     });
   }, []);
 
@@ -45,9 +55,6 @@ const Home = () => {
   return (
     <section className={styles.Container}>
       <div className={styles.MiddleContainer}>
-        <div className={styles.SunBlue} />
-        <div className={styles.SunB} />
-
         <div className={styles.PlanetContainer}>
           {/* Planet Image */}
           <img className={styles.Planet} src={Planet} alt="" />
@@ -59,6 +66,13 @@ const Home = () => {
           <div className={styles.RedBall} id="Planet_RedBall" />
           <div className={styles.BlueBall_A} id="Planet_BlueBall_A" />
           <div className={styles.BlueBall_B} id="Planet_BlueBall_B" />
+
+          {/* Other Planets */}
+          <div className={styles.OtherPlanet_A} id="Other_Planet_A" />
+          <div className={styles.OtherPlanet_B} id="Other_Planet_B" />
+          <div className={styles.OtherPlanet_C} id="Other_Planet_C" />
+          <div className={styles.OtherPlanet_D} id="Other_Planet_D" />
+
           {/* 888888888 */}
 
           <h3>WELCOME TO ASTRONAUT PENGUIN</h3>

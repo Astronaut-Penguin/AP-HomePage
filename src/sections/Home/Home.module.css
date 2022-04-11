@@ -152,6 +152,57 @@
     z-index: 8;
 }
 
+/* Other Planets */
+.OtherPlanet_A{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    bottom: 0px;
+    right: calc(-66px / 2);
+    border-radius: 50%;
+    background: linear-gradient(202.46deg, rgba(0, 0, 0, 0.55) 15.1%, #F24130 85.37%);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.OtherPlanet_B{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    left: calc(-110px / 2);
+    border-radius: 50%;
+    background: linear-gradient(202.46deg, rgba(242, 65, 48, 0) 15.1%, #F24130 85.37%);
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.OtherPlanet_C{
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #000D99 0%, #3A3F6F 100%);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    z-index: 2;
+}
+
+.OtherPlanet_D{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    bottom: -120px;
+    right: calc(-20vw / 2);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #000D99 0%, #3A3F6F 100%);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: 2;
+}
+
 /* 88888888888888888888 */
 
 /* Planet Text */
