@@ -1,0 +1,13 @@
+.Title {
+    margin: 0;
+    margin-left: 25px;
+    padding-top: 15px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 83.8%;
+
+    color: #FFFFFF;
+}
