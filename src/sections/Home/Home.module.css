@@ -7,7 +7,7 @@
 /* ////////// */
 .Container{
     width: 100%;
-    min-height: 200vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -34,7 +34,6 @@
     top: 0;
     right: calc(-25vw / 2);
     border-radius: 50%;
-    background-color: red;
 }
 
 /* 88888888888888888888 */
