@@ -1,16 +1,11 @@
-//- Import React
-import React, { useState } from 'react';
-
-//- Import Styles
+// Style CSS
 import "./App.css";
 
-//- Import Sections
-import WorksSection from './sections/works/works';
+// Pages Imports
+import Landing from "./pages/Landing";
 
 function App() {
-  return (
-    <WorksSection />
-  );
+  return <Landing />;
 }
 
 export default App;
