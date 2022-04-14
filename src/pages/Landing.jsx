@@ -2,10 +2,15 @@
 import React from "react";
 
 // Sections Imports
-import { Home } from "../sections/index";
+import { Home, Works } from "../sections/index";
 
 const Landing = () => {
-  return <Home />;
+  return (
+    <>
+      <Home />
+      <Works />
+    </>
+  );
 };
 
 export default Landing;
