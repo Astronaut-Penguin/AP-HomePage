@@ -6,15 +6,41 @@
     background-color: #1b1b1b;
     margin: 0;
     height: 600px;
+	align-items: center;
 }
 
 .TextContainer {
     width: 280px;
 }
 
+.CarouselContainer {
+	position: relative;
+}
+
+.CarouselMember {
+
+}
+
 .Card {
 	display: inline-block;
-	margin: 10px;
+	margin: 0 auto;
+	margin-top: 30px;
+	transition: width 200ms ease-in;
+}
+
+.Selected {
+	/* margin: 0 auto; */
+	z-index: 1;
+}
+
+.NotSelected {
+	/* width: 219px;
+	height: 240px; */
+	box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	color: #0A0909;
+	z-index: 0;
+	/* margin-top: 30px; */
 }
 
 .Dots {

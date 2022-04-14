@@ -3,8 +3,8 @@
 /*////////////*/
 
 .ClientCard {
-    height: 284px;
-    width: 250px;
+    width: 275px;
+    height: 287px;
     align-items: center;
     text-align: center;
 
@@ -21,7 +21,7 @@
 
     /* transform: matrix(1, 0, 0, -1, 0, 0); */
     margin: 0 auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .CardLogo {
@@ -30,14 +30,15 @@
 }
 
 .CardTitle {
+    font-family: 'Archivo';
     font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 22px;
 
-    margin: 0;
-    padding-top: 2px;
     color: #FFFFFF;
+
+    margin: 0;
 }
 
 .CardText {
@@ -45,13 +46,14 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 14px;
     text-align: center;
+
+    color: #8C8C8C;
 
     max-width: 180px;
     margin: 0 auto;
     margin-top: 15px;
-    color: #8C8C8C;
 }
 
 .MarketContainer {
@@ -83,36 +85,41 @@
 }
 
 .MarketTitle {
+    font-family: 'Archivo';
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 12px;
+    font-size: 10px;
+    line-height: 11px;
     text-align: center;
 
-    margin-bottom: 8px;
     color: #8C8C8C;
+
+    margin-bottom: 8px;
 }
 
 .MarketNum {
+    font-family: 'Archivo';
     font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 28px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
+
+    color: #FFFFFF;
 
     margin: 0 auto;
-    color: #FFFFFF;
 }
 
 .PerWeek {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 7px;
     line-height: 8px;
+    text-align: center;
+
+    color: #8C8C8C;
 
     margin-top: 2px;
-    text-align: center;
-    color: #8C8C8C;
 }
 
 .NoneWeek {
@@ -120,15 +127,15 @@
 }
 
 .Square {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     background-color: #ffffff;
     transform: rotateY(0deg) rotate(45deg);
     margin: 0 auto;
 }
 
 .VerticalLine {
-    width: 1px;
+    width: 2px;
     height: 35px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -141,16 +148,18 @@
 }
 
 .Site {
-    float: left;
-    width: 105px;
+    font-family: 'Archivo';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 10px;
     line-height: 11px;
-    text-decoration: none;
+    margin-top: 10px;
 
-    text-align: left;
     color: #F24130;
+    float: left;
+    width: 105px;
+    text-decoration: none;
+    text-align: left;
 }
 
 .NoneSite {
@@ -158,29 +167,20 @@
 }
 
 .Contract {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 8px;
+
+    color: #FFFFFF;
     float: right;
     width: 105px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 11px;
-
     text-align: right;
-    color: #FFFFFF;
 }
 
 .ContractLogo {
     margin-left: 8px;
-}
-
-
-/***********/
-/* 	VIEWS  */
-/***********/
-
-/* LARGE PHONES  */
-
-@media only screen and (min-width: 425px) {
-	
 }

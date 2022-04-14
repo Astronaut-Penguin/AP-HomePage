@@ -4,9 +4,9 @@ import React from 'react';
 //- Import Styles
 import styles from './text.module.css';
 
-const Text = ({text}) => {
+const Text = ({text, style}) => {
     return (
-        <h1 className={styles.Text}>{text}</h1>
+        <h1 className={styles.Text} style={style}>{text}</h1>
     );
 };
 
