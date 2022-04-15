@@ -14,7 +14,7 @@ import Flicking from '@egjs/react-flicking';
 import '@egjs/react-flicking/dist/flicking.css';
 
 const WebSection = () => {
-    const [s, setS] = useState(1);
+    const [s, setS] = useState(0);
     
     return (
         <section className={styles.Container}>
@@ -30,25 +30,29 @@ const WebSection = () => {
                     onChanged={(e) => {
                         setS(e.index);
                     }}
-                    defaultIndex={1}
+                    defaultIndex={0}
                     renderOnlyVisible={true}
                     className={styles.Carousel}> 
                         <div className={styles.Card}>
                             <WebCard 
                                 title={"What is a Web 3.0?"} 
                                 enablePlay
+                                site={"/"}
                             />
                             <WebCard 
                                 title={"Launch: new wallet"} 
+                                site={"/"}
                             />
                         </div>
                         <div className={styles.Card}>
                             <WebCard 
                                 title={"What is a Web 3.0?"} 
                                 enablePlay
+                                site={"/"}
                             />
                             <WebCard 
-                                title={"Launch: new wallet"} 
+                                title={"Launch: new wallet"}
+                                site={"/"}
                             />
                         </div>
                 </Flicking>

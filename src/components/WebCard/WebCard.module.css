@@ -61,3 +61,55 @@
     text-align: center;
     color: #FFFFFF;
 }
+
+a {
+    text-decoration: none;
+}
+
+/****************/
+/* LARGE MOBILE */
+/****************/
+
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+	.WebWrap {
+        width: 130px;
+        height: 178px;
+    }
+    .WebCard {
+        width: 130px;
+        height: 178px;
+    }
+    .Planet {
+        width: 70px;
+        height: auto;
+    }
+    .CardTitle {
+        font-size: 20px;
+        line-height: 22px;
+    
+        width: 110px;
+        margin-top: 18px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 426px) {
+	.WebWrap {
+        width: 140px;
+        height: 195px;
+    }
+    .WebCard {
+        width: 140px;
+        height: 195px;
+    }
+    .Planet {
+        width: 84px;
+        height: auto;
+    }
+    .CardTitle {
+        font-size: 20px;
+        line-height: 24px;
+    
+        width: 110px;
+        margin-top: 18px;
+    }
+}

@@ -5,7 +5,7 @@
 .Container {
     background-color: #1b1b1b;
     margin: 0;
-    height: 400px;
+    height: 450px;
 	align-items: center;
 }
 
@@ -25,16 +25,10 @@
     color: #F24130;
 }
 
-.CardContainer {
-    width: 280px;
-    align-items: center;
-    background-color: blue;
-    margin: 0 auto;
-}
-
 .Card {
     width: 280px;
     margin: 10px;
+    /* background-color: pink; */
 }
 
 .Dots {
@@ -65,4 +59,20 @@
 	border-radius: 50%;
 	background-color: #8C8C8C;
 	margin: 0 5px 15px 5px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+    .Card {
+        width: 316px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 426px) {
+    .Container {
+        height: 470px;
+    }
+    .Card {
+        width: 338px;
+        margin: 16px;
+    }
 }
