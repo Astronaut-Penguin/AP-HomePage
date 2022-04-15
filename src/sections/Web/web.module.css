@@ -1,0 +1,68 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.Container {
+    background-color: #1b1b1b;
+    margin: 0;
+    height: 400px;
+	align-items: center;
+}
+
+.TextContainer {
+    margin-top: 26px;
+    width: 260px;
+}
+
+.Breaking {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    margin: 32px 0 0 26px;
+
+    color: #F24130;
+}
+
+.CardContainer {
+    width: 280px;
+    align-items: center;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.Card {
+    width: 280px;
+    margin: 10px;
+}
+
+.Dots {
+    width: 38px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.DotsContainer {
+	display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.DotSelected {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #F24130;
+	margin: 0 5px 15px 5px;
+}
+
+.DotNotSelected {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #8C8C8C;
+	margin: 0 5px 15px 5px;
+}
