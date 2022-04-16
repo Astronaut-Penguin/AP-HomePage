@@ -1,0 +1,111 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.Container {
+    background-color: #1b1b1b;
+    margin: 0;
+    height: 450px;
+	align-items: center;
+}
+
+.TextContainer {
+    margin-top: 26px;
+    width: 260px;
+}
+
+.Breaking {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    margin: 32px 0 0 26px;
+
+    color: #F24130;
+}
+
+.Card {
+    width: 280px;
+    margin: 10px;
+    /* background-color: pink; */
+}
+
+.Dots {
+    width: 38px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.DotsContainer {
+	display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.DotSelected {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #F24130;
+	margin: 0 5px 15px 5px;
+}
+
+.DotNotSelected {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #8C8C8C;
+	margin: 0 5px 15px 5px;
+}
+
+/*/// VIEWS ///*/
+
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+    .Card {
+        width: 316px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 426px) {
+    .Container {
+        height: 470px;
+    }
+    .Card {
+        width: 338px;
+        margin: 16px;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .Container {
+        height: 1200px;
+    }
+    .CarouselContainer {
+        display: none;
+    }
+    .Dots {
+        display: none;
+    }
+    .TitleContainer {
+        margin-right: 30px;
+    }
+    .TextContainer {
+        align-items: right;
+        text-align: right;
+        margin: 40px 50px 0 auto;
+    }
+    .Breaking {
+        display: none;
+    }
+    .Standing {
+        align-items: center;
+    }
+    .StandingCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
