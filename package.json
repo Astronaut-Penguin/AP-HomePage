@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@blueprintjs/core": "^4.2.0",
     "@egjs/flicking": "^4.5.1",
     "@egjs/react-flicking": "^4.5.3",
     "@testing-library/jest-dom": "^5.16.4",

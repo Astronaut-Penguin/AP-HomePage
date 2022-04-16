@@ -1,0 +1,196 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.Container {
+    background-color: #1b1b1b;
+    margin: 0;
+    width: 100%;
+    height: 600px;
+	align-items: center;
+}
+
+.UsContainer {
+    margin-right: 30px;
+    align-items: right;
+    text-align: right;
+}
+
+.Penguins {
+    position: relative;
+}
+
+.Penguin1 {
+    position: absolute;
+    z-index: 4;
+    margin-top: 42px;
+    margin-left: 90px;
+}
+
+.Penguin2 {
+    position: absolute;
+    z-index: 2;
+    margin-left: 67px;
+}
+
+.Penguin3 {
+    position: absolute;
+    z-index: 2;
+    margin-left: 180px;
+}
+
+.Penguin4 {
+    position: absolute;
+    z-index: 4;
+    margin-top: 42px;
+    margin-left: 150px;
+}
+
+.Penguin5 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 8px;
+    margin-left: 125px;
+}
+
+.Penguin6 {
+    position: absolute;
+    z-index: 3;
+    margin-top: 28px;
+    margin-left: 198px;
+}
+
+.Penguin7 {
+    position: absolute;
+    z-index: 3;
+    margin-top: 31px;
+    margin-left: 40px;
+}
+
+.Line {
+    position: absolute;
+    width: 60px;
+    height: 1.5px;
+    top: 110px;
+    left: 6px;
+
+    background: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.SecondLine {
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    top: 140px;
+    left: 35.2px;
+
+    background: #FFFFFF;
+}
+
+.Circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 138.5px;
+    left: 42px;
+
+    border-radius: 10px;
+
+    background: #FFFFFF;
+}
+
+.Person {
+    position: absolute;
+    width: 53px;
+    height: 18px;
+    top: 114px;
+    left: 55px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;    
+}
+
+.Job {
+    position: absolute;
+    width: 87px;
+    height: 20px;
+    top: 146px;
+    left: 36px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+
+    color: #F24130;
+}
+
+.TextContainer {
+    margin: 240px 0 0 0;
+}
+
+.WeMake {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-left: 25px;
+    width: 200px;
+    color: #F24130;
+}
+
+.OurTeam {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-left: 25px;
+    width: 200px;
+    color: #FFFFFF;;
+}
+
+.Button {
+    margin-left: 48%;
+}
+
+@keyframes spin {
+	from { transform: rotate(180deg); }
+	to { transform: rotate(0deg); }
+}
+
+@keyframes spinOpen {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(180deg); }
+}
+
+.Img {
+	animation-name: spin;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+    margin: 10px 0 10px 0;
+}
+
+.ImgOpen {
+	animation-name: spinOpen;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+    transform: rotate(180deg);
+    margin: 10px 0 10px 0;
+}
+
+.ButtonContainer {
+    width: 105px;
+    margin: 30px auto;
+}
