@@ -25,6 +25,7 @@ import Arrow from './assets/arrow.png'
 const UsSection = () => {
     // const [s, setS] = useState(1);
     const [isOpen, setIsOpen] = React.useState(false)
+    const [show, setShow] = React.useState(false)
 
     return (
         <section className={styles.Container}>
@@ -32,7 +33,21 @@ const UsSection = () => {
                 <Title text={"Us"} />
             </div>
             <div className={styles.Penguins}>
-                <img src={Penguin1} className={styles.Penguin1} />
+                <a onClick={() => setShow(!show)}> 
+                    <img src={Penguin1} className={styles.Penguin1} />
+                    {show ? (
+                        <div className={styles.Penguin1}>
+                            <div className={styles.Line}></div>
+                            <div className={styles.SecondLine}></div>
+                            <div className={styles.Circle}></div>
+                            <h2 className={styles.Person}>Facu</h2>
+                            <h3 className={styles.Job}>FRONT-END DEVELOPER</h3>                
+                        </div>
+                    ) : (
+                        <img src={Penguin1} className={styles.Penguin1} />
+                    )}
+                </a>
+                {/* <img src={Penguin1} className={styles.Penguin1} /> */}
                 <img src={Penguin2} className={styles.Penguin2} />
                 <img src={Penguin3} className={styles.Penguin3} />
                 <img src={Penguin4} className={styles.Penguin4} />

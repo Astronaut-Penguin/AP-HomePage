@@ -67,8 +67,74 @@
     margin-left: 40px;
 }
 
+.Line {
+    position: absolute;
+    width: 60px;
+    height: 1.5px;
+    top: 110px;
+    left: 6px;
+
+    background: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.SecondLine {
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    top: 140px;
+    left: 35.2px;
+
+    background: #FFFFFF;
+}
+
+.Circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 138.5px;
+    left: 42px;
+
+    border-radius: 10px;
+
+    background: #FFFFFF;
+}
+
+.Person {
+    position: absolute;
+    width: 53px;
+    height: 18px;
+    top: 114px;
+    left: 55px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;    
+}
+
+.Job {
+    position: absolute;
+    width: 87px;
+    height: 20px;
+    top: 146px;
+    left: 36px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+
+    color: #F24130;
+}
+
 .TextContainer {
-    margin: 200px 0 0 0;
+    margin: 240px 0 0 0;
 }
 
 .WeMake {
