@@ -1,14 +1,11 @@
-import logo from "./logo.svg";
+// Style CSS
 import "./App.css";
 
-import Footer from './sections/footer/footer'
+// Pages Imports
+import Landing from "./pages/Landing";
 
 function App() {
-  return (
-    <div className="App">
-      <Footer />
-    </div>
-  );
+  return <Landing />;
 }
 
 export default App;
