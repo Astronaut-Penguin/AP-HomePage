@@ -1,0 +1,85 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.Container {
+    background-color: #1b1b1b;
+    margin: 0;
+    height: 400px;
+	align-items: center;
+}
+
+.Title {
+    width: 150px;
+    width: 50%;
+    float: left;
+}
+
+.Soon {
+    margin-left: 25px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    /* text-align: center; */
+
+    color: #F24130;
+}
+
+.Penguin {
+    width: 50%;
+    float: left;
+}
+
+.Penguin > img {
+    margin: 14px 0 0 24px;
+    width: 120px;
+}
+
+.Count {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 36px;
+
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 180px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.CountInfo {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 11px;
+    text-align: center;
+
+    margin-top: 14px;
+    margin-left: 8px;
+    color: #F24130;
+}
+
+.CountInfo > a {
+    margin: 14px;
+}
+
+.Button {
+    width: 110px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 426px) {
+    .Penguin > img {
+        margin: 4px 0 0 24px;
+        width: 140px;
+    }
+    .Count {
+        padding-top: 200px;
+    }
+}
