@@ -113,3 +113,30 @@ a {
         margin-top: 18px;
     }
 }
+
+/****************/
+/****** PC ******/
+/****************/
+
+@media only screen and (min-width: 1023px) {
+    .WebWrap {
+        width: 352px;
+        height: 413px;
+        margin: 30px;
+    }
+    .WebCard {
+        width: 352px;
+        height: 413px;
+    }
+    .Planet {
+        width: auto;
+        height: 150px;
+        margin-top: 30px;
+    }
+    .CardTitle {
+        font-size: 40px;
+        line-height: 44px;
+        width: 240px;
+        margin-top: 40px;
+    }
+}

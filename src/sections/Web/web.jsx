@@ -18,7 +18,9 @@ const WebSection = () => {
     
     return (
         <section className={styles.Container}>
-            <Title text="Web 3.0" style={{textAlign: 'right', marginRight: '20px'}} />
+            <div className={styles.TitleContainer}>
+                <Title text="Web 3.0" style={{textAlign: 'right', marginRight: '20px'}} />
+            </div>
             <div className={styles.TextContainer}>
                 <Text text="The evolution of Web 3.0 let us make a more unique user centered design, creating an original and customized experience." style={{marginLeft: '26px'}}/>
             </div>
@@ -72,6 +74,24 @@ const WebSection = () => {
                             s == 1 ? styles.DotSelected : styles.DotNotSelected
                         }`}
                     ></div>
+                </div>
+            </div>
+
+            <div className={styles.Standing}>
+                <div className={styles.StandingCard}>
+                    <WebCard 
+                        title={"What is a Web 3.0?"} 
+                        enablePlay
+                        site={"/"}
+                    />
+                    <WebCard 
+                        title={"Launch: new wallet"} 
+                        site={"/"}
+                    />
+                    <WebCard 
+                        title={"Launch: new wallet"} 
+                        site={"/"}
+                    />
                 </div>
             </div>
         </section>

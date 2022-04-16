@@ -61,6 +61,8 @@
 	margin: 0 5px 15px 5px;
 }
 
+/*/// VIEWS ///*/
+
 @media only screen and (min-width: 375px) and (max-width: 389px) {
     .Card {
         width: 316px;
@@ -74,5 +76,36 @@
     .Card {
         width: 338px;
         margin: 16px;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .Container {
+        height: 1200px;
+    }
+    .CarouselContainer {
+        display: none;
+    }
+    .Dots {
+        display: none;
+    }
+    .TitleContainer {
+        margin-right: 30px;
+    }
+    .TextContainer {
+        align-items: right;
+        text-align: right;
+        margin: 40px 50px 0 auto;
+    }
+    .Breaking {
+        display: none;
+    }
+    .Standing {
+        align-items: center;
+    }
+    .StandingCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
