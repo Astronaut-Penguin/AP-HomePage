@@ -23,41 +23,43 @@ import ContractLogo from './assets/contractLogo.png'
 // siteLink: STRING - URL de la Web del cliente
 // contractLink: STRING - URL del contrato del cliente  
 
-const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWeek, footNum, rightTitle, rightNum, enableLine, footText, enableSite, siteLink, contractLink }) => {
+const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWeek, footNum, rightTitle, rightNum, enableLine, footText, enableSite, siteLink, contractLink, s, index }) => {
     return (
-        <div className={styles.ClientCard}>
-            <img src={logo} className={styles.CardLogo} />
-            <h3 className={styles.CardTitle}>{title}</h3>
-            <h4 className={styles.CardText} style={textStyle}>{text}</h4>
-            <div className={styles.MarketContainer}>
-                <div className={styles.LeftSide}>
-                    <h3 className={styles.MarketTitle}>{leftTitle}</h3>
-                    <h2 className={styles.MarketNum}>{leftNum}</h2>
-                    <h5 className={`${styles.PerWeek}
-                        ${enableWeek ? styles.PerWeek : styles.NoneWeek}`}>{footNum}</h5>
-                </div>
-                <div className={`${styles.Line}
-                    ${enableLine ? styles.Line : styles.NoneLine}`}>
-                    <div className={styles.Square}></div>
-                    <div className={styles.VerticalLine}></div>
-                    <div className={styles.Square}></div>
-                </div>
-                <div className={styles.LeftSide}>
-                    <h3 className={styles.MarketTitle}>{rightTitle}</h3>
-                    <h2 className={styles.MarketNum}>{rightNum}</h2>
-                </div>
-            </div>
-            <div className={styles.CardFoot}>
-                <a href={siteLink} className={`${styles.Site}
-                    ${enableSite ? styles.Site : styles.NoneSite}`}>
-                    Go to site
-                </a>
-                <a href={contractLink}>
-                    <div className={styles.Contract}>
-                        {footText}
-                        <img className={styles.ContractLogo} src={ContractLogo}></img>
+        <div className={`${styles.ClientWrap} ${s == index ? styles.Selected : styles.NotSelected}`}>
+            <div className={styles.ClientCard}>
+                <img src={logo} className={styles.CardLogo} />
+                <h3 className={styles.CardTitle}>{title}</h3>
+                <h4 className={styles.CardText} style={textStyle}>{text}</h4>
+                <div className={styles.MarketContainer}>
+                    <div className={styles.LeftSide}>
+                        <h3 className={styles.MarketTitle}>{leftTitle}</h3>
+                        <h2 className={styles.MarketNum}>{leftNum}</h2>
+                        <h5 className={`${styles.PerWeek}
+                            ${enableWeek ? styles.PerWeek : styles.NoneWeek}`}>{footNum}</h5>
                     </div>
-                </a>
+                    <div className={`${styles.Line}
+                        ${enableLine ? styles.Line : styles.NoneLine}`}>
+                        <div className={styles.Square}></div>
+                        <div className={styles.VerticalLine}></div>
+                        <div className={styles.Square}></div>
+                    </div>
+                    <div className={styles.LeftSide}>
+                        <h3 className={styles.MarketTitle}>{rightTitle}</h3>
+                        <h2 className={styles.MarketNum}>{rightNum}</h2>
+                    </div>
+                </div>
+                <div className={styles.CardFoot}>
+                    <a href={siteLink} className={`${styles.Site}
+                        ${enableSite ? styles.Site : styles.NoneSite}`}>
+                        Go to site
+                    </a>
+                    <a href={contractLink}>
+                        <div className={styles.Contract}>
+                            {footText}
+                            <img className={styles.ContractLogo} src={ContractLogo}></img>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     );

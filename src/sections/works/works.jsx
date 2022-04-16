@@ -36,77 +36,77 @@ const WorksSection = () => {
                         setS(e.index);
                     }}
                     defaultIndex={1}
-                    renderOnlyVisible={true}
+                    // renderOnlyVisible={true}
                     className={styles.Carousel}> 
-                        <div className={styles.CarouselMember}>
-                            <div className={`${styles.Card} ${s == 0 ? styles.Selected : styles.NotSelected}`}>
-                                <ClientCard 
-                                    logo={TribeLogo} 
-                                    title={"Tribe"} 
-                                    text={"We developed the marketplace to sell collections inspired in famous DeFi in the BSC."} 
-                                    leftTitle={"MARKET CAP"}
-                                    leftNum={"$40M"}
-                                    enableWeek
-                                    footNum={"on the launch day"}
-                                    rightTitle={"POPULAR COIN"}
-                                    rightNum={"#500"}
-                                    enableLine
-                                    footText={"Contract"}
-                                    enableSite
-                                    siteLink={"https://tribetoken.app/#/"}
-                                    contractLink={"https://tribetoken.app/#/"}
-                                />
-                            </div>
+                        <div className={styles.Card}>
+                            <ClientCard 
+                                logo={TribeLogo} 
+                                title={"Tribe"} 
+                                text={"We developed the marketplace to sell collections inspired in famous DeFi in the BSC."} 
+                                leftTitle={"MARKET CAP"}
+                                leftNum={"$40M"}
+                                enableWeek
+                                footNum={"on the launch day"}
+                                rightTitle={"POPULAR COIN"}
+                                rightNum={"#500"}
+                                enableLine
+                                footText={"Contract"}
+                                enableSite
+                                siteLink={"https://tribetoken.app/#/"}
+                                contractLink={"https://tribetoken.app/#/"}
+                                s={s}
+						        index={0}
+                            />
                         </div>
-                        <div className={styles.CarouselMember}>
-                            <div className={`${styles.Card} ${s == 0 ? styles.Selected : styles.NotSelected}`}>
-                                <ClientCard 
-                                    logo={WilderLogo} 
-                                    title={"Wilder World"} 
-                                    text={"We developed a marketplace to sell NFTs of their Metaverse and worked on 3D models."} 
-                                    leftTitle={"PROFIT"}
-                                    leftNum={"$700K"}
-                                    enableWeek
-                                    footNum={"per week"}
-                                    rightTitle={"POPULAR COIN"}
-                                    rightNum={"#200"}
-                                    enableLine
-                                    footText={"Contract"}
-                                    enableSite
-                                    siteLink={"https://www.wilderworld.com/"}
-                                    contractLink={"https://www.wilderworld.com/"}
-                                />
-                            </div>
+                        <div className={styles.Card}>
+                            <ClientCard 
+                                logo={WilderLogo} 
+                                title={"Wilder World"} 
+                                text={"We developed a marketplace to sell NFTs of their Metaverse and worked on 3D models."} 
+                                leftTitle={"PROFIT"}
+                                leftNum={"$700K"}
+                                enableWeek
+                                footNum={"per week"}
+                                rightTitle={"POPULAR COIN"}
+                                rightNum={"#200"}
+                                enableLine
+                                footText={"Contract"}
+                                enableSite
+                                siteLink={"https://www.wilderworld.com/"}
+                                contractLink={"https://www.wilderworld.com/"}
+                                s={s}
+						        index={1}
+                            />
                         </div>
-                        <div className={styles.CarouselMember}>
-                            <div className={`${styles.Card} ${s == 0 ? styles.Selected : styles.NotSelected}`}>
-                                <ClientCard 
-                                    logo={MiladyLogo} 
-                                    title={"Milady"} 
-                                    text={"We developed the connections to the smart contracts and solve issues."} 
-                                    leftTitle={"PROFIT"}
-                                    leftNum={"$1M"}
-                                    rightTitle={"NFT SOLD"}
-                                    rightNum={"100%"}
-                                    enableLine
-                                    footText={"Contract"}
-                                    enableSite
-                                    siteLink={"https://tribetoken.app/#/"}
-                                    contractLink={"https://tribetoken.app/#/"}
-                                />
-                            </div>
+                        <div className={styles.Card}>
+                            <ClientCard 
+                                logo={MiladyLogo} 
+                                title={"Milady"} 
+                                text={"We developed the connections to the smart contracts and solve issues."} 
+                                leftTitle={"PROFIT"}
+                                leftNum={"$1M"}
+                                rightTitle={"NFT SOLD"}
+                                rightNum={"100%"}
+                                enableLine
+                                footText={"Contract"}
+                                enableSite
+                                siteLink={"https://tribetoken.app/#/"}
+                                contractLink={"https://tribetoken.app/#/"}
+                                s={s}
+						        index={2}
+                            />
                         </div>
-                        <div className={styles.CarouselMember}>
-                            <div className={`${styles.Card} ${s == 0 ? styles.Selected : styles.NotSelected}`}>
-                                <ClientCard 
-                                    logo={APLogo} 
-                                    title={"Astronaut Penguin"} 
-                                    text={"We created the first cold wallet in Latin America and the physical world first for mobile."}
-                                    // textStyle={{paddingTop: '30px'}}
-                                    footText={"View Post"}
-                                    contractLink={"https://tribetoken.app/#/"}
-                                />
-                            </div>
+                        <div className={styles.Card}>
+                            <ClientCard 
+                                logo={APLogo} 
+                                title={"Astronaut Penguin"} 
+                                text={"We created the first cold wallet in Latin America and the physical world first for mobile."}
+                                // textStyle={{paddingTop: '30px'}}
+                                footText={"View Post"}
+                                contractLink={"https://tribetoken.app/#/"}
+                                s={s}
+						        index={3}
+                            />
                         </div>
                 </Flicking>
             </div>

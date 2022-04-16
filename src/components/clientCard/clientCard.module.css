@@ -2,6 +2,55 @@
 /*///STYLES///*/
 /*////////////*/
 
+.ClientWrap {
+    width: 275px;
+    height: 287px;
+    position: relative;
+    background: linear-gradient(to right, rgba(242, 65, 48, 0.19), rgba(38, 38, 38, 0));
+    /* box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25); */
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.Selected {
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.NotSelected {
+    width: 219px;
+	height: 240px;
+	border-radius: 5px;
+	z-index: 0;
+}
+
+.NotSelected > .ClientCard {
+    background: #0A0909;
+    width: 219px;
+	height: 240px;
+}
+
+.NotSelected > .ClientCard > .CardLogo {
+    display: none;
+}
+
+.NotSelected > .ClientCard > .CardTitle {
+    display: none;
+}
+
+.NotSelected > .ClientCard > .CardText {
+    display: none;
+}
+
+.NotSelected > .ClientCard > .MarketContainer {
+    display: none;
+}
+
+.NotSelected > .ClientCard > .CardFoot {
+    display: none;
+}
+
+
 .ClientCard {
     width: 275px;
     height: 287px;
@@ -15,13 +64,10 @@
     );
     box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25);
     
-    border: 1px solid;
-    border-color: rgba(242, 65, 48, 0.19);
+    /* border: 1px solid;
+    border-color: white; */
     border-radius: 5px;
-
-    /* transform: matrix(1, 0, 0, -1, 0, 0); */
     margin: 0 auto;
-    /* margin-top: 30px; */
 }
 
 .CardLogo {
