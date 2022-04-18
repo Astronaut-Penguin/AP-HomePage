@@ -32,7 +32,7 @@ const WorksSection = () => {
   const [s, setS] = useState(1);
   useEffect(() => {
     const camera = document.getElementsByClassName("flicking-camera");
-    camera[0].style.transformStyle='preserve-3d';
+    camera[0].style.transformStyle = "preserve-3d";
   }, []);
 
   return (
@@ -137,6 +137,7 @@ const WorksSection = () => {
           </div>
         </Flicking>
       </div>
+
       <div className={styles.Dots}>
         <div className={styles.DotsContainer}>
           <div

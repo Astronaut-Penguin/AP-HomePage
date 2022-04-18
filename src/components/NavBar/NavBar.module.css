@@ -5,5 +5,29 @@
 /* CONTAINER */
 .Container{
     display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    background-color: red;
+    padding: 28px 18px 0px 18px;
+    z-index: 9999;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* NAVBAR LOGO */
+.Logo{
+    display: inline-block;
+    width: 40vw;
+    height: 15vw;
+    background-image: url('../../../public/assets/logo-big.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: blue;
+}
+
+/* BUTTON */
+.Burger{
     
 }

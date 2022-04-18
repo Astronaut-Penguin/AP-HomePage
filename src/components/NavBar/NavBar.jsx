@@ -9,7 +9,13 @@ const NavBar = () => {
   ////////////
   // RENDER //
   ////////////
-  return <section className={styles.Container}></section>;
+  return (
+    <section className={styles.Container}>
+      <div className={styles.Logo}></div>
+
+      <button className={styles.Burger}></button>
+    </section>
+  );
 };
 
 export default NavBar;
