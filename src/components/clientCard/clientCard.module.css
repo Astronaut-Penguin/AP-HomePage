@@ -14,20 +14,16 @@
 
 .Selected {
 	margin: 0 auto;
-	z-index: 1;
+	/* z-index: 5; */
 }
 
 .NotSelected {
-    width: 219px;
-	height: 240px;
 	border-radius: 5px;
-	z-index: 0;
+	/* z-index: -1; */
 }
 
 .NotSelected > .ClientCard {
     background: #0A0909;
-    width: 219px;
-	height: 240px;
 }
 
 .NotSelected > .ClientCard > .CardLogo {
