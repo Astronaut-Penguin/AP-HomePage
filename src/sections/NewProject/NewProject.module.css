@@ -66,6 +66,8 @@
 
 .CountInfo > a {
     margin: 14px;
+    text-decoration: none;
+    color: #F24130;
 }
 
 .Button {
