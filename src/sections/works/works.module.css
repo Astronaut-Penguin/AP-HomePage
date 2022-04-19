@@ -20,7 +20,7 @@
 
 .Carousel {
 	height: 287px;
-	overflow: visible !important;
+	/* overflow: visible !important; */
 }
 
 .Card {
