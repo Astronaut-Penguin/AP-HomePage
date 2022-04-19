@@ -8,11 +8,12 @@
     flex-direction: row;
     width: 100vw;
     position: absolute;
-    background-color: red;
+    /* background-color: red; */
     padding: 28px 18px 0px 18px;
     z-index: 9999;
     justify-content: space-between;
     box-sizing: border-box;
+    align-items: center;
 }
 
 /* NAVBAR LOGO */
@@ -24,10 +25,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 /* BUTTON */
 .Burger{
-    
+    width: 12vw;
+    height: 12vw;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.Image{
+    width: 100%;
+    height: auto;
 }
