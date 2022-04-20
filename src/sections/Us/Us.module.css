@@ -18,53 +18,106 @@
 
 .Penguins {
     position: relative;
+    margin: 0 auto;
+    width: 270px;
+    height: 180px;
 }
 
-.Penguin1 {
+.Background {
     position: absolute;
-    z-index: 4;
-    margin-top: 42px;
-    margin-left: 90px;
+    margin: 30px 0 0 20px;
+    width: 200px;
+    height: 110px;
+    background: rgba(242, 65, 48, 0.64);
+    filter: blur(80px);
 }
 
-.Penguin2 {
+.Facu {
+    width: 80px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 52px;
+    margin-left: 190px;
+}
+
+.Ale {
+    width: 90px;
     position: absolute;
     z-index: 2;
-    margin-left: 67px;
-}
-
-.Penguin3 {
-    position: absolute;
-    z-index: 2;
-    margin-left: 180px;
-}
-
-.Penguin4 {
-    position: absolute;
-    z-index: 4;
-    margin-top: 42px;
+    margin-top: 20px;
     margin-left: 150px;
 }
 
-.Penguin5 {
+.Flor {
+    width: 70px;
+    position: absolute;
+    z-index: 4;
+    margin-top: 68px;
+    margin-left: 140px;
+}
+
+.Penguin {
+    width: 86px;
     position: absolute;
     z-index: 1;
-    margin-top: 8px;
-    margin-left: 125px;
+    margin-top: 23px;
+    margin-left: 88px;
 }
 
-.Penguin6 {
+.Mati {
+    width: 86px;
     position: absolute;
-    z-index: 3;
-    margin-top: 28px;
-    margin-left: 198px;
+    z-index: 1;
+    margin-top: 16px;
+    margin-left: 25px;
 }
 
-.Penguin7 {
+.Agus {
+    width: 70px;
     position: absolute;
     z-index: 3;
-    margin-top: 31px;
-    margin-left: 40px;
+    margin-top: 68px;
+    margin-left: 65px;
+}
+
+.Diego {
+    width: 88px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 42px;
+    margin-left: 0px;
+}
+
+.Info {
+    position: absolute;
+    z-index: 10;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+}
+
+.InfoClose {
+animation: fadeOut 0.2s ease-in-out;
 }
 
 .Line {
@@ -88,6 +141,16 @@
     background: #FFFFFF;
 }
 
+.SecondLineLeft {
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    top: 140px;
+    left: 26px;
+
+    background: #FFFFFF;
+}
+
 .Circle {
     position: absolute;
     width: 4px;
@@ -100,12 +163,40 @@
     background: #FFFFFF;
 }
 
+.CircleLeft {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 138.9px;
+    left: 22px;
+
+    border-radius: 10px;
+
+    background: #FFFFFF;
+}
+
 .Person {
     position: absolute;
     width: 53px;
     height: 18px;
     top: 114px;
     left: 55px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;    
+}
+
+.PersonLeft {
+    position: absolute;
+    width: 53px;
+    height: 18px;
+    top: 112px;
+    margin-left: -31px;
 
     font-family: 'Archivo';
     font-style: normal;
@@ -133,8 +224,25 @@
     color: #F24130;
 }
 
+.JobLeft {
+    position: absolute;
+    width: 87px;
+    height: 20px;
+    top: 143px;
+    margin-left: -50px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+
+    color: #F24130;
+}
+
 .TextContainer {
-    margin: 240px 0 0 0;
+    margin: 60px 0 0 0;
 }
 
 .WeMake {
