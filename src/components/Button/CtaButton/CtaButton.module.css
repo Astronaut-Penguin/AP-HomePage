@@ -12,7 +12,21 @@
 
     font-family: 'Archivo';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+}
+
+.Large {
+    width: 140px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F24130;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 100;
     font-size: 15px;
     color: white;
 }

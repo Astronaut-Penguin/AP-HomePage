@@ -37,7 +37,7 @@ const NewProjectSection = () => {
             </div>
 
             <div className={styles.Button}>
-                <CtaButton text="Start my project" onClick={"/"} />
+                <CtaButton text="Start my project" onClick={"/"} large />
             </div>
         </section>
     );
