@@ -16,7 +16,7 @@ import CtaButton from "../../components/Button/CtaButton/CtaButton";
 import Penguin1 from "./assets/penguin1.png";
 import Penguin2 from "./assets/penguin2.png";
 import Penguin3 from "./assets/penguin3.png";
-import Arrow from "./assets/arrow.png";
+import Arrow from "./assets/arrow.svg";
 
 const UsSection = () => {
   // const [s, setS] = useState(1);
