@@ -24,6 +24,7 @@
 .ProcessContainer {
     position: relative;
     margin: 20px auto;
+    width: 320px;
 }
 
 .Change {

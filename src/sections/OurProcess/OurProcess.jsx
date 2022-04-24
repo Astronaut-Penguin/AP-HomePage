@@ -30,7 +30,6 @@ const OurProcessSection = () => {
         </div>
 
         <div className={styles.ProcessContainer}>
-
             {s == 1 &&
                 <div className={styles.Change}>
                     <div className={styles.RightSide}>
@@ -201,9 +200,7 @@ const OurProcessSection = () => {
                         </Collapse>
                     </div>
                 </div>
-            }
-
-            
+            }   
         </div>
     </section>
   );
