@@ -32,7 +32,7 @@ const OurProcessSection = () => {
         <div className={styles.ProcessContainer}>
 
             {s == 1 &&
-                <div>
+                <div className={styles.Change}>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#1</div>
                         <div className={styles.RedBall}></div>
@@ -75,7 +75,7 @@ const OurProcessSection = () => {
             }
 
             {s == 2 &&
-                <div>
+                <div className={styles.Change}>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#2</div>
                         <div className={styles.RedBall}></div>
@@ -118,7 +118,7 @@ const OurProcessSection = () => {
             }
 
             {s == 3 &&
-                <div>
+                <div className={styles.Change}>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#3</div>
                         <div className={styles.RedBall}></div>
@@ -161,7 +161,7 @@ const OurProcessSection = () => {
             }
 
             {s == 4 &&
-                <div>
+                <div className={styles.Change}>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#4</div>
                         <div className={styles.RedBall}></div>
