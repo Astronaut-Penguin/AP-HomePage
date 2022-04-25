@@ -33,18 +33,16 @@ const UsSection = () => {
 
         <a onClick={() => setShow(!show)}>
           <img src={Penguin2} className={styles.Facu} />
-          <div className={show ? styles.Info : ''} style={{marginLeft: '205px', marginTop: '35px'}}>
+          {show ? (
+            <div className={styles.Info} style={{marginLeft: '205px', marginTop: '35px'}}>
               <div className={styles.Line}></div>
               <div className={styles.SecondLineLeft}></div>
               <div className={styles.CircleLeft}></div>
               <h2 className={styles.PersonLeft}>Facu</h2>
               <h3 className={styles.JobLeft}>FRONT-END DEVELOPER</h3>
             </div>
-          {show ? (
-            <div className={styles.Info}></div>
           ) : (
-            <div className={styles.InfoClose}></div>
-            // <img src={Penguin2} className={styles.Facu} />
+            null
           )}
         </a>
         <img src={Penguin1} className={styles.Ale} />
