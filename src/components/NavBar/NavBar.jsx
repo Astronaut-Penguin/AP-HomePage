@@ -14,9 +14,11 @@ const NavBar = () => {
   ///////////////
 
   const [Open, setOpen] = useState(false);
+  const [isClicked, setClicked] = useState(false);
 
   const handleOpen = () => {
     setOpen(!Open);
+    setClicked(true);
   };
 
   ////////////
@@ -27,7 +29,7 @@ const NavBar = () => {
       <div className={styles.Logo}></div>
 
       <button className={styles.Burger} onClick={handleOpen}>
-        <Burger />
+        <Burger toggle={Open} activate={isClicked} />
       </button>
     </section>
   );
