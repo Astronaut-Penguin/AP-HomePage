@@ -9,55 +9,66 @@ import gsap from "gsap";
 // activate: variable que le dice a partir de cuando puede cambiar
 
 // SVG COMPONENT
-const Burger = ({ toggle, activate }) => {
+const Burger = ({ toggle, activate, onComplete }) => {
   ////////////////
   // ANIMATIONS //
   ////////////////
 
   useEffect(() => {
     // Animation when starts
-    gsap.fromTo(
+    var tlStart = gsap.timeline();
+    tlStart.fromTo(
       "#Ellipse1",
       { x: 50, y: 50 },
       { x: 22.5, y: 22.5, duration: 0.3, delay: 0.5, ease: "sine" }
     );
-    gsap.fromTo(
+    tlStart.fromTo(
       "#Ellipse2",
       { x: 50, y: 50 },
-      { x: 77.5, y: 22.5, duration: 0.3, delay: 0.5, ease: "sine" }
+      { x: 77.5, y: 22.5, duration: 0.3, delay: 0.5, ease: "sine" },
+      "0"
     );
-    gsap.fromTo(
+    tlStart.fromTo(
       "#Ellipse3",
       { x: 50, y: 50 },
-      { x: 22.5, y: 77.5, duration: 0.3, delay: 0.5, ease: "sine" }
+      { x: 22.5, y: 77.5, duration: 0.3, delay: 0.5, ease: "sine" },
+      "0"
     );
-    gsap.fromTo(
+    tlStart.fromTo(
       "#Ellipse4",
       { x: 50, y: 50 },
-      { x: 77.5, y: 77.5, duration: 0.3, delay: 0.5, ease: "sine" }
+      { x: 77.5, y: 77.5, duration: 0.3, delay: 0.5, ease: "sine" },
+      "0"
     );
-    gsap.fromTo("#Cross", { opacity: 0 }, { opacity: 0 });
+    tlStart.fromTo("#Cross", { opacity: 0 }, { opacity: 0 }, "0");
   }, []);
 
   useEffect(() => {
     // When the button open the modal
+    var tlOpen = gsap.timeline({
+      onComplete: onComplete,
+    });
+
     if (toggle && activate) {
-      gsap.fromTo(
+      tlOpen.fromTo(
         "#Ellipse1",
         { x: 22.5, y: 22.5 },
-        { x: 100, y: 100, scale: 0, duration: 0.3, ease: "sine" }
+        { x: 100, y: 100, scale: 0, duration: 0.3, ease: "sine" },
+        "0"
       );
-      gsap.fromTo(
+      tlOpen.fromTo(
         "#Ellipse2",
         { x: 77.5, y: 22.5 },
-        { x: 50, y: 100, scale: 0, duration: 0.3, ease: "sine" }
+        { x: 50, y: 100, scale: 0, duration: 0.3, ease: "sine" },
+        "0"
       );
-      gsap.fromTo(
+      tlOpen.fromTo(
         "#Ellipse3",
         { x: 22.5, y: 77.5 },
-        { x: 100, y: 50, scale: 0, duration: 0.3, ease: "sine" }
+        { x: 100, y: 50, scale: 0, duration: 0.3, ease: "sine" },
+        "0"
       );
-      gsap.fromTo(
+      tlOpen.fromTo(
         "#Ellipse4",
         { x: 77.5, y: 77.5 },
         {
@@ -66,9 +77,10 @@ const Burger = ({ toggle, activate }) => {
           scale: 0,
           duration: 0.3,
           ease: "sine",
-        }
+        },
+        "0"
       );
-      gsap.fromTo(
+      tlOpen.fromTo(
         "#Cross",
         { x: 500, y: 500, opacity: 1, scale: 0 },
         {
@@ -79,26 +91,34 @@ const Burger = ({ toggle, activate }) => {
           delay: 0.1,
           duration: 0.3,
           ease: "sine",
-        }
+        },
+        "0"
       );
     } else if (!toggle && activate) {
+      var tlClose = gsap.timeline({
+        onComplete: onComplete,
+      });
+
       // When the button closes the modal
-      gsap.fromTo(
+      tlClose.fromTo(
         "#Ellipse1",
         { x: 100, y: 100 },
-        { x: 22.5, y: 22.5, scale: 1, delay: 0.1, duration: 0.3, ease: "sine" }
+        { x: 22.5, y: 22.5, scale: 1, delay: 0.1, duration: 0.3, ease: "sine" },
+        "0"
       );
-      gsap.fromTo(
+      tlClose.fromTo(
         "#Ellipse2",
         { x: 50, y: 100 },
-        { x: 77.5, y: 22.5, scale: 1, delay: 0.2, duration: 0.3, ease: "sine" }
+        { x: 77.5, y: 22.5, scale: 1, delay: 0.2, duration: 0.3, ease: "sine" },
+        "0"
       );
-      gsap.fromTo(
+      tlClose.fromTo(
         "#Ellipse3",
         { x: 100, y: 50 },
-        { x: 22.5, y: 77.5, scale: 1, delay: 0.3, duration: 0.3, ease: "sine" }
+        { x: 22.5, y: 77.5, scale: 1, delay: 0.3, duration: 0.3, ease: "sine" },
+        "0"
       );
-      gsap.fromTo(
+      tlClose.fromTo(
         "#Ellipse4",
         { x: 50, y: 50 },
         {
@@ -108,9 +128,10 @@ const Burger = ({ toggle, activate }) => {
           delay: 0.4,
           duration: 0.3,
           ease: "sine",
-        }
+        },
+        "0"
       );
-      gsap.fromTo(
+      tlClose.fromTo(
         "#Cross",
         { x: 0, y: 0, scale: 1 },
         {
@@ -119,7 +140,8 @@ const Burger = ({ toggle, activate }) => {
           scale: 0,
           duration: 0.3,
           ease: "sine",
-        }
+        },
+        "0"
       );
     }
   }, [toggle]);

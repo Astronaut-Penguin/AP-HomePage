@@ -7,6 +7,10 @@ import styles from "./NavBar.module.css";
 // SVG
 import Burger from "./assets/Burger";
 
+// Collapse
+import "@blueprintjs/core/lib/css/blueprint.css";
+import { Collapse } from "@blueprintjs/core";
+
 // COMPONENT
 const NavBar = () => {
   ///////////////
@@ -15,10 +19,20 @@ const NavBar = () => {
 
   const [Open, setOpen] = useState(false);
   const [isClicked, setClicked] = useState(false);
+  const [block, setBlock] = useState(false);
 
   const handleOpen = () => {
-    setOpen(!Open);
-    setClicked(true);
+    if (!block) {
+      setOpen(!Open);
+      setClicked(true);
+      setBlock(true);
+
+      const interval = setInterval(() => {
+        setBlock(false);
+        clearInterval(interval);
+      }, 500);
+    } else {
+    }
   };
 
   ////////////
@@ -26,11 +40,16 @@ const NavBar = () => {
   ////////////
   return (
     <section className={styles.Container}>
-      <div className={styles.Logo}></div>
+      <div className={styles.Header}>
+        <div className={styles.Logo}></div>
 
-      <button className={styles.Burger} onClick={handleOpen}>
-        <Burger toggle={Open} activate={isClicked} />
-      </button>
+        <button className={styles.Burger} onClick={handleOpen}>
+          <Burger toggle={Open} activate={isClicked} />
+        </button>
+      </div>
+      <Collapse isOpen={Open}>
+        <p style={{ color: "white" }}>Faso</p>
+      </Collapse>
     </section>
   );
 };
