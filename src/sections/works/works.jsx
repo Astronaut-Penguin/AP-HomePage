@@ -137,7 +137,6 @@ const WorksSection = () => {
           </div>
         </Flicking>
       </div>
-
       <div className={styles.Dots}>
         <div className={styles.DotsContainer}>
           <div

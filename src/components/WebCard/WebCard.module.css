@@ -1,0 +1,142 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.WebWrap {
+    width: 50%;
+    float: left;
+
+    padding: 20px;
+    width: 112px;
+    height: 154px;
+    position: relative;
+    background: linear-gradient(to right, rgba(242, 65, 48, 0.19), rgba(38, 38, 38, 0));
+    box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25);
+    padding: 1px;
+    border-radius: 5px;
+    margin: 13px;
+}
+
+.WebCard {
+    width: 112px;
+    height: 154px;
+    background: linear-gradient(0deg, rgba(90, 90, 90, 0) -25.97%, #0A0909 100%);
+    border-radius: 5px;
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.PlayContainer {
+    height: 30px;
+}
+
+.PlayLogo {
+    float: right;
+    margin-top: 8px;
+    margin-left: 38px;
+    margin-right: 13px;
+}
+
+.NotSelected {
+    display: none;
+    margin-top: 30px;
+}
+
+.Planet {
+    text-align:center;
+    display:block;
+    margin:auto;
+    /* padding-bottom: 10px; */
+}
+
+.CardTitle {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************/
+/* LARGE MOBILE */
+/****************/
+
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+	.WebWrap {
+        width: 130px;
+        height: 178px;
+    }
+    .WebCard {
+        width: 130px;
+        height: 178px;
+    }
+    .Planet {
+        width: 70px;
+        height: auto;
+    }
+    .CardTitle {
+        font-size: 20px;
+        line-height: 22px;
+    
+        width: 110px;
+        margin-top: 18px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 426px) {
+	.WebWrap {
+        width: 140px;
+        height: 195px;
+    }
+    .WebCard {
+        width: 140px;
+        height: 195px;
+    }
+    .Planet {
+        width: 84px;
+        height: auto;
+    }
+    .CardTitle {
+        font-size: 20px;
+        line-height: 24px;
+    
+        width: 110px;
+        margin-top: 18px;
+    }
+}
+
+/****************/
+/****** PC ******/
+/****************/
+
+@media only screen and (min-width: 1023px) {
+    .WebWrap {
+        width: 352px;
+        height: 413px;
+        margin: 30px;
+    }
+    .WebCard {
+        width: 352px;
+        height: 413px;
+    }
+    .Planet {
+        width: auto;
+        height: 150px;
+        margin-top: 30px;
+    }
+    .CardTitle {
+        font-size: 40px;
+        line-height: 44px;
+        width: 240px;
+        margin-top: 40px;
+    }
+}
