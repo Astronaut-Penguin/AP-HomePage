@@ -1,0 +1,177 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.Container {
+    background-color: #1b1b1b;
+    margin: 0;
+    width: 100%;
+    height: 700px;
+	align-items: center;
+}
+
+.TitleContainer {
+    width: 100px;
+    align-items: left;
+    text-align: left;
+}
+
+.TextContainer {
+    width: 240px;
+    margin: 20px 0 0 0;
+}
+
+.ProcessContainer {
+    position: relative;
+    margin: 20px auto;
+    width: 320px;
+}
+
+.Change {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+.RightSide {
+    width: 70%;
+    float: right;
+}
+
+.Number {
+    position: absolute;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 83.8%;
+
+    letter-spacing: -0.1em;
+    margin: 80px auto auto 82px;
+    z-index: 100;
+    color: #FFFFFF;
+}
+
+.RedBall {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: linear-gradient(332.46deg, rgba(0, 0, 0, 0.55) 20.1%, #F24130 85.37%);
+    filter: blur(2px);
+    margin: 60px auto auto 70px;
+}
+
+.GrayBall {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background: linear-gradient(202.46deg, #434343 15.1%, #1E1E1E 85.37%);
+    filter: blur(2px);
+}
+
+.SmallNumber {
+    position: absolute;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 83.8%;
+
+    letter-spacing: -0.1em;
+    z-index: 100;
+    color: #C4C4C4;
+}
+
+.Penguin {
+    position: absolute;
+    width: 70px;
+    margin: 150px auto auto 110px;
+}
+
+.LeftSide {
+    width: 30%;
+    float: left;
+}
+
+.ProcessTitle {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    
+    margin: 115px auto auto 25px;
+    color: #F24130;
+}
+
+.ProcessText{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-left: 25px;
+    width: 170px;
+    color: #FFFFFF;;
+}
+
+.Button {
+    margin-left: 100%;
+}
+
+@keyframes spin {
+	from { transform: rotate(180deg); }
+	to { transform: rotate(0deg); }
+}
+
+@keyframes spinOpen {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(180deg); }
+}
+
+.Img {
+	animation-name: spin;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+    margin: 10px 0 10px 0;
+}
+
+.ImgOpen {
+	animation-name: spinOpen;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+    transform: rotate(180deg);
+    margin: 10px 0 10px 0;
+}

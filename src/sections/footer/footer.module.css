@@ -7,15 +7,26 @@
     margin: 0;
     min-height: 100px;
 	align-items: center;
-    padding-top: 50px;
+}
+
+.APContainer {
+    margin: 0 auto 12px auto;
+    align-items: center;
+    width: 130px;
 }
 
 .APLogo {
-    /* width: auto;
-    height: auto; */
-    margin: 10px 0 15px 0;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.SocialContainer {
+    width: 124px;
+    margin: 0 auto;
 }
 
 .Social {
-    margin: 10px;
+    margin: 4px;
+    width: 17px;
+    margin-bottom: 20px;
 }
