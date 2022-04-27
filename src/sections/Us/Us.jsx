@@ -13,14 +13,10 @@ import Title from "../../components/title/title";
 import CtaButton from "../../components/Button/CtaButton/CtaButton";
 
 //- Import Images
-import Penguin1 from "./assets/1.png";
-import Penguin2 from "./assets/2.png";
-import Penguin3 from "./assets/3.png";
-import Penguin4 from "./assets/4.png";
-import Penguin5 from "./assets/5.png";
-import Penguin6 from "./assets/6.png";
-import Penguin7 from "./assets/7.png";
-import Arrow from "./assets/arrow.png";
+import Penguin1 from "./assets/penguin1.png";
+import Penguin2 from "./assets/penguin2.png";
+import Penguin3 from "./assets/penguin3.png";
+import Arrow from "./assets/arrow.svg";
 
 const UsSection = () => {
   // const [s, setS] = useState(1);
@@ -33,27 +29,28 @@ const UsSection = () => {
         <Title text={"Us"} />
       </div>
       <div className={styles.Penguins}>
+        <div className={styles.Background}></div>
+
         <a onClick={() => setShow(!show)}>
-          <img src={Penguin1} className={styles.Penguin1} />
+          <img src={Penguin2} className={styles.Facu} />
           {show ? (
-            <div className={styles.Penguin1}>
+            <div className={styles.Info} style={{marginLeft: '205px', marginTop: '35px'}}>
               <div className={styles.Line}></div>
-              <div className={styles.SecondLine}></div>
-              <div className={styles.Circle}></div>
-              <h2 className={styles.Person}>Facu</h2>
-              <h3 className={styles.Job}>FRONT-END DEVELOPER</h3>
+              <div className={styles.SecondLineLeft}></div>
+              <div className={styles.CircleLeft}></div>
+              <h2 className={styles.PersonLeft}>Facu</h2>
+              <h3 className={styles.JobLeft}>FRONT-END DEVELOPER</h3>
             </div>
           ) : (
-            <img src={Penguin1} className={styles.Penguin1} />
+            null
           )}
         </a>
-        {/* <img src={Penguin1} className={styles.Penguin1} /> */}
-        <img src={Penguin2} className={styles.Penguin2} />
-        <img src={Penguin3} className={styles.Penguin3} />
-        <img src={Penguin4} className={styles.Penguin4} />
-        <img src={Penguin5} className={styles.Penguin5} />
-        <img src={Penguin6} className={styles.Penguin6} />
-        <img src={Penguin7} className={styles.Penguin7} />
+        <img src={Penguin1} className={styles.Ale} />
+        <img src={Penguin1} className={styles.Flor} />
+        <img src={Penguin2} className={styles.Penguin} />
+        <img src={Penguin3} className={styles.Mati} />
+        <img src={Penguin3} className={styles.Agus} />
+        <img src={Penguin2} className={styles.Diego} />
       </div>
 
       <div className={styles.TextContainer}>
