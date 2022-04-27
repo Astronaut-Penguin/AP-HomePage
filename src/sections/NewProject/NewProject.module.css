@@ -49,9 +49,11 @@
     padding-top: 180px;
     text-align: center;
     color: #FFFFFF;
+    cursor: default;
 }
 
 .CountInfo {
+    display: block;
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 600;
@@ -62,12 +64,16 @@
     margin-top: 14px;
     margin-left: 8px;
     color: #F24130;
+    cursor: default;
 }
 
-.CountInfo > a {
+.CountInfo > p {
+    display: inline;
     margin: 14px;
+    margin-top: 0px;
     text-decoration: none;
     color: #F24130;
+    cursor: default;
 }
 
 .Button {
