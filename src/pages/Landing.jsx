@@ -6,8 +6,8 @@ import { Home, Works } from "../sections/index";
 import UsSection from "../sections/Us/Us";
 
 import WebSection from "../sections/Web/web.jsx";
-
 import NewProjectSection from "../sections/NewProject/NewProject";
+import FooterSection from "../sections/footer/footer";
 
 const Landing = () => {
   return (
@@ -16,7 +16,8 @@ const Landing = () => {
       <Works />
       <UsSection />
       <WebSection />
-    <NewProjectSection />
+      <NewProjectSection />
+      <FooterSection />
     </>
   );
 };

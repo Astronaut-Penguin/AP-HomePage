@@ -20,7 +20,7 @@
 
 .Carousel {
 	height: 287px;
-	transform-style: preserve-3d;
+	/* overflow: visible !important; */
 }
 
 .Card {
