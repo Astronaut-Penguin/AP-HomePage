@@ -22,7 +22,7 @@
 	/* z-index: -1; */
 }
 
-.NotSelected > .ClientCard {
+/* .NotSelected > .ClientCard {
     background: #0A0909;
 }
 
@@ -44,7 +44,7 @@
 
 .NotSelected > .ClientCard > .CardFoot {
     display: none;
-}
+} */
 
 
 .ClientCard {

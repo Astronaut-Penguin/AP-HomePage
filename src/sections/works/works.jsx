@@ -22,9 +22,13 @@ import "@egjs/react-flicking/dist/flicking.css";
 const updateTransform = (e) => {
   e.currentTarget.panels.forEach((panel) => {
     const rotateVal = -panel.progress * 30;
+    const opacityVal = panel.progress;
+    const filterVal = Math.abs(opacityVal)
     const sinRot = Math.sin(Math.abs((rotateVal * Math.PI) / 180));
     const depth = 100000 * sinRot * sinRot;
     panel.element.style.transform = `translateZ(-${depth}px) rotateX(${rotateVal}deg)`;
+    panel.element.style.filter = `brightness(${-filterVal + 1})`;
+    console.log(-filterVal + 1);
   });
 };
 
