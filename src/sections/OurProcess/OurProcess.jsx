@@ -59,6 +59,10 @@ const OurProcessSection = () => {
                         <h4 className={styles.ProcessText}>
                             We reach the client and ask for the necessary information to do the project. Goals, target, timeframes, expectations. 
                         </h4>
+
+                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
+                            We talk to the client to know him better and help him find the answers to the project and make a better outcome.
+                        </Collapse>
                         <a onClick={() => setIsOpen(!isOpen)} className={styles.Button}>
                             {isOpen ? (
                                 <img className={styles.ImgOpen} src={Arrow} />
@@ -66,9 +70,6 @@ const OurProcessSection = () => {
                                 <img className={styles.Img} src={Arrow} />
                             )}
                         </a>
-                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
-                            We talk to the client to know him better and help him find the answers to the project and make a better outcome.
-                        </Collapse>
                     </div>
                 </div>
             }
@@ -102,6 +103,10 @@ const OurProcessSection = () => {
                         <h4 className={styles.ProcessText}>
                             With all the information, we design answers consistent with the client requirements, we investigate deeply on the right users, the tasks they need to know to achieve what they want, developing the structure and architecture of the system.
                         </h4>
+
+                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
+                            As we move forward, our designers create prototypes which will be tested. And the product owner talks to the client to have feedback.
+                        </Collapse>
                         <a onClick={() => setIsOpen(!isOpen)} className={styles.Button}>
                             {isOpen ? (
                                 <img className={styles.ImgOpen} src={Arrow} />
@@ -109,9 +114,6 @@ const OurProcessSection = () => {
                                 <img className={styles.Img} src={Arrow} />
                             )}
                         </a>
-                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
-                            As we move forward, our designers create prototypes which will be tested. And the product owner talks to the client to have feedback.
-                        </Collapse>
                     </div>
                 </div>
             }
@@ -145,6 +147,10 @@ const OurProcessSection = () => {
                         <h4 className={styles.ProcessText}>
                             With the client’s feedback, our creative team starts the design, using forefront UX and graphic systems to achieve the goal. We test the products with user types to find issues and solve them.
                         </h4>
+
+                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
+                            When the design phase is approved by the client, the developers start to plan the programming logic and then, start to develop the structure based on the design, performing testings that will confirm everything goes according to plan.
+                        </Collapse>
                         <a onClick={() => setIsOpen(!isOpen)} className={styles.Button}>
                             {isOpen ? (
                                 <img className={styles.ImgOpen} src={Arrow} />
@@ -152,9 +158,6 @@ const OurProcessSection = () => {
                                 <img className={styles.Img} src={Arrow} />
                             )}
                         </a>
-                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
-                            When the design phase is approved by the client, the developers start to plan the programming logic and then, start to develop the structure based on the design, performing testings that will confirm everything goes according to plan.
-                        </Collapse>
                     </div>
                 </div>
             }
@@ -188,6 +191,10 @@ const OurProcessSection = () => {
                         <h4 className={styles.ProcessText}>
                             In this final phase, we fix and merge all the components and apply the technological solutions needed for the client to know the system and be satisfied with the result.
                         </h4>
+
+                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
+                            We think we are a bridge between users and clients, achieving effective communication to make a great experience.
+                        </Collapse>
                         <a onClick={() => setIsOpen(!isOpen)} className={styles.Button}>
                             {isOpen ? (
                                 <img className={styles.ImgOpen} src={Arrow} />
@@ -195,9 +202,6 @@ const OurProcessSection = () => {
                                 <img className={styles.Img} src={Arrow} />
                             )}
                         </a>
-                        <Collapse isOpen={isOpen} className={styles.ProcessText}>
-                            We think we are a bridge between users and clients, achieving effective communication to make a great experience.
-                        </Collapse>
                     </div>
                 </div>
             }   
