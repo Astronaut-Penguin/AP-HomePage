@@ -2,6 +2,17 @@
 /*///STYLES///*/
 /*////////////*/
 
+.Caja {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    filter: blur(1px);
+    -webkit-box-shadow: inset -10px -10px 15px -5px #000000; 
+    box-shadow: inset -10px -10px 15px -5px #000000;
+}
+
+
+
 .Container {
     background-color: #1b1b1b;
     margin: 0;

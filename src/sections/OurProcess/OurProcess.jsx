@@ -5,6 +5,9 @@ import React, { useState } from "react";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import { Collapse, Button } from "@blueprintjs/core";
 
+//- Import Motion
+import { motion } from "framer-motion";
+
 //- Import Styles
 import styles from "./OurProcess.module.css";
 
@@ -20,6 +23,22 @@ const OurProcessSection = () => {
   const [s, setS] = useState(1);
   const [isOpen, setIsOpen] = React.useState(false);
 
+  const variants1 = {
+    open: { 
+        y: 117, 
+        x: 94,
+        backgroundColor: ['hsl(0, 0, 26)', 'hsl(5, 88, 57)'],
+        scale: 2.2 
+    },
+    closed: { 
+        y: 47, 
+        x: 60,
+        backgroundColor: ['hsl(5, 88, 57)', 'hsl(0, 0, 26)' ],
+        scale: 1.0
+    },
+  }
+  const [isMotionOpen1, setMotionOpen1] = useState(true)
+
   return (
     <section className={styles.Container}>
         <div className={styles.TitleContainer}>
@@ -30,8 +49,70 @@ const OurProcessSection = () => {
         </div>
 
         <div className={styles.ProcessContainer}>
-            {s == 1 &&
-                <div className={styles.Change}>
+
+            <div>
+                <div className={styles.RightSide}>
+
+                    <motion.div 
+                        animate={isMotionOpen1 ? "open" : "closed"} 
+                        variants={variants1}
+                        transition= {{ duration: 1.0 }}
+                        className={styles.Caja}
+                    >
+                        <div className={styles.SmallNumber}>#1</div>
+                    </motion.div>
+                    
+
+                    {/* <div className={styles.Number}>#1</div>
+                    <div className={styles.RedBall}></div> */}
+
+                    <a onClick={() => setS(2)}>
+                        <div className={styles.SmallNumber} style={{marginTop: '23px', marginLeft: '129px'}}>#2</div>
+                        <div className={styles.GrayBall} style={{marginTop: '10px', marginLeft: '120px'}}></div>
+                    </a>
+
+                    <a onClick={() => setS(3)}>
+                        <div className={styles.SmallNumber} style={{marginTop: '73px', marginLeft: '169px'}}>#3</div>
+                        <div className={styles.GrayBall} style={{marginTop: '60px', marginLeft: '160px'}}></div>
+                    </a>
+
+                    <a onClick={() => setS(4)}>
+                        <div className={styles.SmallNumber} style={{marginTop: '133px', marginLeft: '179px'}}>#4</div>
+                        <div className={styles.GrayBall} style={{marginTop: '120px', marginLeft: '170px'}}></div>
+                    </a>
+
+                    <img className={styles.Penguin} src={Penguin} />
+                </div>
+
+                <div className={styles.LeftSide}>
+                    <h4 className={styles.ProcessTitle}>OBSERVATION</h4>
+                    <h4 className={styles.ProcessText}>
+                        We reach the client and ask for the necessary information to do the project. Goals, target, timeframes, expectations. 
+                    </h4>
+
+                    <Collapse isOpen={isOpen} className={styles.ProcessText}>
+                        We talk to the client to know him better and help him find the answers to the project and make a better outcome.
+                    </Collapse>
+                    <a onClick={() => setIsOpen(!isOpen)} className={styles.Button}>
+                        {isOpen ? (
+                            <img className={styles.ImgOpen} src={Arrow} />
+                        ) : (
+                            <img className={styles.Img} src={Arrow} />
+                        )}
+                    </a>
+                </div>
+            </div>
+
+
+            <button onClick={() => setMotionOpen1(true)}>Boton</button>
+            <button onClick={() => setMotionOpen1(false)} style={{ marginTop: '130px' }}>Cerrar</button>
+
+
+
+
+
+            {/* {s == 1 &&
+                <div>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#1</div>
                         <div className={styles.RedBall}></div>
@@ -75,7 +156,7 @@ const OurProcessSection = () => {
             }
 
             {s == 2 &&
-                <div className={styles.Change}>
+                <div>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#2</div>
                         <div className={styles.RedBall}></div>
@@ -119,7 +200,7 @@ const OurProcessSection = () => {
             }
 
             {s == 3 &&
-                <div className={styles.Change}>
+                <div>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#3</div>
                         <div className={styles.RedBall}></div>
@@ -163,7 +244,7 @@ const OurProcessSection = () => {
             }
 
             {s == 4 &&
-                <div className={styles.Change}>
+                <div>
                     <div className={styles.RightSide}>
                         <div className={styles.Number}>#4</div>
                         <div className={styles.RedBall}></div>
@@ -204,7 +285,7 @@ const OurProcessSection = () => {
                         </a>
                     </div>
                 </div>
-            }   
+            }    */}
         </div>
     </section>
   );
