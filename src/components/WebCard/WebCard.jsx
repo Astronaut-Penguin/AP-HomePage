@@ -10,19 +10,22 @@ import Planet from './assets/planet.png';
 
 const WebCard = ({enablePlay, title, site}) => {
     return (
-        <div className={styles.WebWrap}>
+        <a href={site} target="_blank" className={styles.WebWrap}>
             <div className={styles.WebCard}>
                 <div className={styles.PlayContainer}>
                     <img src={PlayLogo} className={`${styles.PlayLogo} ${enablePlay ? styles.Selected : styles.NotSelected}`}/>
                 </div>
-                <a href={site} target="_blank">
+                {/* <a href={site} target="_blank">
                     <img src={Planet} className={styles.Planet} />
                 </a>
+                
                 <a href={site} target="_blank">
                     <h3 className={styles.CardTitle}>{title}</h3>
-                </a>
+                </a> */}
+                <img src={Planet} className={styles.Planet} />
+                <h3 className={styles.CardTitle}>{title}</h3>
             </div>
-        </div>
+        </a>
     );
 }
 
