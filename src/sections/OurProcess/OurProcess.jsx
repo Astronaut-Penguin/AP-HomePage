@@ -25,19 +25,69 @@ const OurProcessSection = () => {
 
   const variants1 = {
     open: { 
-        y: 117, 
-        x: 94,
+        y: 81, 
+        x: 93,
         backgroundColor: ['hsl(0, 0, 26)', 'hsl(5, 88, 57)'],
         scale: 2.2 
     },
     closed: { 
-        y: 47, 
+        y: 4, 
         x: 60,
         backgroundColor: ['hsl(5, 88, 57)', 'hsl(0, 0, 26)' ],
         scale: 1.0
     },
   }
+
+  const variants2 = {
+    open: { 
+        y: 81, 
+        x: 93,
+        backgroundColor: ['hsl(0, 0, 26)', 'hsl(5, 88, 57)'],
+        scale: 2.2 
+    },
+    closed: { 
+        y: 10, 
+        x: 120,
+        backgroundColor: ['hsl(5, 88, 57)', 'hsl(0, 0, 26)' ],
+        scale: 1.0
+    },
+  }
+
+  const variants3 = {
+    open: { 
+        y: 81, 
+        x: 93,
+        backgroundColor: ['hsl(0, 0, 26)', 'hsl(5, 88, 57)'],
+        scale: 2.2 
+    },
+    closed: { 
+        y: 59, 
+        x: 160,
+        backgroundColor: ['hsl(5, 88, 57)', 'hsl(0, 0, 26)' ],
+        scale: 1.0
+    },
+  }
+
+  const variants4 = {
+    open: { 
+        y: 81, 
+        x: 93,
+        backgroundColor: ['hsl(0, 0, 26)', 'hsl(5, 88, 57)'],
+        scale: 2.2 
+    },
+    closed: { 
+        y: 120, 
+        x: 171,
+        backgroundColor: ['hsl(5, 88, 57)', 'hsl(0, 0, 26)' ],
+        scale: 1.0
+    },
+  }
+
   const [isMotionOpen1, setMotionOpen1] = useState(true)
+  const [isMotionOpen2, setMotionOpen2] = useState(false)
+  const [isMotionOpen3, setMotionOpen3] = useState(false)
+  const [isMotionOpen4, setMotionOpen4] = useState(false)
+
 
   return (
     <section className={styles.Container}>
@@ -49,92 +99,117 @@ const OurProcessSection = () => {
         </div>
 
         <div className={styles.ProcessContainer}>
-
             <div>
                 <div className={styles.RightSide}>
 
-                    <motion.div 
-                        animate={isMotionOpen1 ? "open" : "closed"} 
-                        variants={variants1}
-                        transition= {{ duration: 1.0 }}
-                        className={styles.Caja}
-                    >
-                        <div className={styles.SmallNumber}>#1</div>
-                    </motion.div>
-                    
+                    { isMotionOpen1 ? (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen1 ? "open" : "closed"} 
+                                variants={variants1}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen1(false)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#1</div>
+                            </motion.div>
+                        </div>
+                    ) : (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen1 ? "open" : "closed"} 
+                                variants={variants1}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen1(true)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#1</div>
+                            </motion.div>
+                        </div>
+                    ) }
 
-                    {/* <div className={styles.Number}>#1</div>
-                    <div className={styles.RedBall}></div> */}
+                    { isMotionOpen2 ? (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen2 ? "open" : "closed"} 
+                                variants={variants2}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen2(false)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#2</div>
+                            </motion.div>
+                        </div>
+                    ) : (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen2 ? "open" : "closed"} 
+                                variants={variants2}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen2(true)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#2</div>
+                            </motion.div>
+                        </div>
+                    ) }
 
-                    <a onClick={() => setS(2)}>
-                        <div className={styles.SmallNumber} style={{marginTop: '23px', marginLeft: '129px'}}>#2</div>
-                        <div className={styles.GrayBall} style={{marginTop: '10px', marginLeft: '120px'}}></div>
-                    </a>
+                    { isMotionOpen3 ? (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen3 ? "open" : "closed"} 
+                                variants={variants3}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen3(false)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#3</div>
+                            </motion.div>
+                        </div>
+                    ) : (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen3 ? "open" : "closed"} 
+                                variants={variants3}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen3(true)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#3</div>
+                            </motion.div>
+                        </div>
+                    ) }
 
-                    <a onClick={() => setS(3)}>
-                        <div className={styles.SmallNumber} style={{marginTop: '73px', marginLeft: '169px'}}>#3</div>
-                        <div className={styles.GrayBall} style={{marginTop: '60px', marginLeft: '160px'}}></div>
-                    </a>
-
-                    <a onClick={() => setS(4)}>
-                        <div className={styles.SmallNumber} style={{marginTop: '133px', marginLeft: '179px'}}>#4</div>
-                        <div className={styles.GrayBall} style={{marginTop: '120px', marginLeft: '170px'}}></div>
-                    </a>
+                    { isMotionOpen4 ? (
+                        <div className={styles.ChangeButton}>
+                            <motion.div 
+                                animate={isMotionOpen4 ? "open" : "closed"} 
+                                variants={variants4}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen4(false)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#4</div>
+                            </motion.div>
+                        </div>
+                    ) : (
+                        <div className={styles.ChangeButton} >
+                            <motion.div 
+                                animate={isMotionOpen4 ? "open" : "closed"} 
+                                variants={variants4}
+                                transition= {{ duration: 1.0 }}
+                                className={styles.Caja}
+                                onClick={() => setMotionOpen4(true)}
+                            >
+                                <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#4</div>
+                            </motion.div>
+                        </div>
+                    ) }
 
                     <img className={styles.Penguin} src={Penguin} />
                 </div>
 
-                <div className={styles.LeftSide}>
-                    <h4 className={styles.ProcessTitle}>OBSERVATION</h4>
-                    <h4 className={styles.ProcessText}>
-                        We reach the client and ask for the necessary information to do the project. Goals, target, timeframes, expectations. 
-                    </h4>
-
-                    <Collapse isOpen={isOpen} className={styles.ProcessText}>
-                        We talk to the client to know him better and help him find the answers to the project and make a better outcome.
-                    </Collapse>
-                    <a onClick={() => setIsOpen(!isOpen)} className={styles.Button}>
-                        {isOpen ? (
-                            <img className={styles.ImgOpen} src={Arrow} />
-                        ) : (
-                            <img className={styles.Img} src={Arrow} />
-                        )}
-                    </a>
-                </div>
-            </div>
-
-
-            <button onClick={() => setMotionOpen1(true)}>Boton</button>
-            <button onClick={() => setMotionOpen1(false)} style={{ marginTop: '130px' }}>Cerrar</button>
-
-
-
-
-
-            {/* {s == 1 &&
-                <div>
-                    <div className={styles.RightSide}>
-                        <div className={styles.Number}>#1</div>
-                        <div className={styles.RedBall}></div>
-
-                        <a onClick={() => setS(2)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '23px', marginLeft: '129px'}}>#2</div>
-                            <div className={styles.GrayBall} style={{marginTop: '10px', marginLeft: '120px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(3)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '73px', marginLeft: '169px'}}>#3</div>
-                            <div className={styles.GrayBall} style={{marginTop: '60px', marginLeft: '160px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(4)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '133px', marginLeft: '179px'}}>#4</div>
-                            <div className={styles.GrayBall} style={{marginTop: '120px', marginLeft: '170px'}}></div>
-                        </a>
-
-                        <img className={styles.Penguin} src={Penguin} />
-                    </div>
-
+                { isMotionOpen1 ? (
                     <div className={styles.LeftSide}>
                         <h4 className={styles.ProcessTitle}>OBSERVATION</h4>
                         <h4 className={styles.ProcessText}>
@@ -152,34 +227,12 @@ const OurProcessSection = () => {
                             )}
                         </a>
                     </div>
-                </div>
-            }
+                ) : (
+                    null
+                )}
 
-            {s == 2 &&
-                <div>
-                    <div className={styles.RightSide}>
-                        <div className={styles.Number}>#2</div>
-                        <div className={styles.RedBall}></div>
-
-                        <a onClick={() => setS(1)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '23px', marginLeft: '129px'}}>#1</div>
-                            <div className={styles.GrayBall} style={{marginTop: '10px', marginLeft: '120px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(3)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '73px', marginLeft: '169px'}}>#3</div>
-                            <div className={styles.GrayBall} style={{marginTop: '60px', marginLeft: '160px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(4)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '133px', marginLeft: '179px'}}>#4</div>
-                            <div className={styles.GrayBall} style={{marginTop: '120px', marginLeft: '170px'}}></div>
-                        </a>
-                        
-                        <img className={styles.Penguin} src={Penguin} />
-                    </div>
-
-                    <div className={styles.LeftSide}>
+                { isMotionOpen2 ? (
+                   <div className={styles.LeftSide}>
                         <h4 className={styles.ProcessTitle}>IDEATION</h4>
                         <h4 className={styles.ProcessText}>
                             With all the information, we design answers consistent with the client requirements, we investigate deeply on the right users, the tasks they need to know to achieve what they want, developing the structure and architecture of the system.
@@ -196,37 +249,15 @@ const OurProcessSection = () => {
                             )}
                         </a>
                     </div>
-                </div>
-            }
+                ) : (
+                    null
+                )}
 
-            {s == 3 &&
-                <div>
-                    <div className={styles.RightSide}>
-                        <div className={styles.Number}>#3</div>
-                        <div className={styles.RedBall}></div>
-
-                        <a onClick={() => setS(1)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '23px', marginLeft: '129px'}}>#1</div>
-                            <div className={styles.GrayBall} style={{marginTop: '10px', marginLeft: '120px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(2)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '73px', marginLeft: '169px'}}>#2</div>
-                            <div className={styles.GrayBall} style={{marginTop: '60px', marginLeft: '160px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(4)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '133px', marginLeft: '179px'}}>#4</div>
-                            <div className={styles.GrayBall} style={{marginTop: '120px', marginLeft: '170px'}}></div>
-                        </a>
-                        
-                        <img className={styles.Penguin} src={Penguin} />
-                    </div>
-
-                    <div className={styles.LeftSide}>
+                { isMotionOpen3 ? (
+                   <div className={styles.LeftSide}>
                         <h4 className={styles.ProcessTitle}>CREATION</h4>
                         <h4 className={styles.ProcessText}>
-                            With the client’s feedback, our creative team starts the design, using forefront UX and graphic systems to achieve the goal. We test the products with user types to find issues and solve them.
+                            With the client`s feedback, our creative team starts the design, using forefront UX and graphic systems to achieve the goal. We test the products with user types to find issues and solve them.
                         </h4>
 
                         <Collapse isOpen={isOpen} className={styles.ProcessText}>
@@ -240,34 +271,12 @@ const OurProcessSection = () => {
                             )}
                         </a>
                     </div>
-                </div>
-            }
+                ) : (
+                    null
+                )}
 
-            {s == 4 &&
-                <div>
-                    <div className={styles.RightSide}>
-                        <div className={styles.Number}>#4</div>
-                        <div className={styles.RedBall}></div>
-
-                        <a onClick={() => setS(1)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '23px', marginLeft: '129px'}}>#1</div>
-                            <div className={styles.GrayBall} style={{marginTop: '10px', marginLeft: '120px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(2)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '73px', marginLeft: '169px'}}>#2</div>
-                            <div className={styles.GrayBall} style={{marginTop: '60px', marginLeft: '160px'}}></div>
-                        </a>
-
-                        <a onClick={() => setS(3)}>
-                            <div className={styles.SmallNumber} style={{marginTop: '133px', marginLeft: '179px'}}>#3</div>
-                            <div className={styles.GrayBall} style={{marginTop: '120px', marginLeft: '170px'}}></div>
-                        </a>
-                        
-                        <img className={styles.Penguin} src={Penguin} />
-                    </div>
-
-                    <div className={styles.LeftSide}>
+                { isMotionOpen4 ? (
+                   <div className={styles.LeftSide}>
                         <h4 className={styles.ProcessTitle}>IMPLEMENTATION</h4>
                         <h4 className={styles.ProcessText}>
                             In this final phase, we fix and merge all the components and apply the technological solutions needed for the client to know the system and be satisfied with the result.
@@ -284,8 +293,10 @@ const OurProcessSection = () => {
                             )}
                         </a>
                     </div>
-                </div>
-            }    */}
+                ) : (
+                    null
+                )}
+            </div>
         </div>
     </section>
   );

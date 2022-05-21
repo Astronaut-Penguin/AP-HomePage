@@ -11,8 +11,6 @@
     box-shadow: inset -10px -10px 15px -5px #000000;
 }
 
-
-
 .Container {
     background-color: #1b1b1b;
     margin: 0;
@@ -38,39 +36,17 @@
     width: 320px;
 }
 
-.Change {
-    animation: fadeIn 1s;
-    -webkit-animation: fadeIn 1s;
-    -moz-animation: fadeIn 1s;
-    -o-animation: fadeIn 1s;
-    -ms-animation: fadeIn 1s;
+.ChangeButton {
+    border: none;
+    background: none;
+    height: 0;
 }
 
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-
+.ChangeButton:focus, .ChangeButton:hover, .ChangeButton:active {
+    border: none;
+    background: none;
+    outline: none !important;
+}
 
 .RightSide {
     width: 70%;
@@ -121,6 +97,7 @@
     letter-spacing: -0.1em;
     z-index: 100;
     color: #C4C4C4;
+    filter: blur(0);
 }
 
 .Penguin {
