@@ -2,15 +2,6 @@
 /*///STYLES///*/
 /*////////////*/
 
-.Caja {
-    height: 36px;
-    width: 36px;
-    border-radius: 50%;
-    filter: blur(1px);
-    -webkit-box-shadow: inset -10px -10px 15px -5px #000000; 
-    box-shadow: inset -10px -10px 15px -5px #000000;
-}
-
 .Container {
     background-color: #1b1b1b;
     margin: 0;
@@ -36,6 +27,25 @@
     width: 320px;
 }
 
+.Caja {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    /* filter: blur(1px); */
+    -webkit-box-shadow: inset -10px -10px 15px -5px #000000; 
+    box-shadow: inset -10px -10px 15px -5px #000000;
+}
+
+.Caja::before {
+    content:"";
+    position:absolute;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    /* background: rgba(255, 255, 255, 0);
+backdrop-filter: blur(5px); */
+}
+
 .ChangeButton {
     border: none;
     background: none;
@@ -51,39 +61,6 @@
 .RightSide {
     width: 70%;
     float: right;
-}
-
-.Number {
-    position: absolute;
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 83.8%;
-
-    letter-spacing: -0.1em;
-    margin: 80px auto auto 82px;
-    z-index: 100;
-    color: #FFFFFF;
-}
-
-.RedBall {
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background: linear-gradient(332.46deg, rgba(0, 0, 0, 0.55) 20.1%, #F24130 85.37%);
-    filter: blur(2px);
-    margin: 60px auto auto 70px;
-}
-
-.GrayBall {
-    position: absolute;
-    height: 36px;
-    width: 36px;
-    border-radius: 50%;
-    background: linear-gradient(202.46deg, #434343 15.1%, #1E1E1E 85.37%);
-    filter: blur(2px);
 }
 
 .SmallNumber {

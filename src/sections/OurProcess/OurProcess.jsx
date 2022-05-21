@@ -121,7 +121,7 @@ const OurProcessSection = () => {
                                 variants={variants1}
                                 transition= {{ duration: 1.0 }}
                                 className={styles.Caja}
-                                onClick={() => setMotionOpen1(true)}
+                                onClick={ () => {setMotionOpen1(true); setMotionOpen2(false); setMotionOpen3(false); setMotionOpen4(false); }}
                             >
                                 <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#1</div>
                             </motion.div>
@@ -147,7 +147,7 @@ const OurProcessSection = () => {
                                 variants={variants2}
                                 transition= {{ duration: 1.0 }}
                                 className={styles.Caja}
-                                onClick={() => setMotionOpen2(true)}
+                                onClick={ () => {setMotionOpen2(true); setMotionOpen1(false); setMotionOpen3(false); setMotionOpen4(false); }}
                             >
                                 <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#2</div>
                             </motion.div>
@@ -173,7 +173,7 @@ const OurProcessSection = () => {
                                 variants={variants3}
                                 transition= {{ duration: 1.0 }}
                                 className={styles.Caja}
-                                onClick={() => setMotionOpen3(true)}
+                                onClick={ () => {setMotionOpen3(true); setMotionOpen1(false); setMotionOpen2(false); setMotionOpen4(false); }}
                             >
                                 <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#3</div>
                             </motion.div>
@@ -199,7 +199,7 @@ const OurProcessSection = () => {
                                 variants={variants4}
                                 transition= {{ duration: 1.0 }}
                                 className={styles.Caja}
-                                onClick={() => setMotionOpen4(true)}
+                                onClick={ () => {setMotionOpen4(true); setMotionOpen1(false); setMotionOpen2(false); setMotionOpen3(false); }}
                             >
                                 <div className={styles.SmallNumber} style={{marginTop: '12px', marginLeft: '8px'}}>#4</div>
                             </motion.div>
