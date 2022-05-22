@@ -41,6 +41,10 @@
 	z-index: 0;
 }
 
+.TabletContainer {
+	display: none;
+}
+
 .Dots {
     width: 72px;
     align-items: center;
@@ -69,4 +73,40 @@
 	border-radius: 50%;
 	background-color: #8C8C8C;
 	margin: 0 5px 15px 5px;
+}
+
+/*/////////////*/
+/*/// VIEWS ///*/
+/*/////////////*/
+
+/* TABLET */
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+	.Container {
+		height: 800px;
+	}
+    .CarouselContainer, .Dots {
+        display: none;
+    }
+	.TextContainer {
+		width: 380px;
+		margin-top: 40px;
+	}
+	.TabletContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		width: 620px;
+		height: 600px;
+		margin: 0 auto;
+		/* background-color: red; */
+	}
+	.Card {
+		display: block;
+		padding: 20px;
+		/* width: 290px; */
+		/* background-color: blue; */
+	}
 }

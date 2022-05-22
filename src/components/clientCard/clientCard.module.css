@@ -7,45 +7,17 @@
     height: 287px;
     position: relative;
     background: linear-gradient(to right, rgba(242, 65, 48, 0.19), rgba(38, 38, 38, 0));
-    /* box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25); */
     padding: 1px;
     border-radius: 5px;
 }
 
 .Selected {
 	margin: 0 auto;
-	/* z-index: 5; */
 }
 
 .NotSelected {
 	border-radius: 5px;
-	/* z-index: -1; */
 }
-
-/* .NotSelected > .ClientCard {
-    background: #0A0909;
-}
-
-.NotSelected > .ClientCard > .CardLogo {
-    display: none;
-}
-
-.NotSelected > .ClientCard > .CardTitle {
-    display: none;
-}
-
-.NotSelected > .ClientCard > .CardText {
-    display: none;
-}
-
-.NotSelected > .ClientCard > .MarketContainer {
-    display: none;
-}
-
-.NotSelected > .ClientCard > .CardFoot {
-    display: none;
-} */
-
 
 .ClientCard {
     width: 275px;
@@ -59,15 +31,11 @@
         rgba(10, 9, 9, 0.74) 100%
     );
     box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25);
-    
-    /* border: 1px solid;
-    border-color: white; */
     border-radius: 5px;
     margin: 0 auto;
 }
 
 .CardLogo {
-    /* height: 66px; */
     margin: 15px 0 8px 0;
 }
 
@@ -225,4 +193,49 @@
 
 .ContractLogo {
     margin-left: 8px;
+}
+
+/*/////////////*/
+/*/// VIEWS ///*/
+/*/////////////*/
+
+/* TABLET */
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+	.ClientWrap {
+        /* width: 309.09px;
+        height: 363.98px; */
+        padding: 3px;
+        border-radius: 15px;
+    }
+    .ClientCard {
+        /* width: 309.09px;
+        height: 363.98px; */
+        border-radius: 15px;
+    }
+    /* .CardLogo {
+        width: 75px;
+        height: 75px;
+    }
+    .CardTitle {
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .CardText {
+        font-size: 13px;
+        line-height: 15px;
+        max-width: 280px;
+    }
+    .MarketContainer {
+        margin-top: 20px;
+    }
+    .MarketTitle {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .Line {
+        float: left;
+        width: 70px;
+        margin-top: 13px;
+    } */
 }
