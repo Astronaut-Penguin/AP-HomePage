@@ -172,6 +172,12 @@
     text-align: left;
 }
 
+.Site:hover {
+    text-decoration: none;
+    outline: none;
+    color: #2432C9;
+}
+
 .NoneSite {
     display: none;
 }
@@ -189,6 +195,10 @@
     width: 105px;
 
     text-align: right;
+}
+
+.Contract:hover {
+    color: #F24130;
 }
 
 .ContractLogo {
@@ -235,6 +245,9 @@
     .CardLogo {
         margin: 30px auto 10px auto;
     }
+    /* .Site {
+        color: #2432C9;
+    } */
 }
 
 /* PC LARGE */
@@ -256,4 +269,7 @@
     .CardLogo {
         margin: 30px auto 10px auto;
     }
+    /* .ClientWrap:hover > .Site {
+        color: #2432C9;
+    } */
 }
