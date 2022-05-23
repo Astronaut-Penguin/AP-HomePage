@@ -38,12 +38,10 @@
 
 .Caja::before {
     content:"";
-    position:absolute;
+    position: absolute;
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0);
-backdrop-filter: blur(5px); */
 }
 
 .ChangeButton {
@@ -100,7 +98,7 @@ backdrop-filter: blur(5px); */
     color: #F24130;
 }
 
-.ProcessText{
+.ProcessText {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 300;
@@ -139,4 +137,74 @@ backdrop-filter: blur(5px); */
 	animation-iteration-count: 1;
     transform: rotate(180deg);
     margin: 10px 0 10px 0;
+}
+
+/*///////*/
+/* VIEWS */
+/*///////*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Container {
+        width: 85%;
+        margin: 0 auto;
+        /* background-color: transparent; */
+    }
+    .ProcessContainer {
+        width: 100%;
+        margin: 0 auto;
+        /* margin-left: 100px; */
+    }
+    .Caja {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        margin: 20px 40px 20px 40px;
+
+        -webkit-box-shadow: inset -10px -10px 15px -5px #000000; 
+        box-shadow: inset -10px -10px 15px -5px #000000;
+    }
+    .Caja::before {
+        content:"";
+        position: absolute;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+    .ProcessTitle {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 27px;
+        text-align: center;
+        
+        margin: 115px auto auto 25px;
+        color: #F24130;
+    }
+    .ProcessText {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 17px;
+    
+        margin-left: 25px;
+        width: 220px;
+        color: #FFFFFF;;
+    }
+    .ChangeButton {
+        /* padding: 10px; */
+    }
+    .RightSide {
+        width: 50%;
+        float: right;
+    }
+    .LeftSide {
+        margin-left: 70px;
+        width: 20%;
+        float: left;
+    }
+    .Button {
+        margin-left: 120px;
+    }
 }

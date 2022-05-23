@@ -20,7 +20,6 @@ import Penguin from "./assets/penguin1.png";
 import Arrow from "./assets/arrow.svg";
 
 const OurProcessSection = () => {
-  const [s, setS] = useState(1);
   const [isOpen, setIsOpen] = React.useState(false);
 
   const variants1 = {
@@ -99,7 +98,7 @@ const OurProcessSection = () => {
         </div>
 
         <div className={styles.ProcessContainer}>
-            <div>
+            <div className={styles.ProcessContainer}>
                 <div className={styles.RightSide}>
 
                     { isMotionOpen1 ? (
