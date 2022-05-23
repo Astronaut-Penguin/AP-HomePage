@@ -15,8 +15,14 @@
 
 /*/// VIEWS ///*/
 
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1439px) {
     .Title {
         font-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Title {
+        font-size: 100px;
     }
 }

@@ -106,3 +106,64 @@
 		padding: 20px;
 	}
 }
+
+/* SMALL PC */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.Container {
+		height: 950px;
+	}
+    .CarouselContainer, .Dots {
+        display: none;
+    }
+	.TextContainer {
+		width: 380px;
+		margin-top: 40px;
+	}
+	.TabletContainer {
+		display: flex;
+		width: 620px;
+		height: 600px;
+		margin: 0 auto;
+		margin-right: 50px;
+	}
+	.Column {
+		flex: 1;
+	}
+	.Card {
+		display: block;
+		padding: 20px;
+	}
+}
+
+/* LARGE PC */
+
+@media only screen and (min-width: 1440px) {
+	.Container {
+		width: 1200px;
+		height: 1000px;
+		margin: 0 auto;
+		background-color: transparent;
+	}
+    .CarouselContainer, .Dots {
+        display: none;
+    }
+	.TextContainer {
+		width: 420px;
+		margin-top: 40px;
+	}
+	.TabletContainer {
+		display: flex;
+		width: 620px;
+		height: 600px;
+		margin: 0 auto;
+		margin-right: 50px;
+	}
+	.Column {
+		flex: 1;
+	}
+	.Card {
+		display: block;
+		padding: 20px;
+	}
+}

@@ -214,25 +214,46 @@
     .CardLogo {
         margin-top: 20px;
     }
-    /* .CardTitle {
-        font-size: 25px;
-        line-height: 27px;
+}
+
+/* PC SMALL */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.ClientWrap {
+        height: 320px;
+        padding: 3px;
+        border-radius: 15px;
+        transition: transform .2s;
     }
-    .CardText {
-        font-size: 13px;
-        line-height: 15px;
-        max-width: 280px;
+    .ClientWrap:hover {
+        transform: scale(1.1);
     }
-    .MarketContainer {
-        margin-top: 20px;
+    .ClientCard {
+        height: 320px;
+        border-radius: 15px;
     }
-    .MarketTitle {
-        font-size: 12px;
-        line-height: 13px;
+    .CardLogo {
+        margin: 30px auto 10px auto;
     }
-    .Line {
-        float: left;
-        width: 70px;
-        margin-top: 13px;
-    } */
+}
+
+/* PC LARGE */
+
+@media only screen and (min-width: 1440px) {
+	.ClientWrap {
+        height: 320px;
+        padding: 3px;
+        border-radius: 15px;
+        transition: transform .2s;
+    }
+    .ClientWrap:hover {
+        transform: scale(1.1);
+    }
+    .ClientCard {
+        height: 320px;
+        border-radius: 15px;
+    }
+    .CardLogo {
+        margin: 30px auto 10px auto;
+    }
 }
