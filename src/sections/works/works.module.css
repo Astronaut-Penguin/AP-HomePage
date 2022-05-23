@@ -83,7 +83,7 @@
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 	.Container {
-		height: 800px;
+		height: 950px;
 	}
     .CarouselContainer, .Dots {
         display: none;
@@ -93,20 +93,16 @@
 		margin-top: 40px;
 	}
 	.TabletContainer {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+		display: flex;
 		width: 620px;
 		height: 600px;
 		margin: 0 auto;
-		/* background-color: red; */
+	}
+	.Column {
+		flex: 1;
 	}
 	.Card {
 		display: block;
 		padding: 20px;
-		/* width: 290px; */
-		/* background-color: blue; */
 	}
 }

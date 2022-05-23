@@ -203,21 +203,18 @@
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 	.ClientWrap {
-        /* width: 309.09px;
-        height: 363.98px; */
+        height: 300px;
         padding: 3px;
         border-radius: 15px;
     }
     .ClientCard {
-        /* width: 309.09px;
-        height: 363.98px; */
+        height: 300px;
         border-radius: 15px;
     }
-    /* .CardLogo {
-        width: 75px;
-        height: 75px;
+    .CardLogo {
+        margin-top: 20px;
     }
-    .CardTitle {
+    /* .CardTitle {
         font-size: 25px;
         line-height: 27px;
     }
