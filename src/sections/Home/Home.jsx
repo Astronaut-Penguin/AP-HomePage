@@ -76,19 +76,23 @@ const Home = () => {
           {/* 888888888 */}
 
           <h3>WELCOME TO ASTRONAUT PENGUIN</h3>
-          <h2>Build the Future.</h2>
+          <h2>Join the Future.</h2>
         </div>
 
-        <p>
-          A design and blockchain company.
-          <br />
-          We create experiences.
-        </p>
+        <p>We provide blockchain solutions</p>
 
         <div style={{ zIndex: 10 }}>
           <CtaButton text={"Get Started"} />
         </div>
       </div>
+
+      <a
+        title="Discord"
+        href="https://discord.com/"
+        target="_blank"
+        className={styles.Discord}
+      />
+
     </section>
   );
 };
