@@ -27,76 +27,38 @@
     width: 320px;
 }
 
-.Change {
-    animation: fadeIn 1s;
-    -webkit-animation: fadeIn 1s;
-    -moz-animation: fadeIn 1s;
-    -o-animation: fadeIn 1s;
-    -ms-animation: fadeIn 1s;
-}
-
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-
-
-.RightSide {
-    width: 70%;
-    float: right;
-}
-
-.Number {
-    position: absolute;
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 83.8%;
-
-    letter-spacing: -0.1em;
-    margin: 80px auto auto 82px;
-    z-index: 100;
-    color: #FFFFFF;
-}
-
-.RedBall {
-    position: absolute;
-    height: 80px;
-    width: 80px;
+.Caja {
+    height: 36px;
+    width: 36px;
     border-radius: 50%;
-    background: linear-gradient(332.46deg, rgba(0, 0, 0, 0.55) 20.1%, #F24130 85.37%);
-    filter: blur(2px);
-    margin: 60px auto auto 70px;
+    /* filter: blur(1px); */
+    -webkit-box-shadow: inset -10px -10px 15px -5px #000000; 
+    box-shadow: inset -10px -10px 15px -5px #000000;
 }
 
-.GrayBall {
+.Caja::before {
+    content:"";
     position: absolute;
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    background: linear-gradient(202.46deg, #434343 15.1%, #1E1E1E 85.37%);
-    filter: blur(2px);
+}
+
+.ChangeButton {
+    border: none;
+    background: none;
+    height: 0;
+}
+
+.ChangeButton:focus, .ChangeButton:hover, .ChangeButton:active {
+    border: none;
+    background: none;
+    outline: none !important;
+}
+
+.RightSide {
+    width: 70%;
+    float: right;
 }
 
 .SmallNumber {
@@ -110,6 +72,7 @@
     letter-spacing: -0.1em;
     z-index: 100;
     color: #C4C4C4;
+    filter: blur(0);
 }
 
 .Penguin {
@@ -135,7 +98,7 @@
     color: #F24130;
 }
 
-.ProcessText{
+.ProcessText {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 300;
@@ -174,4 +137,74 @@
 	animation-iteration-count: 1;
     transform: rotate(180deg);
     margin: 10px 0 10px 0;
+}
+
+/*///////*/
+/* VIEWS */
+/*///////*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Container {
+        width: 85%;
+        margin: 0 auto;
+        /* background-color: transparent; */
+    }
+    .ProcessContainer {
+        width: 100%;
+        margin: 0 auto;
+        /* margin-left: 100px; */
+    }
+    .Caja {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        margin: 20px 40px 20px 40px;
+
+        -webkit-box-shadow: inset -10px -10px 15px -5px #000000; 
+        box-shadow: inset -10px -10px 15px -5px #000000;
+    }
+    .Caja::before {
+        content:"";
+        position: absolute;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+    .ProcessTitle {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 27px;
+        text-align: center;
+        
+        margin: 115px auto auto 25px;
+        color: #F24130;
+    }
+    .ProcessText {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 17px;
+    
+        margin-left: 25px;
+        width: 220px;
+        color: #FFFFFF;;
+    }
+    .ChangeButton {
+        /* padding: 10px; */
+    }
+    .RightSide {
+        width: 50%;
+        float: right;
+    }
+    .LeftSide {
+        margin-left: 70px;
+        width: 20%;
+        float: left;
+    }
+    .Button {
+        margin-left: 120px;
+    }
 }
