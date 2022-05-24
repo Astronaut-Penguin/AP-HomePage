@@ -11,3 +11,18 @@
     color: #C4C4C4;
 }
 
+/*/// VIEWS ///*/
+
+@media only screen and (min-width: 767px) and (max-width: 1439px) {
+    .Text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Text {
+        font-size: 25px;
+        line-height: 29px;
+    }
+}

@@ -15,10 +15,14 @@
 
 /*/// VIEWS ///*/
 
-/* @media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1439px) {
     .Title {
-        font-weight: 800;
-        font-size: 85px;
-        line-height: 83.8%;
+        font-size: 80px;
     }
-} */
+}
+
+@media only screen and (min-width: 1440px) {
+    .Title {
+        font-size: 100px;
+    }
+}
