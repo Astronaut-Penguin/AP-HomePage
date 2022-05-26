@@ -83,7 +83,7 @@ const WorksSection = () => {
               index={0}
             />
           </div>
-          <div className={styles.Card}>
+          {/* <div className={styles.Card}>
             <ClientCard
               logo={WilderLogo}
               title={"Wilder World"}
@@ -104,7 +104,7 @@ const WorksSection = () => {
               s={s}
               index={1}
             />
-          </div>
+          </div> */}
           <div className={styles.Card}>
             <ClientCard
               logo={MiladyLogo}
@@ -122,7 +122,7 @@ const WorksSection = () => {
               siteLink={"https://tribetoken.app/#/"}
               contractLink={"https://tribetoken.app/#/"}
               s={s}
-              index={2}
+              index={1}
             />
           </div>
           <div className={styles.Card}>
@@ -136,14 +136,14 @@ const WorksSection = () => {
               footText={"View Post"}
               contractLink={"https://tribetoken.app/#/"}
               s={s}
-              index={3}
+              index={2}
             />
           </div>
         </Flicking>
       </div>
 
       <div className={styles.TabletContainer}>
-        <div className={styles.Column} style={{ marginTop: "70px" }}>
+        <div className={styles.Column} style={{ marginTop: "140px" }}>
           <div className={styles.Card}>
             <ClientCard
               logo={TribeLogo}
@@ -166,6 +166,9 @@ const WorksSection = () => {
               index={0}
             />
           </div>
+        </div>
+
+        <div className={styles.Column}>
           <div className={styles.Card}>
             <ClientCard
               logo={MiladyLogo}
@@ -186,10 +189,7 @@ const WorksSection = () => {
               index={2}
             />
           </div>
-        </div>
-
-        <div className={styles.Column}>
-          <div className={styles.Card}>
+          {/* <div className={styles.Card}>
             <ClientCard
               logo={WilderLogo}
               title={"Wilder World"}
@@ -210,7 +210,7 @@ const WorksSection = () => {
               s={s}
               index={1}
             />
-          </div>
+          </div> */}
           <div className={styles.Card}>
             <ClientCard
               logo={APLogo}
@@ -250,13 +250,13 @@ const WorksSection = () => {
             }`}
           ></div>
         </div>
-        <div className={styles.DotsContainer}>
+        {/* <div className={styles.DotsContainer}>
           <div
             className={`${styles.TextContainer} ${
               s == 3 ? styles.DotSelected : styles.DotNotSelected
             }`}
           ></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
