@@ -1,0 +1,37 @@
+.swiper-button-next {
+    background-image: url(./assets/pagArrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /* border: 9px solid #F24130;
+    filter: blur(5px); */
+}
+  
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    background-image: url(./assets/pagArrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    /* border: 9px solid #F24130;
+    filter: blur(5px); */
+}
+  
+.swiper-button-prev::after {
+    display: none;
+}
+
+/* .swiper-button-next, .swiper-button-next::after {
+    top: 200px;
+    left: 300px;
+} 
+
+.swiper-button-prev, .swiper-button-next::after {
+    top: 100px;
+    left: 500px;
+} */

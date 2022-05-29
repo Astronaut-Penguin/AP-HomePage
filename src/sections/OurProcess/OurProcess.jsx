@@ -8,8 +8,15 @@ import { Collapse, Button } from "@blueprintjs/core";
 //- Import Motion
 import { motion } from "framer-motion";
 
+//- Import Swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from "swiper";
+
 //- Import Styles
 import styles from "./OurProcess.module.css";
+import 'swiper/css';
+import 'swiper/css/bundle';
+import "./swiper-bundle.min.css"
 
 //- Import Components
 import Title from "../../components/title/title";
@@ -86,7 +93,6 @@ const OurProcessSection = () => {
   const [isMotionOpen2, setMotionOpen2] = useState(false)
   const [isMotionOpen3, setMotionOpen3] = useState(false)
   const [isMotionOpen4, setMotionOpen4] = useState(false)
-
 
   return (
     <section className={styles.Container}>
@@ -295,6 +301,33 @@ const OurProcessSection = () => {
                 ) : (
                     null
                 )}
+            </div>
+        </div>
+
+        <div className={styles.ProcessContainerPC}>
+            <div className={styles.CarouselContainer}>
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    navigation={true} 
+                    modules={[Navigation]} 
+                    className="mySwiper"
+                >
+                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
+                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
+                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
+                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
+                </Swiper>
+                {/* <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> */}
+            </div>
+            <div className={styles.ContainerPC}>
+                <div className={styles.TitleContainerPC}>
+                    <Title text={"Our Process"} />
+                </div>
+                <div className={styles.TextContainerPC}>
+                    <Text text={"Our process is based on Human Centered Design. We are constantly in contact with the client, looking for feedback and to streamline the process."} />
+                </div>
             </div>
         </div>
     </section>

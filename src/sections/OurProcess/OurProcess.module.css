@@ -139,9 +139,15 @@
     margin: 10px 0 10px 0;
 }
 
+.ProcessContainerPC {
+    display: none;
+}
+
 /*///////*/
 /* VIEWS */
 /*///////*/
+
+/* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .Container {
@@ -204,5 +210,45 @@
     }
     .Button {
         margin-left: 120px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .TitleContainer {
+        display: none;
+    }
+    .TextContainer {
+        display: none;
+    }
+    .ProcessContainer {
+        display: none;
+    }
+    .ProcessContainerPC {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: ; */
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        position: relative;
+        margin: 20px auto;
+        width: 900px;
+        height: 500px;
+        /* background-color: red; */
+    }
+    .CarouselContainer {
+        height: 500px;
+        width: 310px;
+        /* background-color: green; */
+    }
+    .Slide {
+        /* background-color: blue; */
+    }
+    .PenguinPC {
+        height: 350px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
 }
