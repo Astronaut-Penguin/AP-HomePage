@@ -69,23 +69,38 @@ const WebSection = () => {
         </div>
       </div>
 
-      {/* <div className={styles.Standing}>
-                <div className={styles.StandingCard}>
-                    <WebCard 
-                        title={"What is a Web 3.0?"} 
-                        enablePlay
-                        site={"/"}
-                    />
-                    <WebCard 
-                        title={"Launch: new wallet"} 
-                        site={"/"}
-                    />
-                    <WebCard 
-                        title={"Launch: new wallet"} 
-                        site={"/"}
-                    />
-                </div>
-            </div> */}
+      <div className={styles.Standing}>
+        <div className={styles.StandingCard}>
+          <WebCard 
+              title={"What is a Web 3.0?"} 
+              enablePlay
+              site={"/"}
+          />
+          <WebCard 
+              title={"Launch: new wallet"} 
+              site={"/"}
+          />
+          <WebCard 
+              title={"Launch: new wallet"} 
+              site={"/"}
+          />
+        </div>
+        <div className={styles.StandingCard}>
+          <WebCard 
+              title={"What is a Web 3.0?"} 
+              enablePlay
+              site={"/"}
+          />
+          <WebCard 
+              title={"Launch: new wallet"} 
+              site={"/"}
+          />
+          <WebCard 
+              title={"Launch: new wallet"} 
+              site={"/"}
+          />
+        </div>
+      </div>
     </section>
   );
 };
