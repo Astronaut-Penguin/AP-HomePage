@@ -21,7 +21,6 @@ const WebSection = () => {
       <div className={styles.TitleContainer}>
         <Title
           text="Web 3.0"
-          style={{ textAlign: "right", marginRight: "20px" }}
         />
       </div>
       <div className={styles.TextContainer}>
@@ -44,7 +43,7 @@ const WebSection = () => {
         >
           <div className={styles.Card}>
             <WebCard title={"What is a Web 3.0?"} enablePlay site={"/"} />
-            <WebCard title={"Launch: new wallet"} site={"/"} />
+            <WebCard title={"Launch: new walleta"} site={"/"} />
           </div>
           <div className={styles.Card}>
             <WebCard title={"What is a Web 3.0?"} enablePlay site={"/"} />
