@@ -82,6 +82,12 @@
     padding-top: 40px;
 }
 
+/* ///// */
+/* VIEWS */
+/* ///// */
+
+/* MOBILE MEDIUM */
+
 @media only screen and (min-width: 376px) and (max-width: 426px) {
     .Penguin > img {
         margin: 4px 0 0 24px;
@@ -89,5 +95,78 @@
     }
     .Count {
         padding-top: 200px;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .Container {
+        margin-top: 80px;
+        height: 600px;
+    }
+    .Soon {
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .Penguin > img {
+        margin: 40px 0 0 110px;
+        width: 240px;
+    }
+    .Count {
+        font-size: 80px;
+        line-height: 80px;
+        width: 500px;
+    }
+    .CountInfo {
+        font-size: 16px;
+        line-height: 11px;
+    }
+    .CountInfo > p {
+        margin: 42px;
+    }
+    .Button {
+        padding-top: 70px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .Container {
+        height: 600px;
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .Title {
+        max-width: 300px;
+        width: 50%;
+        float: left;
+    }
+    .Soon {
+        font-size: 25px;
+        line-height: 27px;
+        margin-top: 50px;
+    }
+    .Penguin > img {
+        position: absolute;
+        margin: 210px 0 0 450px;
+        width: 240px;
+    }
+    .Count {
+        font-size: 80px;
+        line-height: 80px;
+        width: 500px;
+        padding-top: 350px;
+    }
+    .CountInfo {
+        font-size: 16px;
+        line-height: 11px;
+    }
+    .CountInfo > p {
+        margin: 42px;
+    }
+    .Button {
+        padding-top: 70px;
     }
 }
