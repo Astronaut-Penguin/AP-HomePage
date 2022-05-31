@@ -1,5 +1,5 @@
 //- Import React
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 //- Import Expandable Component
 import "@blueprintjs/core/lib/css/blueprint.css";
@@ -25,6 +25,7 @@ import Text from "../../components/text/text";
 //- Import Images
 import Penguin from "./assets/penguin1.png";
 import Arrow from "./assets/arrow.svg";
+import PagArrow from "./assets/pagArrow.svg";
 
 const OurProcessSection = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -93,6 +94,9 @@ const OurProcessSection = () => {
   const [isMotionOpen2, setMotionOpen2] = useState(false)
   const [isMotionOpen3, setMotionOpen3] = useState(false)
   const [isMotionOpen4, setMotionOpen4] = useState(false)
+
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   return (
     <section className={styles.Container}>
@@ -306,20 +310,35 @@ const OurProcessSection = () => {
 
         <div className={styles.ProcessContainerPC}>
             <div className={styles.CarouselContainer}>
+                <img src={Penguin} className={styles.PenguinPC} />
+            </div>
+            <div className={styles.CarouselContainerNumber}>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
-                    navigation={true} 
+                    onInit={(swiper) => {
+                        swiper.params.navigation.prevEl = prevRef.current;
+                        swiper.params.navigation.nextEl = nextRef.current;
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                    }}
                     modules={[Navigation]} 
                     className="mySwiper"
                 >
-                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
-                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
-                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
-                    <SwiperSlide className={styles.Slide}><img src={Penguin} className={styles.PenguinPC} /></SwiperSlide>
+                    <SwiperSlide className={styles.SlideNumber}>#1</SwiperSlide>
+                    <SwiperSlide className={styles.SlideNumber}>#2</SwiperSlide>
+                    <SwiperSlide className={styles.SlideNumber}>#3</SwiperSlide>
+                    <SwiperSlide className={styles.SlideNumber}>#4</SwiperSlide>
+                    <button ref={prevRef} className={styles.PrevArrow}>
+                        <img src={PagArrow} className={styles.Prev} />
+                    </button>
+                    <button ref={nextRef} className={styles.NextArrow}>
+                        <img src={PagArrow} />
+                        <svg width="22" height="32" viewBox="0 0 22 32" fill="#F24130" xmlns="http://www.w3.org/2000/svg" className={styles.Blur}>
+                            <path d="M3.87605 15.2882L3 16M3 16L19 29M3 16L19 3" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </Swiper>
-                {/* <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> */}
             </div>
             <div className={styles.ContainerPC}>
                 <div className={styles.TitleContainerPC}>
@@ -328,6 +347,55 @@ const OurProcessSection = () => {
                 <div className={styles.TextContainerPC}>
                     <Text text={"Our process is based on Human Centered Design. We are constantly in contact with the client, looking for feedback and to streamline the process."} />
                 </div>
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    onInit={(swiper) => {
+                        swiper.params.navigation.prevEl = prevRef.current;
+                        swiper.params.navigation.nextEl = nextRef.current;
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                    }}
+                    modules={[Navigation]} 
+                    className="mySwiper"
+                >
+                    <SwiperSlide className={styles.SlideText}>
+                        <h4 className={styles.ProcessTitle}>OBSERVATION</h4>
+                        <h4 className={styles.ProcessText}>
+                            We reach the client and ask for the necessary information to do the project. Goals, target, timeframes, expectations. 
+                        </h4>
+                        <h4 className={styles.ProcessText}>
+                            We talk to the client to know him better and help him find the answers to the project and make a better outcome.
+                        </h4>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.SlideText}>
+                        <h4 className={styles.ProcessTitle}>IDEATION</h4>
+                        <h4 className={styles.ProcessText}>
+                            With all the information, we design answers consistent with the client requirements, we investigate deeply on the right users, the tasks they need to know to achieve what they want, developing the structure and architecture of the system.
+                        </h4>
+                        <h4 className={styles.ProcessText}>
+                            As we move forward, our designers create prototypes which will be tested. And the product owner talks to the client to have feedback.
+                        </h4>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.SlideText}>
+                        <h4 className={styles.ProcessTitle}>CREATION</h4>
+                        <h4 className={styles.ProcessText}>
+                            With the client`s feedback, our creative team starts the design, using forefront UX and graphic systems to achieve the goal. We test the products with user types to find issues and solve them.
+                        </h4>
+                        <h4 className={styles.ProcessText}>
+                            When the design phase is approved by the client, the developers start to plan the programming logic and then, start to develop the structure based on the design, performing testings that will confirm everything goes according to plan.
+                        </h4>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.SlideText}>
+                        <h4 className={styles.ProcessTitle}>IMPLEMENTATION</h4>
+                        <h4 className={styles.ProcessText}>
+                            In this final phase, we fix and merge all the components and apply the technological solutions needed for the client to know the system and be satisfied with the result.
+                        </h4>
+                        <h4 className={styles.ProcessText}>
+                           We think we are a bridge between users and clients, achieving effective communication to make a great experience.
+                        </h4>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </div>
     </section>
