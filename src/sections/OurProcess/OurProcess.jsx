@@ -21,6 +21,7 @@ import "./swiper-bundle.min.css"
 //- Import Components
 import Title from "../../components/title/title";
 import Text from "../../components/text/text";
+import Tablet from "./Tablet";
 
 //- Import Images
 import Penguin from "./assets/penguin1.png";
@@ -398,6 +399,8 @@ const OurProcessSection = () => {
                 </Swiper>
             </div>
         </div>
+
+        <Tablet />
     </section>
   );
 };

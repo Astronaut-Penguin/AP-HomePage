@@ -143,6 +143,10 @@
     display: none;
 }
 
+.ProcessContainerTablet {
+    display: none;
+}
+
 /*///////*/
 /* VIEWS */
 /*///////*/
@@ -153,12 +157,9 @@
     .Container {
         width: 85%;
         margin: 0 auto;
-        /* background-color: transparent; */
     }
     .ProcessContainer {
-        width: 100%;
-        margin: 0 auto;
-        /* margin-left: 100px; */
+        display: none;
     }
     .Caja {
         height: 55px;
@@ -204,12 +205,23 @@
         float: right;
     }
     .LeftSide {
-        margin-left: 70px;
         width: 20%;
         float: left;
     }
     .Button {
         margin-left: 120px;
+    }
+    .ProcessContainerTablet {
+        display: block;
+    }
+    .Penguin {
+        position: absolute;
+        width: 140px;
+        margin: 195px auto auto 85px;
+    }
+    .SmallNumber {
+        
+        font-size: 24px;
     }
 }
 
