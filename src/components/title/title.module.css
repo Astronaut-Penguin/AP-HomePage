@@ -18,11 +18,13 @@
 @media only screen and (min-width: 767px) and (max-width: 1439px) {
     .Title {
         font-size: 80px;
+        line-height: 80px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .Title {
         font-size: 100px;
+        line-height: 90px;
     }
 }

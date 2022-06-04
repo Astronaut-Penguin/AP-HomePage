@@ -30,3 +30,36 @@
     width: 17px;
     margin-bottom: 20px;
 }
+
+/*///////////*/
+/*// VIEWS //*/
+/*///////////*/
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+    .Container {
+        min-height: 150px;
+    }
+    .APContainer {
+        width: 200px;
+    }
+    .APLogo {
+        width: 200px;
+    }
+    .SocialContainer {
+        width: 184px;
+    }
+    .Social {
+        margin: 6px;
+        width: 25px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .Container {
+        margin-top: 30px;
+    }
+}
