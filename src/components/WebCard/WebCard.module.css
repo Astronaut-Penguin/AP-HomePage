@@ -18,6 +18,10 @@
     text-decoration: none !important;
 }
 
+.WebWrap:hover { 
+    transform: scale(1.1); 
+}
+
 .WebCard {
     width: 112px;
     height: 154px;
@@ -35,6 +39,8 @@
     margin-top: 8px;
     margin-left: 38px;
     margin-right: 13px;
+    width: 20px;
+    height: 23px;
 }
 
 .NotSelected {
@@ -116,28 +122,72 @@ a {
 }
 
 /****************/
+/**** TABLET ****/
+/****************/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .WebWrap {
+        width: 260px;
+        height: 320px;
+    }
+    .WebCard {
+        width: 260px;
+        height: 320px;
+    }
+    .PlayContainer {
+        height: 70px;
+        /* background-color: red; */
+    }
+    .PlayLogo {
+        margin-top: 20px;
+        width: 60px;
+        height: 45px;
+    }
+    .Planet {
+        height: 120px;
+    }
+    .CardTitle {
+        font-size: 30px;
+        line-height: 34px;
+        margin-top: 25px;
+        width: 170px;
+    }
+}
+
+/****************/
 /****** PC ******/
 /****************/
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1024px) {
     .WebWrap {
-        width: 352px;
-        height: 413px;
+        width: 266px;
+        height: 313px;
         margin: 30px;
+        border-radius: 15px;
+        transition: all .2s ease-in-out;
     }
     .WebCard {
-        width: 352px;
-        height: 413px;
+        width: 266px;
+        height: 313px;
+        border-radius: 15px;
+    }
+    .PlayContainer {
+        height: 70px;
+        /* background-color: red; */
+    }
+    .PlayLogo {
+        margin-top: 20px;
+        width: 60px;
+        height: 45px;
     }
     .Planet {
         width: auto;
-        height: 150px;
-        margin-top: 30px;
+        height: 130px;
     }
     .CardTitle {
-        font-size: 40px;
-        line-height: 44px;
-        width: 240px;
-        margin-top: 40px;
+        font-size: 34px;
+        line-height: 38px;
+        width: 200px;
+        margin-top: 15px;
     }
 }

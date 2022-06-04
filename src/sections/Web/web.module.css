@@ -9,6 +9,11 @@
 	align-items: center;
 }
 
+.TitleContainer {
+    text-align: right;
+    margin-right: 20px;
+}
+
 .TextContainer {
     margin-top: 26px;
     width: 260px;
@@ -61,7 +66,11 @@
 	margin: 0 5px 15px 5px;
 }
 
+/* /////////// */
 /*/// VIEWS ///*/
+/* /////////// */
+
+/* MEDIUM PHONE */
 
 @media only screen and (min-width: 375px) and (max-width: 389px) {
     .Card {
@@ -79,7 +88,56 @@
     }
 }
 
-@media only screen and (min-width: 1023px) {
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Container {
+        height: 1200px;
+    }
+    .TitleContainer {
+        text-align: left;
+        margin-right: 30px;
+    }
+    .TextContainer {
+        margin-top: 40px;
+        width: 430px;
+    }
+    .Breaking {
+        font-size: 25px;
+        line-height: 27px;
+        margin: 80px 0 0 26px;
+    }
+    .CarouselContainer {
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 10px;
+        /* background-color: red; */
+    }
+    .Card {
+        width: 600px;
+        margin: 40px;
+        margin-left: 50px;
+        /* background-color: pink; */
+    }
+    .Dots {
+        width: 62px;
+        margin-top: 10px;
+    }
+    .DotSelected {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px 15px 5px;
+    }    
+    .DotNotSelected {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px 15px 5px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
     .Container {
         height: 1200px;
     }
@@ -95,13 +153,16 @@
     .TextContainer {
         align-items: right;
         text-align: right;
-        margin: 40px 50px 0 auto;
+        margin-top: 40px;
+        width: 430px;
+        margin: 40px 30px 0 auto;
     }
     .Breaking {
         display: none;
     }
     .Standing {
         align-items: center;
+        margin-top: 40px;
     }
     .StandingCard {
         display: flex;
