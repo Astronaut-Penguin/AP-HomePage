@@ -16,7 +16,7 @@ const Landing = () => {
   return (
     <>
       {/* NAVBAR */}
-      <NavBar />
+      {/* <NavBar /> */}
       {/* SECTIONS */}
       <Home />
       <Works />
