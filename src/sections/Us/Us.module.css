@@ -8,11 +8,11 @@
     width: 100%;
     height: 600px;
 	align-items: center;
+    z-index: -4;
 }
 
 .UsContainer {
     margin-right: 30px;
-    align-items: right;
     text-align: right;
 }
 
@@ -30,234 +30,65 @@
     height: 110px;
     background: rgba(242, 65, 48, 0.64);
     filter: blur(80px);
+    z-index: 0;
+}
+
+.BottomShadow {
+    position: absolute;
+    margin: 130px 0 0 -10px;
+    width: 290px;
+    height: 40px;
+    background: rgb(0, 0, 0);
+    filter: blur(15px);
+    border-radius: 50px;
+    z-index: 0;
 }
 
 .Facu {
-    width: 80px;
     position: absolute;
     z-index: 3;
-    margin-top: 52px;
-    margin-left: 190px;
+    margin-left: 185px;
+    margin-top: 27px;
 }
 
 .Ale {
-    width: 90px;
     position: absolute;
     z-index: 2;
-    margin-top: 20px;
     margin-left: 150px;
 }
 
 .Flor {
-    width: 70px;
     position: absolute;
     z-index: 4;
     margin-top: 68px;
-    margin-left: 140px;
+    margin-left: 125px;
 }
 
 .Penguin {
-    width: 86px;
     position: absolute;
     z-index: 1;
-    margin-top: 23px;
+    margin-top: 5px;
     margin-left: 88px;
 }
 
 .Mati {
-    width: 86px;
     position: absolute;
     z-index: 1;
-    margin-top: 16px;
     margin-left: 25px;
 }
 
 .Agus {
-    width: 70px;
     position: absolute;
     z-index: 3;
     margin-top: 68px;
-    margin-left: 65px;
+    margin-left: 50px;
 }
 
 .Diego {
-    width: 88px;
     position: absolute;
     z-index: 2;
-    margin-top: 42px;
-    margin-left: 0px;
-}
-
-.Info {
-    position: absolute;
-    /* display: none; */
-    z-index: 10;
-    animation: fadeIn 0.2s ease-in-out;
-}
-
-.Modal.open{
-    animation: bounce-in 1s ease-in;
-}
-.Modal.close{
-    animation: bounce-out 1s ease-in;
-}
-@keyframes bounce-in{
-    0%    {opacity: 0;   transform: scale(0.5);}
-    100%  {opacity: 1;   transform: scale(1);}
-}
-@keyframes bounce-out{
-    0%    {opacity: 1;   transform: scale(1);}
-    100%  {opacity: 0;   transform: scale(0.5);}
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        display: inline-block;
-        transform: translateY(-2rem);
-    }
-    100% {
-        display: inline-block;
-        opacity: 1;
-        transform: translateY(0);
-    }
-} 
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(2rem);
-        display: none;
-    }
-}
-
-.InfoClose {
-animation: fadeOut 0.2s ease-in-out;
-}
-
-.Line {
-    position: absolute;
-    width: 60px;
-    height: 1.5px;
-    top: 110px;
-    left: 6px;
-
-    background: #FFFFFF;
-    transform: rotate(90deg);
-}
-
-.SecondLine {
-    position: absolute;
-    width: 10px;
-    height: 1.5px;
-    top: 140px;
-    left: 35.2px;
-
-    background: #FFFFFF;
-}
-
-.SecondLineLeft {
-    position: absolute;
-    width: 10px;
-    height: 1.5px;
-    top: 140px;
-    left: 26px;
-
-    background: #FFFFFF;
-}
-
-.Circle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    top: 138.5px;
-    left: 42px;
-
-    border-radius: 10px;
-
-    background: #FFFFFF;
-}
-
-.CircleLeft {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    top: 138.9px;
-    left: 22px;
-
-    border-radius: 10px;
-
-    background: #FFFFFF;
-}
-
-.Person {
-    position: absolute;
-    width: 53px;
-    height: 18px;
-    top: 114px;
-    left: 55px;
-
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
-
-    color: #FFFFFF;    
-}
-
-.PersonLeft {
-    position: absolute;
-    width: 53px;
-    height: 18px;
-    top: 112px;
-    margin-left: -31px;
-
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
-
-    color: #FFFFFF;    
-}
-
-.Job {
-    position: absolute;
-    width: 87px;
-    height: 20px;
-    top: 146px;
-    left: 36px;
-
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 9px;
-    text-align: center;
-
-    color: #F24130;
-}
-
-.JobLeft {
-    position: absolute;
-    width: 87px;
-    height: 20px;
-    top: 143px;
-    margin-left: -50px;
-
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 9px;
-    text-align: center;
-
-    color: #F24130;
+    margin-top: 28px;
+    margin-left: -5px;
 }
 
 .TextContainer {
@@ -290,6 +121,7 @@ animation: fadeOut 0.2s ease-in-out;
 
 .Button {
     margin-left: 48%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @keyframes spin {
@@ -320,4 +152,87 @@ animation: fadeOut 0.2s ease-in-out;
 .ButtonContainer {
     width: 105px;
     margin: 30px auto;
+}
+
+/* ///// */
+/* VIEWS */
+/* ///// */
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Container {
+        height: 900px;
+    }
+    .UsContainer {
+        margin-left: 40px;
+        text-align: left;
+    }
+    .Penguins {
+        margin-top: 50px;
+        width: 500px;
+        height: 280px;
+    }
+    .Background {
+        margin: 30px 0 0 40px;
+        width: 400px;
+        height: 170px;
+    }
+    .Facu {
+        margin-left: 340px;
+        margin-top: 45px;
+    }
+    .Ale {
+        margin-left: 280px;
+    }
+    .Flor {
+        margin-top: 68px;
+        margin-left: 240px;
+    }
+    .Penguin {
+        margin-top: 5px;
+        margin-left: 175px;
+    }
+    .Mati {
+        margin-left: 65px;
+    }
+    .Agus {
+        margin-top: 68px;
+        margin-left: 110px;
+    }
+    .Diego {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+    .TextContainer {
+        width: 440px;
+        margin: 60px auto 0 auto;
+    }
+    .WeMake {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        margin-left: 0px;
+        width: 440px;
+    }
+    .OurTeam {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        margin-left: 0px;
+        width: 440px;
+    }
+    .Button {
+        margin-left: 48%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .Img {
+        width: 40px;
+    }
+    .ImgOpen {
+        width: 40px;
+    }
+    .Button {
+        margin-left: 46%;
+    }
 }
