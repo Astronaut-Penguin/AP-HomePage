@@ -17,6 +17,8 @@ import UsPenguin from "../../components/UsPenguin/UsPenguin";
 import Penguin1 from "./assets/penguin1.png";
 import Penguin2 from "./assets/penguin2.png";
 import Penguin3 from "./assets/penguin3.png";
+import Penguin4 from "./assets/penguin4.png";
+import Penguin5 from "./assets/penguin5.png";
 import Arrow from "./assets/arrow.svg";
 
 const UsSection = () => {
@@ -28,16 +30,23 @@ const UsSection = () => {
       <div className={styles.UsContainer}>
         <Title text={"Us"} />
       </div>
+      <div className={styles.PCText}>
+        <h4 className={styles.PC}>We make experiences. Our team is qualified to accomplish your project and make it real.</h4>
+        <h4 className={styles.PC}>We are a multi-disciplinary team of experts in different areas. With
+          focus on new technologies such as Blockchain, NFTs, Web 3.0 and the
+          ultimate trends on design and digital production systems.</h4>
+      </div>
+
       <div className={styles.Penguins}>
         <div className={styles.Background}></div>
         <div className={styles.BottomShadow}></div>
 
-        <UsPenguin penguin={Penguin2} name='Penguin' job='TEAM LEAD' left className={styles.Penguin} />
+        <UsPenguin penguin={Penguin2} name='Penguin' job='TEAM LEAD' className={styles.Penguin} />
         <UsPenguin penguin={Penguin1} name='Astro' job='DEVELOP TEAM LEAD' left className={styles.Ale} />
         <UsPenguin penguin={Penguin2} name='Facu' job='FRONT-END DEVELOPER' left className={styles.Facu} />
-        <UsPenguin penguin={Penguin1} name='Flor' job='GRAPHIC DESIGN' left className={styles.Flor} />
+        <UsPenguin penguin={Penguin4} name='Flor' job='GRAPHIC DESIGN' left className={styles.Flor} />
         <UsPenguin penguin={Penguin3} name='Mati' job='SCRUM MASTER' className={styles.Mati} />
-        <UsPenguin penguin={Penguin3} name='Agus' job='DESIGN TEAM LEAD' className={styles.Agus} />
+        <UsPenguin penguin={Penguin5} name='Agus' job='DESIGN TEAM LEAD' className={styles.Agus} />
         <UsPenguin penguin={Penguin2} name='Diego' job='UX/IX SPECIALIST' className={styles.Diego} />
       </div>
 

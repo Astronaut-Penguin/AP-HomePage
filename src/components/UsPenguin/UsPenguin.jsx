@@ -14,7 +14,6 @@ const UsPenguin = ({ penguin, name, job, left, className }) => {
   const [s, setS] = useState(0);
     return (
         <div className={className}>
-            {/* <button onClick={() => setS(1)} className={`${styles.Member} ${className}`}> */}
             <button onClick={() => setS(1)} className={styles.Member}>
                 <img src={penguin} className={styles.Penguin} />
                 {s == 1 ? (

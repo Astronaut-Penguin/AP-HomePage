@@ -35,9 +35,9 @@
 
 .BottomShadow {
     position: absolute;
-    margin: 130px 0 0 -10px;
-    width: 290px;
-    height: 40px;
+    margin: 105px 0 0 -10px;
+    width: 300px;
+    height: 60px;
     background: rgb(0, 0, 0);
     filter: blur(15px);
     border-radius: 50px;
@@ -60,7 +60,7 @@
 .Flor {
     position: absolute;
     z-index: 4;
-    margin-top: 68px;
+    margin-top: 38px;
     margin-left: 125px;
 }
 
@@ -80,7 +80,7 @@
 .Agus {
     position: absolute;
     z-index: 3;
-    margin-top: 68px;
+    margin-top: 38px;
     margin-left: 50px;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .TextContainer {
-    margin: 60px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 .WeMake {
@@ -154,6 +154,10 @@
     margin: 30px auto;
 }
 
+.PCText {
+    display: none;
+}
+
 /* ///// */
 /* VIEWS */
 /* ///// */
@@ -177,6 +181,12 @@
         margin: 30px 0 0 40px;
         width: 400px;
         height: 170px;
+    }
+    .BottomShadow {
+        margin: 175px 0 0 -12px;
+        width: 510px;
+        height: 80px;
+        filter: blur(25px);
     }
     .Facu {
         margin-left: 340px;
@@ -206,7 +216,7 @@
     }
     .TextContainer {
         width: 440px;
-        margin: 60px auto 0 auto;
+        margin: 130px auto 0 auto;
     }
     .WeMake {
         font-weight: 400;
@@ -234,5 +244,79 @@
     }
     .Button {
         margin-left: 46%;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .Container {
+        height: 900px;
+    }
+    .UsContainer {
+        margin-left: 0px;
+        text-align: left;
+    }
+    .Penguins {
+        margin-top: 50px;
+        width: 500px;
+        height: 280px;
+    }
+    .Background {
+        margin: 30px 0 0 -50px;
+        width: 600px;
+        height: 220px;
+    }
+    .BottomShadow {
+        margin: 285px 0 0 -130px;
+        width: 780px;
+        height: 110px;
+        filter: blur(25px);
+    }
+    .Facu {
+        margin-left: 420px;
+        margin-top: 72px;
+    }
+    .Ale {
+        margin-left: 310px;
+    }
+    .Flor {
+        margin-top: 108px;
+        margin-left: 250px;
+    }
+    .Penguin {
+        margin-top: 5px;
+        margin-left: 135px;
+    }
+    .Mati {
+        margin-left: -40px;
+    }
+    .Agus {
+        margin-top: 108px;
+        margin-left: 20px;
+    }
+    .Diego {
+        margin-top: 72px;
+        margin-left: -140px;
+    }
+    .TextContainer {
+        display: none;
+    }
+    .ButtonContainer {
+        display: none;
+    }
+    .PCText {
+        display: block;
+    }
+    .PC {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-left: 30px;
+        width: 450px;
+        color: #C4C4C4;
     }
 }
