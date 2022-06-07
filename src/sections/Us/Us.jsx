@@ -25,6 +25,7 @@ const UsSection = () => {
   const [s, setS] = useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
 
+
   return (
     <section className={styles.Container}>
       <div className={styles.UsContainer}>
@@ -41,13 +42,27 @@ const UsSection = () => {
         <div className={styles.Background}></div>
         <div className={styles.BottomShadow}></div>
 
-        <UsPenguin penguin={Penguin2} name='Penguin' job='TEAM LEAD' className={styles.Penguin} />
-        <UsPenguin penguin={Penguin1} name='Astro' job='DEVELOP TEAM LEAD' left className={styles.Ale} />
-        <UsPenguin penguin={Penguin2} name='Facu' job='FRONT-END DEVELOPER' left className={styles.Facu} />
-        <UsPenguin penguin={Penguin4} name='Flor' job='GRAPHIC DESIGN' left className={styles.Flor} />
-        <UsPenguin penguin={Penguin3} name='Mati' job='SCRUM MASTER' className={styles.Mati} />
-        <UsPenguin penguin={Penguin5} name='Agus' job='DESIGN TEAM LEAD' className={styles.Agus} />
-        <UsPenguin penguin={Penguin2} name='Diego' job='UX/IX SPECIALIST' className={styles.Diego} />
+        <div onClick={() => setS(1)}>
+          <UsPenguin penguin={Penguin2} name='Penguin' job='TEAM LEAD' className={styles.Penguin} index={s} num={1} />
+        </div>
+        <div onClick={() => setS(2)}>
+          <UsPenguin penguin={Penguin1} name='Astro' job='DEVELOP TEAM LEAD' left className={styles.Ale} index={s} num={2} />      
+        </div>
+        <div onClick={() => setS(3)}>
+          <UsPenguin penguin={Penguin2} name='Facu' job='FRONT-END DEVELOPER' left className={styles.Facu} index={s} num={3} />
+        </div>
+        <div onClick={() => setS(4)}>
+          <UsPenguin penguin={Penguin4} name='Flor' job='GRAPHIC DESIGN' left className={styles.Flor} index={s} num={4} />
+        </div>
+        <div onClick={() => setS(5)}>
+          <UsPenguin penguin={Penguin3} name='Mati' job='SCRUM MASTER' className={styles.Mati} index={s} num={5} />
+        </div>
+        <div onClick={() => setS(6)}>
+          <UsPenguin penguin={Penguin5} name='Agus' job='DESIGN TEAM LEAD' className={styles.Agus} index={s} num={6} />
+        </div>
+        <div onClick={() => setS(7)}>
+          <UsPenguin penguin={Penguin2} name='Diego' job='UX/IX SPECIALIST' className={styles.Diego} index={s} num={7} />
+        </div>
       </div>
 
       <div className={styles.TextContainer}>

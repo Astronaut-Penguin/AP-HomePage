@@ -10,13 +10,13 @@ import styles from './UsPenguin.module.css';
 // job: STRING - Puesto de trabajo
 // left: BOOL - Si está activado, los datos se muestran a la izquierda
 
-const UsPenguin = ({ penguin, name, job, left, className }) => {
+const UsPenguin = ({ penguin, name, job, left, className, index, num }) => {
   const [s, setS] = useState(0);
     return (
         <div className={className}>
-            <button onClick={() => setS(1)} className={styles.Member}>
+            <button className={styles.Member}>
                 <img src={penguin} className={styles.Penguin} />
-                {s == 1 ? (
+                {index == num ? (
                     <div className={styles.Info}>
                     <div className={styles.Line}></div>
                     {left ? (
