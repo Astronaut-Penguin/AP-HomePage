@@ -43,7 +43,7 @@ const WebSection = () => {
         >
           <div className={styles.Card}>
             <WebCard title={"What is a Web 3.0?"} enablePlay site={"/"} />
-            <WebCard title={"Launch: new walleta"} site={"/"} />
+            <WebCard title={"Launch: new wallet"} site={"/"} />
           </div>
           <div className={styles.Card}>
             <WebCard title={"What is a Web 3.0?"} enablePlay site={"/"} />

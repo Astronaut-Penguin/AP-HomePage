@@ -66,6 +66,10 @@
 	margin: 0 5px 15px 5px;
 }
 
+.Standing {
+    display: none;
+}
+
 /* /////////// */
 /*/// VIEWS ///*/
 /* /////////// */
@@ -161,6 +165,7 @@
         display: none;
     }
     .Standing {
+        display: block;
         align-items: center;
         margin-top: 40px;
     }

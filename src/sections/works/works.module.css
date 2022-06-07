@@ -117,15 +117,16 @@
         display: none;
     }
 	.TextContainer {
+		position: absolute;
 		width: 380px;
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	.TabletContainer {
 		display: flex;
 		width: 620px;
 		height: 600px;
 		margin: 0 auto;
-		margin-right: 50px;
+		margin-right: 26px;
 	}
 	.Column {
 		flex: 1;
@@ -149,8 +150,9 @@
         display: none;
     }
 	.TextContainer {
+		position: absolute;
 		width: 420px;
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	.TabletContainer {
 		display: flex;

@@ -323,6 +323,7 @@ const OurProcessSection = () => {
                         swiper.navigation.init();
                         swiper.navigation.update();
                     }}
+                    allowTouchMove={false}
                     modules={[Navigation]} 
                     className="mySwiper"
                 >
@@ -357,6 +358,7 @@ const OurProcessSection = () => {
                         swiper.navigation.init();
                         swiper.navigation.update();
                     }}
+                    allowTouchMove={false}
                     modules={[Navigation]} 
                     className="mySwiper"
                 >
