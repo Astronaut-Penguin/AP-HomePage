@@ -13,7 +13,8 @@ import ClientCard from "../../components/clientCard/clientCard";
 import TribeLogo from "./assets/tribeLogo.png";
 import MiladyLogo from "./assets/miladyLogo.png";
 import APLogo from "./assets/apLogo.png";
-import WilderLogo from "./assets/wilderLogo.png";
+// import WilderLogo from "./assets/wilderLogo.png";
+import CapyLogo from "./assets/capyLogo.png";
 
 //- Flicking Imports
 import Flicking from "@egjs/react-flicking";
@@ -166,6 +167,28 @@ const WorksSection = () => {
               index={0}
             />
           </div>
+          <div className={styles.Card}>
+            <ClientCard
+              logo={CapyLogo}
+              title={"CAPYARMY"}
+              text={
+                "We developed the home and the mint page for the collection on Polygon."
+              }
+              // leftTitle={"PROFIT"}
+              // leftNum={"$700K"}
+              // enableWeek
+              // footNum={"per week"}
+              // rightTitle={"POPULAR COIN"}
+              // rightNum={"#200"}
+              // enableLine
+              footText={"Contract"}
+              enableSite
+              siteLink={"https://capyarmy.com/"}
+              contractLink={"https://capyarmy.com/"}
+              s={s}
+              index={1}
+            />
+          </div>
         </div>
 
         <div className={styles.Column}>
@@ -189,28 +212,6 @@ const WorksSection = () => {
               index={2}
             />
           </div>
-          {/* <div className={styles.Card}>
-            <ClientCard
-              logo={WilderLogo}
-              title={"Wilder World"}
-              text={
-                "We developed a marketplace to sell NFTs of their Metaverse and worked on 3D models."
-              }
-              leftTitle={"PROFIT"}
-              leftNum={"$700K"}
-              enableWeek
-              footNum={"per week"}
-              rightTitle={"POPULAR COIN"}
-              rightNum={"#200"}
-              enableLine
-              footText={"Contract"}
-              enableSite
-              siteLink={"https://www.wilderworld.com/"}
-              contractLink={"https://www.wilderworld.com/"}
-              s={s}
-              index={1}
-            />
-          </div> */}
           <div className={styles.Card}>
             <ClientCard
               logo={APLogo}

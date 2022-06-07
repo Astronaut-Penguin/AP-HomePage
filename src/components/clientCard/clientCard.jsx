@@ -50,10 +50,10 @@ const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWe
                 </div>
                 <div className={styles.CardFoot}>
                     <a href={siteLink} className={`${styles.Site}
-                        ${enableSite ? styles.Site : styles.NoneSite}`}>
+                        ${enableSite ? styles.Site : styles.NoneSite}`} target="_blank">
                         Go to site
                     </a>
-                    <a href={contractLink}>
+                    <a href={contractLink} target="_blank">
                         <div className={styles.Contract}>
                             {footText}
                             <img className={styles.ContractLogo} src={ContractLogo}></img>
