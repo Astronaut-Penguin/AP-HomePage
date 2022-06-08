@@ -140,6 +140,7 @@
     }
     .Title {
         max-width: 300px;
+        margin-left: 0px;
         width: 50%;
         float: left;
     }
@@ -177,7 +178,10 @@
     .Container {
         width: 1440px;
     }
-    .Penguin > img {
-        margin: 210px 0 0 750px;
+    .Title {
+        margin-left: 110px;
+    }
+        .Penguin > img {
+        margin: 210px 0 0 580px;
     }
 }
