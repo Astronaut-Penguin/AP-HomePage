@@ -268,8 +268,9 @@
         line-height: 24px;
     }
     .Job {
+        width: 75px;
         top: 417px;
-        left: 110px;
+        left: 108px;
         font-size: 9px;
         line-height: 10px;
     }
