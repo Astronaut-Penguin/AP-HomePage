@@ -1,0 +1,56 @@
+.mySwipere {
+    height: 900px;
+    width: 800px;
+    margin-right: 0px;
+}
+
+.swiper-button-next {
+    color: white;
+}
+  
+.swiper-button-next::after {
+    color: white;
+}
+
+.swiper-button-prev {
+    color: white;
+}
+  
+.swiper-button-prev::after {
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    background: #8c8c8c;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #F24130;
+    width: 15px;
+    height: 15px;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .swiper-button-next {
+        color: white;
+        margin-right: 50px;
+    }
+        
+    .swiper-button-next::after {
+        color: white;
+        margin-right: 140px;
+    }
+    
+    .swiper-button-prev {
+        color: white;
+    }
+        
+    .swiper-button-prev::after {
+        color: white;
+    }
+}

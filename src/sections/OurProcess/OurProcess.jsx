@@ -16,7 +16,7 @@ import { Navigation } from "swiper";
 import styles from "./OurProcess.module.css";
 import 'swiper/css';
 import 'swiper/css/bundle';
-import "./swiper-bundle.min.css"
+// import "./swiper-bundle.min.css"
 
 //- Import Components
 import Title from "../../components/title/title";

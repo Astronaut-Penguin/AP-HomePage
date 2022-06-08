@@ -111,7 +111,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 	.Container {
-		height: 950px;
+		height: 1050px;
 	}
     .CarouselContainer, .Dots {
         display: none;
@@ -126,7 +126,7 @@
 		width: 620px;
 		height: 600px;
 		margin: 0 auto;
-		margin-right: 26px;
+		margin-right: 85px;
 	}
 	.Column {
 		flex: 1;
@@ -142,7 +142,7 @@
 @media only screen and (min-width: 1440px) {
 	.Container {
 		width: 1200px;
-		height: 1000px;
+		height: 1100px;
 		margin: 0 auto;
 		background-color: transparent;
 	}
@@ -159,7 +159,7 @@
 		width: 620px;
 		height: 600px;
 		margin: 0 auto;
-		margin-right: 50px;
+		margin-right: 85px;
 	}
 	.Column {
 		flex: 1;
