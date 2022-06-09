@@ -51,10 +51,10 @@ const Header = () => {
       </div>
       <Collapse isOpen={Open}>
         <nav className={styles.Nav}>
-          <a href="">Work</a>
-          <a href="">Process</a>
-          <a href="">Us</a>
-          <a href="">3.0</a>
+          <a href="#work">Work</a>
+          <a href="@process">Process</a>
+          <a href="#us">Us</a>
+          <a href="#web3">3.0</a>
         </nav>
         <hr />
         <a href="" className={styles.Contact}>
