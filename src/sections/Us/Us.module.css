@@ -324,11 +324,15 @@
 /* PC LARGE */
 
 @media only screen and (min-width: 1440px) {
+    .Container {
+        width: 1440px;
+        margin: 0 auto;
+    }
     .UsContainer {
-        margin-left: 70px;
+        margin-left: 110px;
     }
     .PC {
-        margin-left: 102px;
+        margin-left: 140px;
         width: 450px;
     }
 }

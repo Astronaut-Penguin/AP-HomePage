@@ -179,6 +179,10 @@
 /* PC LARGE */
 
 @media only screen and (min-width: 1440px) {
+    .Container {
+        width: 1440px;
+        margin: 0 auto;
+    }
     .TitleContainer {
         margin-right: 210px;
     }
