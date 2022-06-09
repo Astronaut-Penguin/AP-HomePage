@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 // STYLES
-import styles from "./NavBar.module.css";
+import styles from "./Header.module.css";
 
 // SVG
 import Burger from "./assets/Burger";
@@ -12,7 +12,7 @@ import "@blueprintjs/core/lib/css/blueprint.css";
 import { Collapse } from "@blueprintjs/core";
 
 // COMPONENT
-const NavBar = () => {
+const Header = () => {
   ///////////////
   // FUNCTIONS //
   ///////////////
@@ -54,4 +54,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Header;
