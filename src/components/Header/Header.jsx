@@ -39,7 +39,9 @@ const Header = () => {
   // RENDER //
   ////////////
   return (
-    <section className={styles.Container}>
+    <section
+      className={`${styles.Container} ${Open ? styles.Black : styles.Deg}`}
+    >
       <div className={styles.Header}>
         <div className={styles.Logo}></div>
 
@@ -48,7 +50,16 @@ const Header = () => {
         </button>
       </div>
       <Collapse isOpen={Open}>
-        <p style={{ color: "white" }}>Faso</p>
+        <nav className={styles.Nav}>
+          <a href="">Work</a>
+          <a href="">Process</a>
+          <a href="">Us</a>
+          <a href="">3.0</a>
+        </nav>
+        <hr />
+        <a href="" className={styles.Contact}>
+          Contact us
+        </a>
       </Collapse>
     </section>
   );
