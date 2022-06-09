@@ -25,9 +25,9 @@
 
 .Background {
     position: absolute;
-    margin: 30px 0 0 20px;
-    width: 200px;
-    height: 110px;
+    margin: 10px 0 0 10px;
+    width: 230px;
+    height: 130px;
     background: rgba(242, 65, 48, 0.64);
     filter: blur(80px);
     z-index: 0;
@@ -64,7 +64,7 @@
     margin-left: 125px;
 }
 
-.Mati {
+.Penguin {
     position: absolute;
     z-index: 1;
     margin-top: 5px;
@@ -174,13 +174,13 @@
     }
     .Penguins {
         margin-top: 50px;
-        width: 500px;
+        width: 520px;
         height: 280px;
     }
     .Background {
-        margin: 30px 0 0 40px;
-        width: 400px;
-        height: 170px;
+        margin: 10px 0 0 20px;
+        width: 480px;
+        height: 220px;
     }
     .BottomShadow {
         margin: 175px 0 0 -12px;
@@ -189,30 +189,30 @@
         filter: blur(25px);
     }
     .Facu {
-        margin-left: 340px;
-        margin-top: 45px;
+        margin-left: 360px;
+        margin-top: 52px;
     }
     .Ale {
         margin-left: 280px;
     }
     .Flor {
-        margin-top: 68px;
+        margin-top: 88px;
         margin-left: 240px;
     }
     .Penguin {
-        margin-top: 5px;
+        margin-top: 0px;
         margin-left: 175px;
     }
     .Mati {
         margin-left: 65px;
     }
     .Agus {
-        margin-top: 68px;
+        margin-top: 88px;
         margin-left: 110px;
     }
     .Diego {
-        margin-top: 35px;
-        margin-left: 0px;
+        margin-top: 55px;
+        margin-left: -5px;
     }
     .TextContainer {
         width: 440px;
@@ -259,30 +259,30 @@
     }
     .Penguins {
         margin-top: 50px;
-        width: 500px;
+        width: 580px;
         height: 280px;
     }
     .Background {
-        margin: 30px 0 0 -50px;
-        width: 600px;
-        height: 220px;
+        margin: 10px 0 0 -80px;
+        width: 700px;
+        height: 320px;
     }
     .BottomShadow {
-        margin: 285px 0 0 -130px;
-        width: 780px;
-        height: 110px;
+        margin: 265px 0 0 -130px;
+        width: 880px;
+        height: 130px;
         filter: blur(25px);
     }
     .Facu {
-        margin-left: 420px;
-        margin-top: 72px;
+        margin-left: 432px;
+        margin-top: 85px;
     }
     .Ale {
         margin-left: 310px;
     }
     .Flor {
-        margin-top: 108px;
-        margin-left: 250px;
+        margin-top: 120px;
+        margin-left: 245px;
     }
     .Penguin {
         margin-top: 5px;
@@ -292,11 +292,11 @@
         margin-left: -40px;
     }
     .Agus {
-        margin-top: 108px;
-        margin-left: 20px;
+        margin-top: 120px;
+        margin-left: 30px;
     }
     .Diego {
-        margin-top: 72px;
+        margin-top: 82px;
         margin-left: -140px;
     }
     .TextContainer {
