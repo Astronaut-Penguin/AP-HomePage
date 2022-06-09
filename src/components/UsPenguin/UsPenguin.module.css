@@ -54,10 +54,10 @@
 
 .Line {
     position: absolute;
-    width: 60px;
+    width: 100px;
     height: 1.5px;
     top: 110px;
-    left: 6px;
+    left: -5px;
 
     background: #FFFFFF;
     transform: rotate(90deg);
@@ -67,8 +67,8 @@
     position: absolute;
     width: 10px;
     height: 1.5px;
-    top: 140px;
-    left: 35.2px;
+    top: 160px;
+    left: 44.2px;
 
     background: #FFFFFF;
 }
@@ -77,8 +77,8 @@
     position: absolute;
     width: 10px;
     height: 1.5px;
-    top: 140px;
-    left: 26px;
+    top: 159px;
+    left: 35px;
 
     background: #FFFFFF;
 }
@@ -87,11 +87,10 @@
     position: absolute;
     width: 4px;
     height: 4px;
-    top: 138.5px;
-    left: 42px;
+    top: 158.5px;
+    left: 51px;
 
     border-radius: 10px;
-
     background: #FFFFFF;
 }
 
@@ -99,11 +98,10 @@
     position: absolute;
     width: 4px;
     height: 4px;
-    top: 138.9px;
-    left: 22px;
+    top: 157.9px;
+    left: 32px;
 
     border-radius: 10px;
-
     background: #FFFFFF;
 }
 
@@ -111,8 +109,8 @@
     position: absolute;
     width: 53px;
     height: 18px;
-    top: 112px;
-    left: 50px;
+    top: 132px;
+    left: 60px;
 
     font-family: 'Archivo';
     font-style: normal;
@@ -127,8 +125,8 @@
     position: absolute;
     width: 53px;
     height: 18px;
-    top: 112px;
-    margin-left: -33px;
+    top: 131px;
+    margin-left: -29px;
 
     font-family: 'Archivo';
     font-style: normal;
@@ -143,8 +141,8 @@
     position: absolute;
     width: 67px;
     height: 20px;
-    top: 141px;
-    left: 34px;
+    top: 162px;
+    left: 52px;
 
     font-family: 'Archivo';
     font-style: normal;
@@ -160,8 +158,8 @@
     position: absolute;
     width: 67px;
     height: 20px;
-    top: 142px;
-    margin-left: -40px;
+    top: 162px;
+    margin-left: -35px;
 
     font-family: 'Archivo';
     font-style: normal;
@@ -182,5 +180,104 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .Penguin {
         width: 130px;
+    }
+    .Line {
+        width: 160px;
+        top: 180px;
+        left: -10px;
+    }
+    .SecondLine {
+        top: 259px;
+        left: 69.2px;
+    }
+    .SecondLineLeft {
+        top: 259px;
+        left: 60px;
+    }
+    .Circle {
+        top: 258px;
+        left: 79px;
+    }
+    .CircleLeft {
+        top: 258px;
+        left: 57px;
+    }
+    .Person {
+        top: 230px;
+        left: 88px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .PersonLeft {
+        top: 228px;
+        margin-left: -2px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .Job {
+        top: 265px;
+        left: 84px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .JobLeft {
+        top: 262px;
+        margin-left: -7px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .Penguin {
+        width: 210px;
+    }
+    .Line {
+        width: 220px;
+        top: 300px;
+        left: -10px;
+    }
+    .SecondLine {
+        top: 410px;
+        left: 99.2px;
+    }
+    .SecondLineLeft {
+        top: 410px;
+        left: 90px;
+    }
+    .Circle {
+        top: 408px;
+        left: 108px;
+    }
+    .CircleLeft {
+        top: 408px;
+        left: 89px;
+    }
+    .Person {
+        top: 380px;
+        left: 117px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .PersonLeft {
+        top: 378px;
+        margin-left: 25px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .Job {
+        width: 75px;
+        top: 417px;
+        left: 108px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .JobLeft {
+        top: 411px;
+        margin-left: 19px;
+        font-size: 9px;
+        line-height: 10px;
     }
 }
