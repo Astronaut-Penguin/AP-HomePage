@@ -14,11 +14,14 @@ import CtaButton from "../../components/Button/CtaButton/CtaButton";
 import UsPenguin from "../../components/UsPenguin/UsPenguin";
 
 //- Import Images
-import Penguin1 from "./assets/penguin1.png";
-import Penguin2 from "./assets/penguin2.png";
-import Penguin3 from "./assets/penguin3.png";
-import Penguin4 from "./assets/penguin4.png";
-import Penguin5 from "./assets/penguin5.png";
+import Alejo from "./assets/Alejo.png";
+import Agustin from "./assets/Agustin.png";
+import Mati from "./assets/Mati.png";
+import Flor from "./assets/Flor.png";
+import Agustina from "./assets/Agustina.png";
+import Facu from "./assets/Facu.png";
+import Diego from "./assets/Penguin.png";
+
 import Arrow from "./assets/arrow.svg";
 
 const UsSection = () => {
@@ -43,25 +46,25 @@ const UsSection = () => {
         <div className={styles.BottomShadow}></div>
 
         <div onClick={() => setS(1)}>
-          <UsPenguin penguin={Penguin2} name='Penguin' job='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CO-FOUNDER' className={styles.Penguin} index={s} num={1} />
+          <UsPenguin penguin={Mati} name='Mati' job='SCRUM MASTER' className={styles.Penguin} index={s} num={1} />
         </div>
         <div onClick={() => setS(2)}>
-          <UsPenguin penguin={Penguin1} name='Astro' job='CO-FOUNDER' left className={styles.Ale} index={s} num={2} />      
+          <UsPenguin penguin={Alejo} name='Astro' job='CO-FOUNDER' left className={styles.Ale} index={s} num={2} />      
         </div>
         <div onClick={() => setS(3)}>
-          <UsPenguin penguin={Penguin2} name='Facu' job='DEVELOPER' left className={styles.Facu} index={s} num={3} />
+          <UsPenguin penguin={Facu} name='Facu' job='DEVELOPER' left className={styles.Facu} index={s} num={3} />
         </div>
         <div onClick={() => setS(4)}>
-          <UsPenguin penguin={Penguin4} name='Flor' job='DESIGNER' left className={styles.Flor} index={s} num={4} />
+          <UsPenguin penguin={Flor} name='Flor' job='DESIGNER' left className={styles.Flor} index={s} num={4} />
         </div>
         <div onClick={() => setS(5)}>
-          <UsPenguin penguin={Penguin3} name='Mati' job='SCRUM MASTER' className={styles.Mati} index={s} num={5} />
+          <UsPenguin penguin={Agustin} name='Agustin' job='CO-FOUNDER' className={styles.Mati} index={s} num={5} />
         </div>
         <div onClick={() => setS(6)}>
-          <UsPenguin penguin={Penguin5} name='Agus' job='DESIGNER' className={styles.Agus} index={s} num={6} />
+          <UsPenguin penguin={Agustina} name='Agus' job='DESIGNER' className={styles.Agus} index={s} num={6} />
         </div>
         <div onClick={() => setS(7)}>
-          <UsPenguin penguin={Penguin2} name='Diego' job='UX/IX SPECIALIST' className={styles.Diego} index={s} num={7} />
+          <UsPenguin penguin={Diego} name='Diego' job='UX/IX SPECIALIST' className={styles.Diego} index={s} num={7} />
         </div>
       </div>
 

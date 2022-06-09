@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import styles from "./OurProcess.module.css";
 
 //- Import Images
-import Penguin from "./assets/penguin1.png";
+import Penguin from "./assets/AnimationInspect.gif";
 import Arrow from "./assets/arrow.svg";
 import PagArrow from "./assets/pagArrow.svg";
 

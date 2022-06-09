@@ -24,7 +24,7 @@ import Text from "../../components/text/text";
 import Tablet from "./Tablet";
 
 //- Import Images
-import Penguin from "./assets/penguin1.png";
+import Penguin from "./assets/AnimationInspect.gif";
 import Arrow from "./assets/arrow.svg";
 import PagArrow from "./assets/pagArrow.svg";
 

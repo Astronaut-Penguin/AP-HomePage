@@ -6,7 +6,7 @@ import Countdown from "react-countdown";
 import styles from "./NewProject.module.css";
 
 //- Import Images
-import Penguin from "./assets/penguin.png";
+import Penguin from "./assets/penguin.gif";
 
 //- Import Components
 import Title from "../../components/title/title";
