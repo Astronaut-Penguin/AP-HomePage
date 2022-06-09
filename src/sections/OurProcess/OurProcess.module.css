@@ -147,6 +147,14 @@
     display: none;
 }
 
+.PrevArrow {
+    display: none;
+}
+
+.NextArrow {
+    display: none;
+}
+
 /*///////*/
 /* VIEWS */
 /*///////*/
@@ -224,7 +232,6 @@
         margin: 195px auto auto 85px;
     }
     .SmallNumber {
-        
         font-size: 24px;
     }
 }
@@ -301,6 +308,7 @@
         width: 400px;
     }
     .NextArrow {
+        display: inline-block;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         background-color: transparent;
@@ -325,6 +333,7 @@
         z-index: -1;
     }
     .PrevArrow {
+        display: inline-block;
         background-color: transparent;
         background-repeat: no-repeat;
         border: none;

@@ -11,7 +11,6 @@ import styles from './UsPenguin.module.css';
 // left: BOOL - Si está activado, los datos se muestran a la izquierda
 
 const UsPenguin = ({ penguin, name, job, left, className, index, num }) => {
-  const [s, setS] = useState(0);
     return (
         <div className={className}>
             <button className={styles.Member}>
@@ -35,6 +34,11 @@ const UsPenguin = ({ penguin, name, job, left, className, index, num }) => {
                         </div>
                     )}
                     </div>
+                ) : (
+                    <img src={penguin} className={styles.Filter} />
+                )}
+                {index == 0 ? ( 
+                    <img src={penguin} className={styles.Penguin} />
                 ) : (
                     ""
                 )}
