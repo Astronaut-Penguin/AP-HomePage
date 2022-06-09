@@ -23,7 +23,7 @@ import ContractLogo from './assets/contractLogo.png'
 // siteLink: STRING - URL de la Web del cliente
 // contractLink: STRING - URL del contrato del cliente  
 
-const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWeek, footNum, rightTitle, rightNum, enableLine, footText, enableSite, siteLink, contractLink, s, index, enableSoon }) => {
+const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWeek, footNum, rightTitle, rightNum, enableLine, footText, enableSite, siteLink, contractLink, s, index, enableSoon, enableFoot }) => {
     return (
         <div className={`${styles.ClientWrap} ${s == index ? styles.Selected : styles.NotSelected}`}>
             <div className={styles.ClientCard}>
@@ -52,7 +52,8 @@ const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWe
                     COMING SOON
                     </h2>
                 </div>
-                <div className={styles.CardFoot}>
+                <div className={`${styles.CardFoot}
+                        ${enableFoot ? styles.CardFoot : styles.NoneFoot}`}>
                     <a href={siteLink} className={`${styles.Site}
                         ${enableSite ? styles.Site : styles.NoneSite}`} target="_blank">
                         Go to site

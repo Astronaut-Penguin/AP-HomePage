@@ -5,7 +5,7 @@
 .Container {
     background-color: #1b1b1b;
     margin: 0;
-    height: 600px;
+    height: 550px;
 	align-items: center;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .Dots {
-    width: 54px;
+    width: 90px;
     align-items: center;
     margin: 0 auto;
     margin-top: 30px;
@@ -83,7 +83,7 @@
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 	.Container {
-		height: 1050px;
+		height: 1100px;
 	}
     .CarouselContainer, .Dots {
         display: none;

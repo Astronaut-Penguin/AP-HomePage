@@ -157,6 +157,10 @@
     margin-top: 95px;
 }
 
+.NoneFoot {
+    display: none;
+}
+
 .Site {
     font-family: 'Archivo';
     font-style: normal;
@@ -213,7 +217,7 @@
     right:0;
     margin-left:auto;
     margin-right:auto;
-    bottom: 50px;
+    bottom: 30px;
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 700;
