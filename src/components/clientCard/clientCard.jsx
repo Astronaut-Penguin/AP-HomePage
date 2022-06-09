@@ -23,7 +23,7 @@ import ContractLogo from './assets/contractLogo.png'
 // siteLink: STRING - URL de la Web del cliente
 // contractLink: STRING - URL del contrato del cliente  
 
-const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWeek, footNum, rightTitle, rightNum, enableLine, footText, enableSite, siteLink, contractLink, s, index }) => {
+const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWeek, footNum, rightTitle, rightNum, enableLine, footText, enableSite, siteLink, contractLink, s, index, enableSoon }) => {
     return (
         <div className={`${styles.ClientWrap} ${s == index ? styles.Selected : styles.NotSelected}`}>
             <div className={styles.ClientCard}>
@@ -47,13 +47,17 @@ const ClientCard = ({ logo, title, text, textStyle, leftTitle, leftNum, enableWe
                         <h3 className={styles.MarketTitle}>{rightTitle}</h3>
                         <h2 className={styles.MarketNum}>{rightNum}</h2>
                     </div>
+                    <h2 className={`${styles.Soon}
+                        ${enableSoon ? styles.Soon : styles.NoneSoon}`}>
+                    COMING SOON
+                    </h2>
                 </div>
                 <div className={styles.CardFoot}>
                     <a href={siteLink} className={`${styles.Site}
-                        ${enableSite ? styles.Site : styles.NoneSite}`}>
+                        ${enableSite ? styles.Site : styles.NoneSite}`} target="_blank">
                         Go to site
                     </a>
-                    <a href={contractLink}>
+                    <a href={contractLink} target="_blank">
                         <div className={styles.Contract}>
                             {footText}
                             <img className={styles.ContractLogo} src={ContractLogo}></img>

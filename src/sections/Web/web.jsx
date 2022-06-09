@@ -9,6 +9,13 @@ import Title from "../../components/title/title";
 import Text from "../../components/text/text";
 import WebCard from "../../components/WebCard/WebCard";
 
+//- Import Swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/bundle';
+import "./swiper-bundle.min.css"
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+
 //- Flicking Imports
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
@@ -43,7 +50,7 @@ const WebSection = () => {
         >
           <div className={styles.Card}>
             <WebCard title={"What is a Web 3.0?"} enablePlay site={"/"} />
-            <WebCard title={"Launch: new walleta"} site={"/"} />
+            <WebCard title={"Launch: new wallet"} site={"/"} />
           </div>
           <div className={styles.Card}>
             <WebCard title={"What is a Web 3.0?"} enablePlay site={"/"} />
@@ -70,36 +77,81 @@ const WebSection = () => {
       </div>
 
       <div className={styles.Standing}>
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        allowTouchMove={false}
+        modules={[Navigation, Pagination]}
+        className="mySwiper3"
+      >
+        <SwiperSlide>
+          <div className={styles.StandingCard}>
+            <WebCard 
+                title={"What is a Web 3.0?"} 
+                enablePlay
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+          </div>
+          <div className={styles.StandingCard}>
+            <WebCard 
+                title={"What is a Web 3.0?"} 
+                enablePlay
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
         <div className={styles.StandingCard}>
-          <WebCard 
-              title={"What is a Web 3.0?"} 
-              enablePlay
-              site={"/"}
-          />
-          <WebCard 
-              title={"Launch: new wallet"} 
-              site={"/"}
-          />
-          <WebCard 
-              title={"Launch: new wallet"} 
-              site={"/"}
-          />
-        </div>
-        <div className={styles.StandingCard}>
-          <WebCard 
-              title={"What is a Web 3.0?"} 
-              enablePlay
-              site={"/"}
-          />
-          <WebCard 
-              title={"Launch: new wallet"} 
-              site={"/"}
-          />
-          <WebCard 
-              title={"Launch: new wallet"} 
-              site={"/"}
-          />
-        </div>
+            <WebCard 
+                title={"What is a Web 3.0?"} 
+                enablePlay
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+          </div>
+          <div className={styles.StandingCard}>
+            <WebCard 
+                title={"What is a Web 3.0?"} 
+                enablePlay
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+            <WebCard 
+                title={"Launch: new wallet"} 
+                site={"/"}
+            />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+        
+        
       </div>
     </section>
   );

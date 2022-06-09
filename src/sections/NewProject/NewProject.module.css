@@ -3,7 +3,7 @@
 /*////////////*/
 
 .Container {
-    background-color: #1b1b1b;
+    /* background-color: #1b1b1b; */
     margin: 0;
     height: 400px;
 	align-items: center;
@@ -33,8 +33,8 @@
 }
 
 .Penguin > img {
-    margin: 14px 0 0 24px;
-    width: 120px;
+    margin: 14px 0 0 36px;
+    width: 90px;
 }
 
 .Count {
@@ -90,8 +90,8 @@
 
 @media only screen and (min-width: 376px) and (max-width: 426px) {
     .Penguin > img {
-        margin: 4px 0 0 24px;
-        width: 140px;
+        margin: 8px 0 0 74px;
+        width: 110px;
     }
     .Count {
         padding-top: 200px;
@@ -110,8 +110,8 @@
         line-height: 27px;
     }
     .Penguin > img {
-        margin: 40px 0 0 110px;
-        width: 240px;
+        margin: 30px 0 0 160px;
+        width: 170px;
     }
     .Count {
         font-size: 80px;
@@ -140,6 +140,7 @@
     }
     .Title {
         max-width: 300px;
+        margin-left: 0px;
         width: 50%;
         float: left;
     }
@@ -150,8 +151,8 @@
     }
     .Penguin > img {
         position: absolute;
-        margin: 210px 0 0 450px;
-        width: 240px;
+        margin: 210px 0 0 500px;
+        width: 190px;
     }
     .Count {
         font-size: 80px;
@@ -177,7 +178,10 @@
     .Container {
         width: 1440px;
     }
-    .Penguin > img {
-        margin: 210px 0 0 750px;
+    .Title {
+        margin-left: 110px;
+    }
+        .Penguin > img {
+        margin: 210px 0 0 580px;
     }
 }

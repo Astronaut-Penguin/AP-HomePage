@@ -3,7 +3,7 @@
 /*////////////*/
 
 .Container {
-    background-color: #1b1b1b;
+    /* background-color: #1b1b1b; */
     margin: 0;
     height: 450px;
 	align-items: center;
@@ -64,6 +64,10 @@
 	border-radius: 50%;
 	background-color: #8C8C8C;
 	margin: 0 5px 15px 5px;
+}
+
+.Standing {
+    display: none;
 }
 
 /* /////////// */
@@ -148,19 +152,20 @@
         display: none;
     }
     .TitleContainer {
-        margin-right: 30px;
+        margin-right: 20px;
     }
     .TextContainer {
         align-items: right;
         text-align: right;
         margin-top: 40px;
         width: 430px;
-        margin: 40px 30px 0 auto;
+        margin: 40px 20px 0 auto;
     }
     .Breaking {
         display: none;
     }
     .Standing {
+        display: block;
         align-items: center;
         margin-top: 40px;
     }
@@ -168,5 +173,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+/* PC LARGE */
+
+@media only screen and (min-width: 1440px) {
+    .TitleContainer {
+        margin-right: 210px;
+    }
+    .TextContainer {
+        align-items: right;
+        text-align: right;
+        margin-top: 40px;
+        width: 430px;
+        margin: 40px 215px 0 auto;
     }
 }

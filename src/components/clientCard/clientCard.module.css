@@ -195,6 +195,8 @@
     width: 105px;
 
     text-align: right;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .Contract:hover {
@@ -203,6 +205,26 @@
 
 .ContractLogo {
     margin-left: 8px;
+}
+
+.Soon {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: 50px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.NoneSoon {
+    display: none;
 }
 
 /*/////////////*/

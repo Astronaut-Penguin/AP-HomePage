@@ -1,0 +1,40 @@
+.mySwipere {
+    height: 900px;
+    width: 800px;
+    margin-right: 0px;
+}
+
+.mySwiper3 {
+    height: 790px;
+    width: 100%;
+    /* margin-right: 0px; */
+}
+
+.swiper-button-next {
+    color: white;
+}
+  
+.swiper-button-next::after {
+    color: white;
+}
+
+.swiper-button-prev {
+    color: white;
+}
+  
+.swiper-button-prev::after {
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    background: #8c8c8c;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #F24130;
+    width: 15px;
+    height: 15px;
+}
