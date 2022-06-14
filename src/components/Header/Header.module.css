@@ -34,9 +34,11 @@
   justify-content: space-between;
   align-items: center;
 }
-
 /* HEADER LOGO */
-.Logo {
+.Logo,
+.Logo:active,
+.Logo:focus,
+.Logo:hover {
   display: inline-block;
   width: 40vw;
   height: 15vw;
@@ -59,7 +61,6 @@
   border: none !important;
   outline: none;
 }
-
 .Image {
   width: 100%;
   height: auto;
@@ -73,7 +74,6 @@
   flex-direction: column;
   padding: 0px 28px;
 }
-
 .Nav > a {
   display: inline-block;
   font-family: "Archivo";
@@ -84,12 +84,10 @@
 
   color: #8c8c8c;
 }
-
 .Nav > a:hover {
   text-decoration: none;
   color: #f24130;
 }
-
 .Contact {
   display: inline-block;
   font-family: "Archivo";
@@ -100,8 +98,48 @@
   margin: 30px;
   color: white;
 }
-
 .Contact:hover {
   text-decoration: none;
   color: #f24130;
+}
+
+/* ///////////////////////////////// */
+
+/* ////// */
+/* TABLET */
+/* ////// */
+
+@media screen and (min-width: 768px) {
+  /* HEADER */
+  .Header {
+    padding: 21px 57px;
+  }
+  /* HEADER LOGO */
+  .Logo,
+  .Logo:active,
+  .Logo:focus,
+  .Logo:hover {
+    width: 200px;
+    height: 50px;
+  }
+  /* BUTTON */
+  .Burger,
+  .Burger:hover,
+  .Burger:active,
+  .Burger:focus {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* NAVBAR */
+  .Nav {
+    padding: 0px 57px;
+  }
+  .Nav > a {
+    font-size: 32px;
+  }
+  .Contact {
+    margin: 30px 57px;
+    font-size: 32px;
+  }
 }

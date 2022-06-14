@@ -10,6 +10,7 @@ import Burger from "./assets/Burger";
 // Collapse
 import "@blueprintjs/core/lib/css/blueprint.css";
 import { Collapse } from "@blueprintjs/core";
+import { useEffect } from "react";
 
 // COMPONENT
 const Header = () => {
@@ -35,33 +36,44 @@ const Header = () => {
     }
   };
 
+  // Resize
+  const [width, setWidth] = useState(window.innerWidth);
+
+  window.addEventListener("resize", () => {
+    setWidth(window.innerWidth);
+  });
+
   ////////////
   // RENDER //
   ////////////
   return (
-    <section
+    <header
       className={`${styles.Container} ${Open ? styles.Black : styles.Deg}`}
     >
       <div className={styles.Header}>
-        <div className={styles.Logo}></div>
+        <a className={styles.Logo} href="#home" />
 
-        <button className={styles.Burger} onClick={handleOpen}>
-          <Burger toggle={Open} activate={isClicked} />
-        </button>
+        {width <= 768 ? (
+          <button className={styles.Burger} onClick={handleOpen}>
+            <Burger toggle={Open} activate={isClicked} />
+          </button>
+        ) : null}
       </div>
-      <Collapse isOpen={Open}>
-        <nav className={styles.Nav}>
-          <a href="#work">Work</a>
-          <a href="@process">Process</a>
-          <a href="#us">Us</a>
-          <a href="#web3">3.0</a>
-        </nav>
-        <hr />
-        <a href="" className={styles.Contact}>
-          Contact us
-        </a>
-      </Collapse>
-    </section>
+      {width <= 768 ? (
+        <Collapse isOpen={Open}>
+          <nav className={styles.Nav}>
+            <a href="#work">Work</a>
+            <a href="#process">Process</a>
+            <a href="#us">Us</a>
+            <a href="#web3">3.0</a>
+          </nav>
+          <hr />
+          <a href="" className={styles.Contact}>
+            Contact us
+          </a>
+        </Collapse>
+      ) : null}
+    </header>
   );
 };
 
