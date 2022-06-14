@@ -53,7 +53,7 @@ const Home = () => {
   // RENDER //
   ////////////
   return (
-    <section className={styles.Container}>
+    <section className={styles.Container} id="home">
       <div className={styles.MiddleContainer}>
         <div className={styles.PlanetContainer}>
           {/* Planet Image */}
@@ -92,7 +92,6 @@ const Home = () => {
         target="_blank"
         className={styles.Discord}
       />
-
     </section>
   );
 };

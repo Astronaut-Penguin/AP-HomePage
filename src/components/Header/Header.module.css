@@ -1,0 +1,145 @@
+/* //////////// */
+/* MOBILE FIRST */
+/* //////////// */
+
+/* CONTAINER */
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: fixed;
+  padding: 28px 18px 0px 18px;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+.Deg {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8018557764902836) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.Black {
+  background: black;
+  border-radius: 0px 0px 26px 26px;
+}
+
+/* HEADER */
+.Header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* HEADER LOGO */
+.Logo,
+.Logo:active,
+.Logo:focus,
+.Logo:hover {
+  display: inline-block;
+  width: 40vw;
+  height: 15vw;
+  background-image: url("../../../public/assets/logo-big.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: blue; */
+}
+
+/* BUTTON */
+.Burger,
+.Burger:hover,
+.Burger:active,
+.Burger:focus {
+  width: 12vw;
+  height: 12vw;
+  padding: 0;
+  background: none !important;
+  border: none !important;
+  outline: none;
+}
+.Image {
+  width: 100%;
+  height: auto;
+}
+
+/* ///////////////////////////////// */
+
+/* NAVBAR */
+.Nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 28px;
+}
+.Nav > a {
+  display: inline-block;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 19px 0px;
+
+  color: #8c8c8c;
+}
+.Nav > a:hover {
+  text-decoration: none;
+  color: #f24130;
+}
+.Contact {
+  display: inline-block;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 16px;
+  margin: 30px;
+  color: white;
+}
+.Contact:hover {
+  text-decoration: none;
+  color: #f24130;
+}
+
+/* ///////////////////////////////// */
+
+/* ////// */
+/* TABLET */
+/* ////// */
+
+@media screen and (min-width: 768px) {
+  /* HEADER */
+  .Header {
+    padding: 21px 57px;
+  }
+  /* HEADER LOGO */
+  .Logo,
+  .Logo:active,
+  .Logo:focus,
+  .Logo:hover {
+    width: 200px;
+    height: 50px;
+  }
+  /* BUTTON */
+  .Burger,
+  .Burger:hover,
+  .Burger:active,
+  .Burger:focus {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* NAVBAR */
+  .Nav {
+    padding: 0px 57px;
+  }
+  .Nav > a {
+    font-size: 32px;
+  }
+  .Contact {
+    margin: 30px 57px;
+    font-size: 32px;
+  }
+}
