@@ -18,10 +18,10 @@ import CapyLogo from "./assets/capyLogo.png";
 import MatchLogo from "./assets/matchLogo.png";
 
 //- Import Swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import "./swiper-bundle.min.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/bundle";
+import "./swiper-bundle.min.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 //- Flicking Imports
@@ -49,7 +49,7 @@ const WorksSection = () => {
   }, []);
 
   return (
-    <section className={styles.Container}>
+    <section className={styles.Container} id="work">
       <Title text="Works" style={{ marginLeft: "26px" }} />
       <div className={styles.TextContainer}>
         <Text
@@ -243,8 +243,7 @@ const WorksSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.TabletContainer}>
-            <div className={styles.Column} style={{ marginTop: "140px" }}>
-            </div>
+            <div className={styles.Column} style={{ marginTop: "140px" }}></div>
 
             <div className={styles.Column}>
               <div className={styles.Card}>
@@ -265,7 +264,6 @@ const WorksSection = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      
 
       <div className={styles.Dots}>
         <div className={styles.DotsContainer}>
