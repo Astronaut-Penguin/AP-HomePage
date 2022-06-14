@@ -92,28 +92,6 @@ const WorksSection = () => {
               index={0}
             />
           </div>
-          {/* <div className={styles.Card}>
-            <ClientCard
-              logo={WilderLogo}
-              title={"Wilder World"}
-              text={
-                "We developed a marketplace to sell NFTs of their Metaverse and worked on 3D models."
-              }
-              leftTitle={"PROFIT"}
-              leftNum={"$700K"}
-              enableWeek
-              footNum={"per week"}
-              rightTitle={"POPULAR COIN"}
-              rightNum={"#200"}
-              enableLine
-              footText={"Contract"}
-              enableSite
-              siteLink={"https://www.wilderworld.com/"}
-              contractLink={"https://www.wilderworld.com/"}
-              s={s}
-              index={1}
-            />
-          </div> */}
           <div className={styles.Card}>
             <ClientCard
               logo={MiladyLogo}
@@ -148,6 +126,30 @@ const WorksSection = () => {
               index={2}
             />
           </div>
+            <div className={styles.Card}>
+              <ClientCard
+                logo={CapyLogo}
+                title={"CAPYARMY"}
+                text={
+                  "We developed the home and the mint page for the collection on Polygon."
+                }                  
+                s={s}
+                index={3}
+                enableSoon
+              />
+            </div>
+            <div className={styles.Card}>
+                <ClientCard
+                  logo={MatchLogo}
+                  title={"Matchain"}
+                  text={
+                    "The very first TON decentralized game platform, focused on the education of new game developers and the boost of experienced ones."
+                  }
+                  enableSoon
+                  s={s}
+                  index={4}
+                />
+              </div>
         </Flicking>
       </div>
 
@@ -178,6 +180,7 @@ const WorksSection = () => {
                   rightTitle={"POPULAR COIN"}
                   rightNum={"#500"}
                   enableLine
+                  enableFoot
                   footText={"Contract"}
                   enableSite
                   siteLink={"https://tribetoken.app/#/"}
@@ -192,11 +195,7 @@ const WorksSection = () => {
                   title={"CAPYARMY"}
                   text={
                     "We developed the home and the mint page for the collection on Polygon."
-                  }
-                  footText={"Contract"}
-                  enableSite
-                  siteLink={"https://capyarmy.com/"}
-                  contractLink={"https://capyarmy.com/"}
+                  }                  
                   s={s}
                   index={1}
                   enableSoon
@@ -217,6 +216,7 @@ const WorksSection = () => {
                   rightTitle={"NFT SOLD"}
                   rightNum={"100%"}
                   enableLine
+                  enableFoot
                   footText={"Contract"}
                   enableSite
                   siteLink={"https://tribetoken.app/#/"}
@@ -232,6 +232,7 @@ const WorksSection = () => {
                   text={
                     "We created the first cold wallet in Latin America and the physical world first for mobile."
                   }
+                  enableFoot
                   footText={"View Post"}
                   contractLink={"https://tribetoken.app/#/"}
                   s={s}
@@ -243,9 +244,7 @@ const WorksSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.TabletContainer}>
-            <div className={styles.Column} style={{ marginTop: "140px" }}></div>
-
-            <div className={styles.Column}>
+            <div className={styles.Column} style={{ marginTop: "140px" }}>
               <div className={styles.Card}>
                 <ClientCard
                   logo={MatchLogo}
@@ -254,8 +253,21 @@ const WorksSection = () => {
                     "The very first TON decentralized game platform, focused on the education of new game developers and the boost of experienced ones."
                   }
                   enableSoon
-                  footText={"View Post"}
-                  contractLink={"https://tribetoken.app/#/"}
+                  s={s}
+                  index={3}
+                />
+              </div>
+            </div>
+
+            <div className={styles.Column}>
+              <div className={styles.Card}>
+                <ClientCard
+                  logo={APLogo}
+                  title={"New Project"}
+                  text={
+                    ""
+                  }
+                  enableSoon
                   s={s}
                   index={3}
                 />
@@ -287,13 +299,20 @@ const WorksSection = () => {
             }`}
           ></div>
         </div>
-        {/* <div className={styles.DotsContainer}>
+        <div className={styles.DotsContainer}>
           <div
             className={`${styles.TextContainer} ${
               s == 3 ? styles.DotSelected : styles.DotNotSelected
             }`}
           ></div>
-        </div> */}
+        </div>
+        <div className={styles.DotsContainer}>
+          <div
+            className={`${styles.TextContainer} ${
+              s == 4 ? styles.DotSelected : styles.DotNotSelected
+            }`}
+          ></div>
+        </div>
       </div>
     </section>
   );

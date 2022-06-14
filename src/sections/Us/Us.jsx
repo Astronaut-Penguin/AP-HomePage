@@ -47,7 +47,7 @@ const UsSection = () => {
 
       <div className={styles.Penguins}>
         <div className={styles.Background}></div>
-        <div className={styles.BottomShadow}></div>
+        {/* <div className={styles.BottomShadow}></div> */}
 
         <div onClick={() => setS(1)}>
           <UsPenguin

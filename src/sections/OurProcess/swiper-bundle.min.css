@@ -20,14 +20,14 @@
   
 .swiper-button-prev::after {
     display: none;
-} */
+}
 
-/* .swiper-button-next, .swiper-button-next::after {
+.swiper-button-next, .swiper-button-next::after {
     top: 200px;
     left: 300px;
 } 
 
 .swiper-button-prev, .swiper-button-next::after {
-    top: 100px;
+    top: 14px;
     left: 500px;
 } */
