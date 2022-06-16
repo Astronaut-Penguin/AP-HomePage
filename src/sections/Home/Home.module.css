@@ -9,7 +9,7 @@
   width: 100%;
   height: 100vh;
   min-height: 500px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .MiddleContainer {
@@ -182,11 +182,7 @@
   top: 0px;
   left: calc(-110px / 2);
   border-radius: 50%;
-  background: linear-gradient(
-    202.46deg,
-    rgba(242, 65, 48, 0) 15.1%,
-    #f24130 85.37%
-  );
+  background: linear-gradient(202.46deg, rgb(0, 0, 0) 15.1%, #f24130 85.37%);
   filter: blur(6px);
   -webkit-filter: blur(6px);
 }
@@ -288,7 +284,17 @@
 @media screen and (min-width: 768px) {
   /* CONTAINER */
   .Container {
-    max-height: 1080px;
+    max-height: 900px;
+  }
+
+  /* FX */
+  .CFX {
+    width: 500px;
+    height: 600px;
+    top: calc(70% / 2);
+    right: calc(-80% / 2);
+    background-color: rgba(2, 23, 255, 0.15);
+    z-index: 9;
   }
 
   /* PLANETS */

@@ -3,76 +3,75 @@
 /*////////////*/
 
 .Container {
-    background-color: #1b1b1b;
-    margin: 0;
-    height: 550px;
-	align-items: center;
+  margin: 0;
+  height: 550px;
+  align-items: center;
 }
 
 .TextContainer {
-    width: 280px;
+  width: 280px;
 }
 
 .CarouselContainer {
-	position: relative;
-	margin-top: 35px;
+  position: relative;
+  margin-top: 35px;
 }
 
 .Carousel {
-	height: 287px;
-	/* overflow: visible !important; */
+  height: 287px;
+  /* overflow: visible !important; */
 }
 
 .Card {
-	display: flex;
-	width: 150px;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+  display: flex;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .Selected {
-	margin: 0 auto;
-	z-index: 1;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .NotSelected {
-	border-radius: 5px;
-	z-index: 0;
+  border-radius: 5px;
+  z-index: 0;
 }
 
 .TabletContainer {
-	display: none;
+  display: none;
 }
 
 .Dots {
-    width: 90px;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 30px;
+  width: 90px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .DotsContainer {
-	display: inline-block;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .DotSelected {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background-color: #F24130;
-	margin: 0 5px 15px 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f24130;
+  margin: 0 5px 15px 5px;
 }
 
 .DotNotSelected {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background-color: #8C8C8C;
-	margin: 0 5px 15px 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8c8c8c;
+  margin: 0 5px 15px 5px;
 }
 
 /*/////////////*/
@@ -82,90 +81,93 @@
 /* TABLET */
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
-	.Container {
-		height: 1100px;
-	}
-    .CarouselContainer, .Dots {
-        display: none;
-    }
-	.TextContainer {
-		width: 380px;
-		margin-top: 20px;
-	}
-	.TabletContainer {
-		display: flex;
-		width: 620px;
-		height: 600px;
-		margin: 0 auto;
-	}
-	.Column {
-		flex: 1;
-	}
-	.Card {
-		display: block;
-		padding: 20px;
-	}
+  .Container {
+    height: 1100px;
+  }
+  .CarouselContainer,
+  .Dots {
+    display: none;
+  }
+  .TextContainer {
+    width: 380px;
+    margin-top: 20px;
+  }
+  .TabletContainer {
+    display: flex;
+    width: 620px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  .Column {
+    flex: 1;
+  }
+  .Card {
+    display: block;
+    padding: 20px;
+  }
 }
 
 /* SMALL PC */
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-	.Container {
-		height: 1050px;
-	}
-    .CarouselContainer, .Dots {
-        display: none;
-    }
-	.TextContainer {
-		position: absolute;
-		width: 380px;
-		margin-top: 0px;
-	}
-	.TabletContainer {
-		display: flex;
-		width: 620px;
-		height: 600px;
-		margin: 0 auto;
-		margin-right: 85px;
-	}
-	.Column {
-		flex: 1;
-	}
-	.Card {
-		display: block;
-		padding: 20px;
-	}
+  .Container {
+    height: 1050px;
+  }
+  .CarouselContainer,
+  .Dots {
+    display: none;
+  }
+  .TextContainer {
+    position: absolute;
+    width: 380px;
+    margin-top: 0px;
+  }
+  .TabletContainer {
+    display: flex;
+    width: 620px;
+    height: 600px;
+    margin: 0 auto;
+    margin-right: 85px;
+  }
+  .Column {
+    flex: 1;
+  }
+  .Card {
+    display: block;
+    padding: 20px;
+  }
 }
 
 /* LARGE PC */
 
 @media only screen and (min-width: 1440px) {
-	.Container {
-		width: 1200px;
-		height: 1100px;
-		margin: 0 auto;
-		background-color: transparent;
-	}
-    .CarouselContainer, .Dots {
-        display: none;
-    }
-	.TextContainer {
-		position: absolute;
-		width: 420px;
-		margin-top: 0px;
-	}
-	.TabletContainer {
-		display: flex;
-		width: 620px;
-		height: 600px;
-		margin: 0 auto;
-		margin-right: 85px;
-	}
-	.Column {
-		flex: 1;
-	}
-	.Card {
-		display: block;
-		padding: 20px;
-	}
+  .Container {
+    width: 1200px;
+    height: 1100px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .CarouselContainer,
+  .Dots {
+    display: none;
+  }
+  .TextContainer {
+    position: absolute;
+    width: 420px;
+    margin-top: 0px;
+  }
+  .TabletContainer {
+    display: flex;
+    width: 620px;
+    height: 600px;
+    margin: 0 auto;
+    margin-right: 85px;
+  }
+  .Column {
+    flex: 1;
+  }
+  .Card {
+    display: block;
+    padding: 20px;
+  }
 }
