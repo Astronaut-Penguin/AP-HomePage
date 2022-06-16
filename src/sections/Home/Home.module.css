@@ -7,7 +7,8 @@
 /* ////////// */
 .Container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 500px;
   overflow: hidden;
 }
 
@@ -20,7 +21,7 @@
   position: relative;
 
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
 
 /* 88888888888888888888 */
@@ -277,4 +278,40 @@
   background-image: url("./assets/discordLogo.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* 8888888888888888888888888888 */
+/* ////// */
+/* TABLET */
+/* ////// */
+
+@media screen and (min-width: 768px) {
+  /* CONTAINER */
+  .Container {
+    max-height: 1080px;
+  }
+
+  /* PLANETS */
+  .OtherPlanet_A {
+    width: 100px;
+    height: 100px;
+    right: calc(-30% / 2);
+  }
+  .OtherPlanet_B {
+    width: 150px;
+    height: 150px;
+    left: calc(-75% / 2);
+  }
+  .OtherPlanet_C {
+    width: 130px;
+    height: 130px;
+    top: 200px;
+    left: 0px;
+  }
+  .OtherPlanet_D {
+    width: 130px;
+    height: 130px;
+    bottom: -150px;
+    right: calc(-75% / 2);
+  }
 }
