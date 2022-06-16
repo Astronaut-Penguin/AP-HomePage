@@ -10,7 +10,6 @@ import Burger from "./assets/Burger";
 // Collapse
 import "@blueprintjs/core/lib/css/blueprint.css";
 import { Collapse } from "@blueprintjs/core";
-import { useEffect } from "react";
 
 // COMPONENT
 const Header = () => {
@@ -53,13 +52,28 @@ const Header = () => {
       <div className={styles.Header}>
         <a className={styles.Logo} href="#home" />
 
-        {width <= 768 ? (
+        {width >= 1024 ? (
+          <>
+            <nav className={styles.Nav}>
+              <a href="#work">Work</a>
+              <a href="#process">Process</a>
+              <a href="#us">Us</a>
+              <a href="#web3">3.0</a>
+            </nav>
+
+            <a href="" className={styles.Contact}>
+              Contact us
+            </a>
+          </>
+        ) : null}
+
+        {width <= 1023 ? (
           <button className={styles.Burger} onClick={handleOpen}>
             <Burger toggle={Open} activate={isClicked} />
           </button>
         ) : null}
       </div>
-      {width <= 768 ? (
+      {width <= 1023 ? (
         <Collapse isOpen={Open}>
           <nav className={styles.Nav}>
             <a href="#work">Work</a>
