@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.MiddleContainer {
+  z-index: 10;
+}
+
 .TextContainer {
   width: 280px;
 }

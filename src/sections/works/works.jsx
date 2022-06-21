@@ -50,268 +50,268 @@ const WorksSection = () => {
 
   return (
     <section className={styles.Container} id="work">
-      <Title text="Works" style={{ marginLeft: "26px" }} />
-      <div className={styles.TextContainer}>
-        <Text
-          text="Our projects, successful cases that have exceeded our expectations."
-          style={{ marginLeft: "26px" }}
-        />
-      </div>
+      <div className={styles.MiddleContainer}>
+        <Title text="Works" style={{ marginLeft: "26px" }} />
+        <div className={styles.TextContainer}>
+          <Text
+            text="Our projects, successful cases that have exceeded our expectations."
+            style={{ marginLeft: "26px" }}
+          />
+        </div>
 
-      <div className={styles.CarouselContainer}>
-        <Flicking
-          circular={false}
-          onChanged={(e) => {
-            setS(e.index);
-          }}
-          defaultIndex={1}
-          // renderOnlyVisible={true}
-          onReady={updateTransform}
-          onMove={updateTransform}
-          className={styles.Carousel}
-        >
-          <div className={styles.Card}>
-            <ClientCard
-              logo={TribeLogo}
-              title={"Tribe"}
-              text={
-                "We developed the marketplace to sell collections inspired in famous DeFi in the BSC."
-              }
-              leftTitle={"MARKET CAP"}
-              leftNum={"$40M"}
-              enableWeek
-              footNum={"on the launch day"}
-              rightTitle={"POPULAR COIN"}
-              rightNum={"#500"}
-              enableLine
-              footText={"Contract"}
-              enableSite
-              siteLink={"https://tribetoken.app/#/"}
-              contractLink={"https://tribetoken.app/#/"}
-              s={s}
-              index={0}
-            />
-          </div>
-          <div className={styles.Card}>
-            <ClientCard
-              logo={MiladyLogo}
-              title={"Milady"}
-              text={
-                "We developed the connections to the smart contracts and solve issues."
-              }
-              leftTitle={"PROFIT"}
-              leftNum={"$1M"}
-              rightTitle={"NFT SOLD"}
-              rightNum={"100%"}
-              enableLine
-              footText={"Contract"}
-              enableSite
-              siteLink={"https://tribetoken.app/#/"}
-              contractLink={"https://tribetoken.app/#/"}
-              s={s}
-              index={1}
-            />
-          </div>
-          <div className={styles.Card}>
-            <ClientCard
-              logo={APLogo}
-              title={"Astronaut Penguin"}
-              text={
-                "We created the first cold wallet in Latin America and the physical world first for mobile."
-              }
-              // textStyle={{paddingTop: '30px'}}
-              footText={"View Post"}
-              contractLink={"https://tribetoken.app/#/"}
-              s={s}
-              index={2}
-            />
-          </div>
+        <div className={styles.CarouselContainer}>
+          <Flicking
+            circular={false}
+            onChanged={(e) => {
+              setS(e.index);
+            }}
+            defaultIndex={1}
+            // renderOnlyVisible={true}
+            onReady={updateTransform}
+            onMove={updateTransform}
+            className={styles.Carousel}
+          >
+            <div className={styles.Card}>
+              <ClientCard
+                logo={TribeLogo}
+                title={"Tribe"}
+                text={
+                  "We developed the marketplace to sell collections inspired in famous DeFi in the BSC."
+                }
+                leftTitle={"MARKET CAP"}
+                leftNum={"$40M"}
+                enableWeek
+                footNum={"on the launch day"}
+                rightTitle={"POPULAR COIN"}
+                rightNum={"#500"}
+                enableLine
+                footText={"Contract"}
+                enableSite
+                siteLink={"https://tribetoken.app/#/"}
+                contractLink={"https://tribetoken.app/#/"}
+                s={s}
+                index={0}
+              />
+            </div>
+            <div className={styles.Card}>
+              <ClientCard
+                logo={MiladyLogo}
+                title={"Milady"}
+                text={
+                  "We developed the connections to the smart contracts and solve issues."
+                }
+                leftTitle={"PROFIT"}
+                leftNum={"$1M"}
+                rightTitle={"NFT SOLD"}
+                rightNum={"100%"}
+                enableLine
+                footText={"Contract"}
+                enableSite
+                siteLink={"https://tribetoken.app/#/"}
+                contractLink={"https://tribetoken.app/#/"}
+                s={s}
+                index={1}
+              />
+            </div>
+            <div className={styles.Card}>
+              <ClientCard
+                logo={APLogo}
+                title={"Astronaut Penguin"}
+                text={
+                  "We created the first cold wallet in Latin America and the physical world first for mobile."
+                }
+                // textStyle={{paddingTop: '30px'}}
+                footText={"View Post"}
+                contractLink={"https://tribetoken.app/#/"}
+                s={s}
+                index={2}
+              />
+            </div>
             <div className={styles.Card}>
               <ClientCard
                 logo={CapyLogo}
                 title={"CAPYARMY"}
                 text={
                   "We developed the home and the mint page for the collection on Polygon."
-                }                  
+                }
                 s={s}
                 index={3}
                 enableSoon
               />
             </div>
             <div className={styles.Card}>
-                <ClientCard
-                  logo={MatchLogo}
-                  title={"Matchain"}
-                  text={
-                    "The very first TON decentralized game platform, focused on the education of new game developers and the boost of experienced ones."
-                  }
-                  enableSoon
-                  s={s}
-                  index={4}
-                />
-              </div>
-        </Flicking>
-      </div>
+              <ClientCard
+                logo={MatchLogo}
+                title={"Matchain"}
+                text={
+                  "The very first TON decentralized game platform, focused on the education of new game developers and the boost of experienced ones."
+                }
+                enableSoon
+                s={s}
+                index={4}
+              />
+            </div>
+          </Flicking>
+        </div>
 
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        // mousewheel={true}
-        // keyboard={true}
-        allowTouchMove={false}
-        modules={[Navigation, Pagination]}
-        className="mySwipere"
-      >
-        <SwiperSlide>
-          <div className={styles.TabletContainer}>
-            <div className={styles.Column} style={{ marginTop: "140px" }}>
-              <div className={styles.Card}>
-                <ClientCard
-                  logo={TribeLogo}
-                  title={"Tribe"}
-                  text={
-                    "We developed the marketplace to sell collections inspired in famous DeFi in the BSC."
-                  }
-                  leftTitle={"MARKET CAP"}
-                  leftNum={"$40M"}
-                  enableWeek
-                  footNum={"on the launch day"}
-                  rightTitle={"POPULAR COIN"}
-                  rightNum={"#500"}
-                  enableLine
-                  enableFoot
-                  footText={"Contract"}
-                  enableSite
-                  siteLink={"https://tribetoken.app/#/"}
-                  contractLink={"https://tribetoken.app/#/"}
-                  s={s}
-                  index={0}
-                />
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          // mousewheel={true}
+          // keyboard={true}
+          allowTouchMove={false}
+          modules={[Navigation, Pagination]}
+          className="mySwipere"
+        >
+          <SwiperSlide>
+            <div className={styles.TabletContainer}>
+              <div className={styles.Column} style={{ marginTop: "140px" }}>
+                <div className={styles.Card}>
+                  <ClientCard
+                    logo={TribeLogo}
+                    title={"Tribe"}
+                    text={
+                      "We developed the marketplace to sell collections inspired in famous DeFi in the BSC."
+                    }
+                    leftTitle={"MARKET CAP"}
+                    leftNum={"$40M"}
+                    enableWeek
+                    footNum={"on the launch day"}
+                    rightTitle={"POPULAR COIN"}
+                    rightNum={"#500"}
+                    enableLine
+                    enableFoot
+                    footText={"Contract"}
+                    enableSite
+                    siteLink={"https://tribetoken.app/#/"}
+                    contractLink={"https://tribetoken.app/#/"}
+                    s={s}
+                    index={0}
+                  />
+                </div>
+                <div className={styles.Card}>
+                  <ClientCard
+                    logo={CapyLogo}
+                    title={"CAPYARMY"}
+                    text={
+                      "We developed the home and the mint page for the collection on Polygon."
+                    }
+                    s={s}
+                    index={1}
+                    enableSoon
+                  />
+                </div>
               </div>
-              <div className={styles.Card}>
-                <ClientCard
-                  logo={CapyLogo}
-                  title={"CAPYARMY"}
-                  text={
-                    "We developed the home and the mint page for the collection on Polygon."
-                  }                  
-                  s={s}
-                  index={1}
-                  enableSoon
-                />
+
+              <div className={styles.Column}>
+                <div className={styles.Card}>
+                  <ClientCard
+                    logo={MiladyLogo}
+                    title={"Milady"}
+                    text={
+                      "We developed the connections to the smart contracts and solve issues."
+                    }
+                    leftTitle={"PROFIT"}
+                    leftNum={"$1M"}
+                    rightTitle={"NFT SOLD"}
+                    rightNum={"100%"}
+                    enableLine
+                    enableFoot
+                    footText={"Contract"}
+                    enableSite
+                    siteLink={"https://tribetoken.app/#/"}
+                    contractLink={"https://tribetoken.app/#/"}
+                    s={s}
+                    index={2}
+                  />
+                </div>
+                <div className={styles.Card}>
+                  <ClientCard
+                    logo={APLogo}
+                    title={"Astronaut Penguin"}
+                    text={
+                      "We created the first cold wallet in Latin America and the physical world first for mobile."
+                    }
+                    enableFoot
+                    footText={"View Post"}
+                    contractLink={"https://tribetoken.app/#/"}
+                    s={s}
+                    index={3}
+                  />
+                </div>
               </div>
             </div>
-
-            <div className={styles.Column}>
-              <div className={styles.Card}>
-                <ClientCard
-                  logo={MiladyLogo}
-                  title={"Milady"}
-                  text={
-                    "We developed the connections to the smart contracts and solve issues."
-                  }
-                  leftTitle={"PROFIT"}
-                  leftNum={"$1M"}
-                  rightTitle={"NFT SOLD"}
-                  rightNum={"100%"}
-                  enableLine
-                  enableFoot
-                  footText={"Contract"}
-                  enableSite
-                  siteLink={"https://tribetoken.app/#/"}
-                  contractLink={"https://tribetoken.app/#/"}
-                  s={s}
-                  index={2}
-                />
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.TabletContainer}>
+              <div className={styles.Column} style={{ marginTop: "140px" }}>
+                <div className={styles.Card}>
+                  <ClientCard
+                    logo={MatchLogo}
+                    title={"Matchain"}
+                    text={
+                      "The very first TON decentralized game platform, focused on the education of new game developers and the boost of experienced ones."
+                    }
+                    enableSoon
+                    s={s}
+                    index={3}
+                  />
+                </div>
               </div>
-              <div className={styles.Card}>
-                <ClientCard
-                  logo={APLogo}
-                  title={"Astronaut Penguin"}
-                  text={
-                    "We created the first cold wallet in Latin America and the physical world first for mobile."
-                  }
-                  enableFoot
-                  footText={"View Post"}
-                  contractLink={"https://tribetoken.app/#/"}
-                  s={s}
-                  index={3}
-                />
+
+              <div className={styles.Column}>
+                <div className={styles.Card}>
+                  <ClientCard
+                    logo={APLogo}
+                    title={"New Project"}
+                    text={""}
+                    enableSoon
+                    s={s}
+                    index={3}
+                  />
+                </div>
               </div>
             </div>
+          </SwiperSlide>
+        </Swiper>
+
+        <div className={styles.Dots}>
+          <div className={styles.DotsContainer}>
+            <div
+              className={`${styles.TextContainer} ${
+                s == 0 ? styles.DotSelected : styles.DotNotSelected
+              }`}
+            ></div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={styles.TabletContainer}>
-            <div className={styles.Column} style={{ marginTop: "140px" }}>
-              <div className={styles.Card}>
-                <ClientCard
-                  logo={MatchLogo}
-                  title={"Matchain"}
-                  text={
-                    "The very first TON decentralized game platform, focused on the education of new game developers and the boost of experienced ones."
-                  }
-                  enableSoon
-                  s={s}
-                  index={3}
-                />
-              </div>
-            </div>
-
-            <div className={styles.Column}>
-              <div className={styles.Card}>
-                <ClientCard
-                  logo={APLogo}
-                  title={"New Project"}
-                  text={
-                    ""
-                  }
-                  enableSoon
-                  s={s}
-                  index={3}
-                />
-              </div>
-            </div>
+          <div className={styles.DotsContainer}>
+            <div
+              className={`${styles.TextContainer} ${
+                s == 1 ? styles.DotSelected : styles.DotNotSelected
+              }`}
+            ></div>
           </div>
-        </SwiperSlide>
-      </Swiper>
-
-      <div className={styles.Dots}>
-        <div className={styles.DotsContainer}>
-          <div
-            className={`${styles.TextContainer} ${
-              s == 0 ? styles.DotSelected : styles.DotNotSelected
-            }`}
-          ></div>
-        </div>
-        <div className={styles.DotsContainer}>
-          <div
-            className={`${styles.TextContainer} ${
-              s == 1 ? styles.DotSelected : styles.DotNotSelected
-            }`}
-          ></div>
-        </div>
-        <div className={styles.DotsContainer}>
-          <div
-            className={`${styles.TextContainer} ${
-              s == 2 ? styles.DotSelected : styles.DotNotSelected
-            }`}
-          ></div>
-        </div>
-        <div className={styles.DotsContainer}>
-          <div
-            className={`${styles.TextContainer} ${
-              s == 3 ? styles.DotSelected : styles.DotNotSelected
-            }`}
-          ></div>
-        </div>
-        <div className={styles.DotsContainer}>
-          <div
-            className={`${styles.TextContainer} ${
-              s == 4 ? styles.DotSelected : styles.DotNotSelected
-            }`}
-          ></div>
+          <div className={styles.DotsContainer}>
+            <div
+              className={`${styles.TextContainer} ${
+                s == 2 ? styles.DotSelected : styles.DotNotSelected
+              }`}
+            ></div>
+          </div>
+          <div className={styles.DotsContainer}>
+            <div
+              className={`${styles.TextContainer} ${
+                s == 3 ? styles.DotSelected : styles.DotNotSelected
+              }`}
+            ></div>
+          </div>
+          <div className={styles.DotsContainer}>
+            <div
+              className={`${styles.TextContainer} ${
+                s == 4 ? styles.DotSelected : styles.DotNotSelected
+              }`}
+            ></div>
+          </div>
         </div>
       </div>
     </section>
