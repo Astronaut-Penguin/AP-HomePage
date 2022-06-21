@@ -143,3 +143,36 @@
     font-size: 32px;
   }
 }
+
+/* ///////////////////////////////// */
+
+/* ////// */
+/*   PC   */
+/* ////// */
+
+@media screen and (min-width: 1024px) {
+  /* CONTAINER */
+  .Container {
+    justify-content: center;
+    align-items: center;
+  }
+  /* HEADER */
+  .Header {
+    max-width: 1280px;
+    padding: 21px 42px;
+  }
+
+  /* NAVBAR */
+  .Nav {
+    flex-direction: row;
+    padding: 0px;
+  }
+
+  .Nav > a {
+    font-size: 2em;
+    margin: 0px 20px;
+  }
+  .Contact {
+    margin: 0px;
+  }
+}
