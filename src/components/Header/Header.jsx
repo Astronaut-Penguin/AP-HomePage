@@ -57,8 +57,8 @@ const Header = () => {
             <nav className={styles.Nav}>
               <a href="#work">Work</a>
               <a href="#process">Process</a>
-              <a href="#us">Us</a>
-              <a href="#web3">3.0</a>
+              {/* <a href="#us">Us</a> */}
+              {/* <a href="#web3">3.0</a> */}
             </nav>
 
             <a href="" className={styles.Contact}>
@@ -78,8 +78,8 @@ const Header = () => {
           <nav className={styles.Nav}>
             <a href="#work">Work</a>
             <a href="#process">Process</a>
-            <a href="#us">Us</a>
-            <a href="#web3">3.0</a>
+            {/* <a href="#us">Us</a> */}
+            {/* <a href="#web3">3.0</a> */}
           </nav>
           <hr />
           <a href="" className={styles.Contact}>
