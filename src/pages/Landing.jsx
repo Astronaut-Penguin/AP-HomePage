@@ -21,9 +21,9 @@ const Landing = () => {
       <Home />
       <Works />
       <OurProcessSection />
-      <UsSection />
-      <WebSection />
-      <NewProjectSection />
+      {/* <UsSection /> */}
+      {/* <WebSection /> */}
+      {/* <NewProjectSection /> */}
       <FooterSection />
     </>
   );
