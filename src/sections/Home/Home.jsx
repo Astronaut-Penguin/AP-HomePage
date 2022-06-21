@@ -76,7 +76,11 @@ const Home = () => {
           {/* 888888888 */}
 
           <h3>WELCOME TO ASTRONAUT PENGUIN</h3>
-          <h2>Join the Future.</h2>
+          <h2>
+            Build the
+            <br />
+            future.
+          </h2>
         </div>
 
         <p>We provide blockchain solutions</p>

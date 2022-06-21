@@ -6,10 +6,13 @@
 /* Containers */
 /* ////////// */
 .Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   min-height: 500px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .MiddleContainer {
@@ -21,7 +24,6 @@
   position: relative;
 
   width: 100%;
-  height: 100%;
 }
 
 /* 88888888888888888888 */
@@ -163,7 +165,7 @@
   height: 20vw;
   position: absolute;
   bottom: 0px;
-  right: calc(-66px / 2);
+  right: calc(-20vw / 2);
   border-radius: 50%;
   background: linear-gradient(
     202.46deg,
@@ -180,7 +182,7 @@
   height: 110px;
   position: absolute;
   top: 0px;
-  left: calc(-110px / 2);
+  left: calc(-25vw / 2);
   border-radius: 50%;
   background: linear-gradient(202.46deg, rgb(0, 0, 0) 15.1%, #f24130 85.37%);
   filter: blur(6px);
@@ -191,8 +193,8 @@
   width: 25vw;
   height: 25vw;
   position: absolute;
-  top: 170px;
-  left: 10px;
+  bottom: 0px;
+  left: calc(-10vw / 2);
   border-radius: 50%;
   background: linear-gradient(180deg, #000d99 0%, #3a3f6f 100%);
   filter: blur(3px);
@@ -276,7 +278,9 @@
   background-repeat: no-repeat;
 }
 
-/* 8888888888888888888888888888 */
+/* 888888888888888888888888888888888888888888888888888888 */
+/* 888888888888888888888888888888888888888888888888888888 */
+/* 888888888888888888888888888888888888888888888888888888 */
 /* ////// */
 /* TABLET */
 /* ////// */
@@ -319,5 +323,40 @@
     height: 130px;
     bottom: -150px;
     right: calc(-75% / 2);
+  }
+}
+/* 888888888888888888888888888888888888888888888888888888 */
+/* 888888888888888888888888888888888888888888888888888888 */
+/* 888888888888888888888888888888888888888888888888888888 */
+/* ////// */
+/*   PC   */
+/* ////// */
+
+@media screen and (min-width: 1024px) {
+  /* CONTAINER */
+  .Container {
+    overflow: visible;
+  }
+
+  /* MIDLECONTAINER */
+  .MiddleContainer {
+    margin-top: 100px;
+  }
+
+  /* PLANET */
+  .Planet {
+    width: 450px;
+  }
+
+  /* Planet Text */
+  .PlanetContainer > h2 {
+    font-size: 110px;
+  }
+  .PlanetContainer > h3 {
+    font-size: 15px;
+  }
+  .MiddleContainer > p {
+    font-size: 20px;
+    margin: 80px 0px 35px 0px;
   }
 }
