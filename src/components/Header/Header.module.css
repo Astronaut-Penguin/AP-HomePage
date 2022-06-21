@@ -81,6 +81,7 @@
   font-weight: 800;
   font-size: 30px;
   margin: 19px 0px;
+  transition: all 100ms ease-in;
 
   color: #8c8c8c;
 }
@@ -97,6 +98,7 @@
   line-height: 16px;
   margin: 30px;
   color: white;
+  transition: all 100ms ease-in;
 }
 .Contact:hover {
   text-decoration: none;
@@ -173,6 +175,17 @@
     margin: 0px 20px;
   }
   .Contact {
+    display: flex;
+    align-items: center;
     margin: 0px;
+  }
+
+  .Contact > svg {
+    stroke: white;
+    margin-left: 10px;
+    transition: all 100ms ease-in;
+  }
+  .Contact:hover > svg {
+    stroke: #f24130;
   }
 }

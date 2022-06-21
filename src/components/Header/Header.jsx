@@ -6,6 +6,7 @@ import styles from "./Header.module.css";
 
 // SVG
 import Burger from "./assets/Burger";
+import Arrow from "./assets/arrow.svg";
 
 // Collapse
 import "@blueprintjs/core/lib/css/blueprint.css";
@@ -62,7 +63,21 @@ const Header = () => {
             </nav>
 
             <a href="" className={styles.Contact}>
-              Contact us
+              Start now
+              <svg
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.75 8.75L35 21L22.75 33.25M7 21H35H7Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </>
         ) : null}
