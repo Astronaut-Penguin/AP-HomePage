@@ -62,7 +62,11 @@ const Header = () => {
               {/* <a href="#web3">3.0</a> */}
             </nav>
 
-            <a href="" className={styles.Contact}>
+            <a
+              href="https://t.me/AntiguoAstronauta"
+              target="_blank"
+              className={styles.Contact}
+            >
               Start now
               <svg
                 width="42"
@@ -91,13 +95,21 @@ const Header = () => {
       {width <= 1023 ? (
         <Collapse isOpen={Open}>
           <nav className={styles.Nav}>
-            <a href="#work">Work</a>
-            <a href="#process">Process</a>
+            <a href="#work" onClick={handleOpen}>
+              Work
+            </a>
+            <a href="#process" onClick={handleOpen}>
+              Process
+            </a>
             {/* <a href="#us">Us</a> */}
             {/* <a href="#web3">3.0</a> */}
           </nav>
           <hr />
-          <a href="" className={styles.Contact}>
+          <a
+            href="https://t.me/AntiguoAstronauta"
+            target="_blank"
+            className={styles.Contact}
+          >
             Contact us
           </a>
         </Collapse>
