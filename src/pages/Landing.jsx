@@ -12,6 +12,9 @@ import WebSection from "../sections/Web/web.jsx";
 import NewProjectSection from "../sections/NewProject/NewProject";
 import FooterSection from "../sections/footer/footer";
 
+// Styles
+import styles from "./Landing.module.css";
+
 const Landing = () => {
   return (
     <>
