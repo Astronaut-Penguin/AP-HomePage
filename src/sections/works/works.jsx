@@ -17,6 +17,8 @@ import APLogo from "./assets/apLogo.png";
 import CapyLogo from "./assets/capyLogo.png";
 import MatchLogo from "./assets/matchLogo.png";
 
+import Planet from "../../assets/images/planet.png";
+
 //- Import Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -50,7 +52,23 @@ const WorksSection = () => {
 
   return (
     <section className={styles.Container} id="work">
-      <div className={styles.MiddleContainer}>
+      {/* PLANET AND FXS */}
+      <div className={styles.Container_Planet}>
+        <img src={Planet} alt="Pixel Planet" className={styles.Planet} />
+        <div className={styles.Glow} />
+        <div className={styles.FX_Planet_A} />
+        <div className={styles.FX_Planet_B} />
+      </div>
+      {/* 88888888888888888888888 */}
+      {/* FXs */}
+      <div className={styles.Container_Background_FX}>
+        <div className={styles.Background_FX_A} />
+        <div className={styles.Background_FX_B} />
+      </div>
+      {/* 88888888888888888888888 */}
+
+      {/* CONTENT */}
+      <div className={styles.Container_Content}>
         <Title text="Works" style={{ marginLeft: "26px" }} />
         <div className={styles.TextContainer}>
           <Text
