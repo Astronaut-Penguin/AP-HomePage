@@ -289,7 +289,7 @@
   /* CONTAINER */
   .Container {
     max-height: 900px;
-    overflow: visible;
+    /* overflow: visible; */
   }
 
   /* FX */
@@ -335,9 +335,9 @@
 
 @media screen and (min-width: 1024px) {
   /* CONTAINER */
-  .Container {
+  /* .Container {
     overflow: visible;
-  }
+  } */
 
   /* MIDLECONTAINER */
   .MiddleContainer {

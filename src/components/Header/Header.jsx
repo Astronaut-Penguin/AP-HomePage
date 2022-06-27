@@ -56,8 +56,8 @@ const Header = () => {
         {width >= 1024 ? (
           <>
             <nav className={styles.Nav}>
-              <a href="#work">Work</a>
-              <a href="#process">Process</a>
+              {/* <a href="#work">Work</a> */}
+              {/* <a href="#process">Process</a> */}
               {/* <a href="#us">Us</a> */}
               {/* <a href="#web3">3.0</a> */}
             </nav>
@@ -95,12 +95,12 @@ const Header = () => {
       {width <= 1023 ? (
         <Collapse isOpen={Open}>
           <nav className={styles.Nav}>
-            <a href="#work" onClick={handleOpen}>
+            {/* <a href="#work" onClick={handleOpen}>
               Work
-            </a>
-            <a href="#process" onClick={handleOpen}>
+            </a> */}
+            {/* <a href="#process" onClick={handleOpen}>
               Process
-            </a>
+            </a> */}
             {/* <a href="#us">Us</a> */}
             {/* <a href="#web3">3.0</a> */}
           </nav>

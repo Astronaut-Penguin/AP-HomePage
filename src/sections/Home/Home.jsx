@@ -83,19 +83,23 @@ const Home = () => {
           </h2>
         </div>
 
-        <p>We provide blockchain solutions</p>
+        <p>
+          A design and blockchain company.
+          <br />
+          We create experiences.
+        </p>
 
-        <div style={{ zIndex: 10 }}>
+        {/* <div style={{ zIndex: 10 }}>
           <CtaButton text={"Get Started"} />
-        </div>
+        </div> */}
       </div>
 
-      <a
+      {/* <a
         title="Discord"
         href="https://discord.com/"
         target="_blank"
         className={styles.Discord}
-      />
+      /> */}
     </section>
   );
 };
