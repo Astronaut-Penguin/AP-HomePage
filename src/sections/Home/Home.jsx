@@ -84,7 +84,7 @@ const Home = () => {
         </div>
 
         <p>
-          A design and blockchain company.
+          A design, web and blockchain company.
           <br />
           We create experiences.
         </p>
