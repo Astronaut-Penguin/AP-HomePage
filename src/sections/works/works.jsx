@@ -13,7 +13,6 @@ import ClientCard from "../../components/clientCard/clientCard";
 import TribeLogo from "./assets/tribeLogo.png";
 import MiladyLogo from "./assets/miladyLogo.png";
 import APLogo from "./assets/apLogo.png";
-// import WilderLogo from "./assets/wilderLogo.png";
 import CapyLogo from "./assets/capyLogo.png";
 import MatchLogo from "./assets/matchLogo.png";
 
