@@ -23,7 +23,7 @@ const Landing = () => {
       {/* SECTIONS */}
       <Home />
       <Works />
-      <OurProcessSection />
+      {/* <OurProcessSection /> */}
       {/* <UsSection /> */}
       {/* <WebSection /> */}
       {/* <NewProjectSection /> */}

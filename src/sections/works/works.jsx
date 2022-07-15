@@ -50,10 +50,41 @@ const WorksSection = () => {
     camera[0].style.transformStyle = "preserve-3d";
   }, []);
 
+  ///////////////
+  // ANIMATORS //
+  ///////////////
+  useEffect(() => {
+    window.addEventListener("scroll", function (e) {
+      // Get Other Planets Ref
+      const Background_Ball_A = document.getElementById("Background_Ball_A");
+      const Background_Ball_B = document.getElementById("Background_Ball_B");
+      const Background_Ball_C = document.getElementById("Background_Ball_C");
+
+      // Get Scroll Value
+      var scrolled = window.scrollY;
+
+      // Randomize Translate
+      var short = scrolled * 0.1;
+      var mid = scrolled * 0.2;
+      var large = scrolled * 0.3;
+
+      // Other Planets Animate
+      Background_Ball_A.style.transform = "translateY(" + mid + "px)";
+      Background_Ball_B.style.transform =
+        "translateY(" + scrolled * 0.5 + "px)";
+      Background_Ball_C.style.transform =
+        "translateY(" + scrolled * 0.15 + "px)";
+    });
+  }, []);
+
+  ////////////
+  // RENDER //
+  ////////////
+
   return (
     <section className={styles.Container} id="work">
       {/* PLANET AND FXS */}
-      <div className={styles.Container_Planet}>
+      <div className={`${styles.Container_Planet} Container_Background`}>
         <img src={Planet} alt="Pixel Planet" className={styles.Planet} />
         <div className={styles.Glow} />
         <div className={styles.FX_Planet_A} />
@@ -61,14 +92,26 @@ const WorksSection = () => {
       </div>
       {/* 88888888888888888888888 */}
       {/* FXs */}
-      <div className={styles.Container_Background_FX}>
-        <div className={styles.Background_FX_A} />
-        <div className={styles.Background_FX_B} />
+      <div className={`${styles.Container_Background_FX} Container_Background`}>
+        <div className={styles.Container_Overflow_Background_FX}>
+          {/* Background Planets */}
+          <div className={styles.Background_Ball_A} id="Background_Ball_A" />
+          <div className={styles.Background_Ball_B} id="Background_Ball_B" />
+          <div className={styles.Background_Ball_C} id="Background_Ball_C" />
+
+          {/* Background FXs */}
+
+          <div className={styles.Background_FX_A} />
+          <div className={styles.Background_FX_B} />
+          <div className={styles.Background_FX_C} />
+          <div className={styles.Background_FX_D} />
+          <div className={styles.Background_FX_E} />
+        </div>
       </div>
       {/* 88888888888888888888888 */}
 
       {/* CONTENT */}
-      <div className={styles.Container_Content}>
+      <div className={`${styles.Container_Content} Container_Content`}>
         <Title text="Works" style={{ marginLeft: "26px" }} />
         <div className={styles.TextContainer}>
           <Text

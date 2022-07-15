@@ -1,3 +1,29 @@
+/* ///////// */
+/* VARIABLES */
+/* ///////// */
+
+:root {
+  --blur: 90px;
+  --blur-low: 50px;
+
+  /* DEGRADE */
+  /* Red */
+  --red-degrade: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(242, 65, 48, 0.7) 0%,
+    rgba(242, 65, 48, 0.056) 100%
+  );
+  --red-degrade-2: rgba(242, 65, 48, 0.41);
+  --red-degrade-3: rgba(242, 65, 48, 0.5);
+
+  /* Blue */
+  --blue-degrade: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(36, 50, 201, 0.7) 0%,
+    rgba(36, 50, 201, 0.056) 100%
+  );
+}
+
 /* ///////////////// */
 /* MOBILE FIRST VIEW */
 /* ///////////////// */
@@ -7,16 +33,21 @@
 /* ////////// */
 
 .Container {
+  display: flex;
+  justify-content: center;
+
   width: 100%;
   margin: 0;
   padding-top: 90px;
+  padding-bottom: 90px;
   align-items: center;
 
   position: relative;
 }
 
 .Container_Content {
-  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .TextContainer {
@@ -98,21 +129,26 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 100;
+
+  padding-top: 200px;
 }
 
 /* Planet Image */
 .Planet {
   position: absolute;
-  width: 350px;
+  width: 60vw;
+  max-width: 1000px;
   z-index: 2;
-  image-rendering: pixelated;
 }
 
 /* Planet FX */
 .Glow {
   display: inline-block;
-  width: 320px;
-  height: 320px;
+  width: 60vw;
+  height: 60vw;
+  max-width: 800px;
+  max-height: 800px;
   position: absolute;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.8);
@@ -124,26 +160,30 @@
 
 .FX_Planet_A {
   display: inline-block;
-  width: 500px;
-  height: 500px;
+  width: 75vw;
+  height: 75vw;
+  max-width: 1000px;
+  max-height: 1000px;
   position: absolute;
   border-radius: 50%;
   background: rgba(242, 65, 48, 0.41);
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
+  filter: blur(var(--blur));
+  -webkit-filter: blur(var(--blur));
 
   z-index: 1;
 }
 
 .FX_Planet_B {
   display: inline-block;
-  width: 500px;
-  height: 500px;
+  width: 75vw;
+  height: 75vw;
+  max-width: 1000px;
+  max-height: 1000px;
   position: absolute;
   border-radius: 50%;
   background: rgba(242, 65, 48, 0.5);
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
+  filter: blur(var(--blur));
+  -webkit-filter: blur(var(--blur));
 
   z-index: 4;
 }
@@ -156,33 +196,39 @@
 
 /* Container */
 .Container_Background_FX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  overflow: hidden;
 
   width: 100%;
   height: 150%;
   top: calc(-75% / 2);
+  overflow: hidden;
+}
 
-  z-index: 0;
+.Container_Overflow_Background_FX {
+  position: absolute;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
 }
 
 /* FXs */
 .Background_FX_A {
   display: inline-block;
   position: absolute;
-  right: calc(-222px / 2);
+  right: calc(-222px / 4);
   top: calc(100% / 5);
 
   width: 222px;
   height: 266px;
 
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(242, 65, 48, 0.7) 0%,
-    rgba(242, 65, 48, 0.056) 100%
-  );
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
+  border-radius: 50%;
+  background: var(--red-degrade);
+  filter: blur(var(--blur));
+  -webkit-filter: blur(var(--blur));
 }
 
 .Background_FX_B {
@@ -194,13 +240,105 @@
   width: 250px;
   height: 300px;
 
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(36, 50, 201, 0.7) 0%,
-    rgba(36, 50, 201, 0.056) 100%
-  );
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
+  border-radius: 50%;
+  background: var(--blue-degrade);
+  filter: blur(var(--blur));
+  -webkit-filter: blur(var(--blur));
+}
+
+.Background_FX_C {
+  display: inline-block;
+  position: absolute;
+
+  top: calc(25% + 230px);
+  left: calc(50% - 150px);
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+  background: var(--red-degrade-2);
+  filter: blur(var(--blur-low));
+  -webkit-filter: blur(var(--blur-low));
+}
+
+.Background_FX_D {
+  display: inline-block;
+  position: absolute;
+  left: calc(25% - 250px);
+  bottom: 10%;
+
+  width: 250px;
+  height: 300px;
+
+  border-radius: 50%;
+  background: var(--blue-degrade);
+  filter: blur(var(--blur-low));
+  -webkit-filter: blur(var(--blur-low));
+}
+
+.Background_FX_E {
+  display: inline-block;
+  position: absolute;
+  right: calc(25% - 250px);
+  bottom: 10%;
+
+  width: 250px;
+  height: 300px;
+
+  border-radius: 50%;
+  background: var(--blue-degrade);
+  filter: blur(var(--blur-low));
+  -webkit-filter: blur(var(--blur-low));
+}
+
+/* Background Planets */
+.Background_Ball_A {
+  width: 40vw;
+  height: 40vw;
+  max-width: 250px;
+  max-height: 250px;
+
+  position: absolute;
+  top: calc(25% / 4);
+  left: calc(-20vw / 2);
+
+  border-radius: 50%;
+  background: var(--planet-red);
+  filter: blur(var(--planet-blur));
+  -webkit-filter: blur(var(--planet-blur));
+}
+
+.Background_Ball_B {
+  width: 20vw;
+  height: 20vw;
+  max-width: 150px;
+  max-height: 150px;
+
+  position: absolute;
+  top: calc(30% / 3);
+  right: calc(-5vw / 2);
+
+  border-radius: 50%;
+  background: var(--planet-blue);
+  filter: blur(var(--planet-blur-mid));
+  -webkit-filter: blur(var(--planet-blur-mid));
+}
+
+.Background_Ball_C {
+  width: 30vw;
+  height: 30vw;
+  max-width: 300px;
+  max-height: 300px;
+
+  position: absolute;
+  bottom: calc(60% / 2);
+  left: calc(-5vw / 2);
+
+  border-radius: 50%;
+  background: var(--planet-blue);
+  filter: blur(var(--planet-blur));
+  -webkit-filter: blur(var(--planet-blur));
 }
 
 /* 88888888888888888888888888888888 */
@@ -213,7 +351,7 @@
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   .Container {
-    height: 1100px;
+    min-height: 1100px;
   }
   .CarouselContainer,
   .Dots {
@@ -235,6 +373,71 @@
   .Card {
     display: block;
     padding: 20px;
+  }
+
+  /* PLANET */
+  .Container_Planet {
+    display: flex;
+    left: 0px;
+  }
+  /* BALLS FXs */
+  /* Background Planets */
+  .Background_Ball_A {
+    top: 15%;
+    left: calc(-20vw / 2);
+  }
+  .Background_Ball_B {
+    top: 30%;
+    right: calc(-5vw / 2);
+  }
+  .Background_Ball_C {
+    bottom: 20%;
+    left: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+
+  /* FXs */
+  .Background_FX_A {
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.7;
+    -webkit-opacity: 0.7;
+  }
+  .Background_FX_B {
+    top: 50%;
+
+    width: 50vw;
+    height: 50vw;
+  }
+  .Background_FX_C {
+    top: calc(25% + 50vw);
+    left: calc(50% - 20vw);
+
+    width: 60vw;
+    height: 60vw;
+
+    filter: blur(150px);
+    -webkit-filter: blur(150px);
+  }
+  .Background_FX_D {
+    left: calc(25% - 50vw);
+    bottom: 5%;
+
+    width: 50vw;
+    height: 50vw;
+
+    filter: blur(150px);
+    -webkit-filter: blur(150px);
+  }
+  .Background_FX_E {
+    right: calc(25% - 50vw);
+    bottom: 5%;
+
+    width: 50vw;
+    height: 50vw;
+
+    opacity: 0.8;
   }
 }
 
@@ -270,6 +473,74 @@
     display: block;
     padding: 20px;
   }
+
+  /* //////////// */
+  /* SUPER PLANET */
+  /* //////////// */
+  /* PLANET */
+  .Container_Planet {
+    display: flex;
+    left: 0px;
+  }
+  /* BALLS FXs */
+  /* Background Planets */
+  .Background_Ball_A {
+    top: 15%;
+    left: calc(-20vw / 2);
+  }
+  .Background_Ball_B {
+    top: 30%;
+    right: calc(-5vw / 2);
+  }
+  .Background_Ball_C {
+    bottom: 20%;
+    left: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+
+  /* FXs */
+  .Background_FX_A {
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.7;
+    -webkit-opacity: 0.7;
+  }
+  .Background_FX_B {
+    top: 50%;
+
+    width: 50vw;
+    height: 50vw;
+  }
+  .Background_FX_C {
+    top: calc(25% + 30vw);
+    left: calc(50% - 20vw);
+
+    width: 60vw;
+    height: 60vw;
+
+    filter: blur(150px);
+    -webkit-filter: blur(150px);
+  }
+  .Background_FX_D {
+    left: calc(25% - 50vw);
+    bottom: 5%;
+
+    width: 50vw;
+    height: 50vw;
+
+    filter: blur(150px);
+    -webkit-filter: blur(150px);
+  }
+  .Background_FX_E {
+    right: calc(25% - 50vw);
+    bottom: 5%;
+
+    width: 50vw;
+    height: 50vw;
+
+    opacity: 0.8;
+  }
 }
 
 /* 88888888888888888888888888888888 */
@@ -281,11 +552,6 @@
 /* ////////////// */
 
 @media only screen and (min-width: 1440px) {
-  .Container {
-    width: 1200px;
-    margin: 0 auto;
-    background-color: transparent;
-  }
   .CarouselContainer,
   .Dots {
     display: none;
@@ -308,5 +574,73 @@
   .Card {
     display: block;
     padding: 20px;
+  }
+
+  /* //////////// */
+  /* SUPER PLANET */
+  /* //////////// */
+  /* PLANET */
+  .Container_Planet {
+    display: flex;
+    left: 0px;
+  }
+  /* BALLS FXs */
+  /* Background Planets */
+  .Background_Ball_A {
+    top: 15%;
+    left: -100px;
+  }
+  .Background_Ball_B {
+    top: 30%;
+    right: -50px;
+  }
+  .Background_Ball_C {
+    bottom: 20%;
+    left: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+
+  /* FXs */
+  .Background_FX_A {
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.7;
+    -webkit-opacity: 0.7;
+  }
+  .Background_FX_B {
+    top: 50%;
+
+    width: 50vw;
+    height: 50vw;
+  }
+  .Background_FX_C {
+    top: calc(25% + 30vw);
+    left: calc(50% - 20vw);
+
+    width: 60vw;
+    height: 60vw;
+
+    filter: blur(150px);
+    -webkit-filter: blur(150px);
+  }
+  .Background_FX_D {
+    left: calc(25% - 50vw);
+    bottom: 5%;
+
+    width: 50vw;
+    height: 50vw;
+
+    filter: blur(150px);
+    -webkit-filter: blur(150px);
+  }
+  .Background_FX_E {
+    right: calc(25% - 50vw);
+    bottom: 5%;
+
+    width: 50vw;
+    height: 50vw;
+
+    opacity: 0.8;
   }
 }

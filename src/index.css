@@ -1,5 +1,16 @@
 :root {
   scroll-behavior: smooth;
+
+  /* //////////////////////////// */
+  /* BACKGROUND PLANETS VARIABLES */
+  /* //////////////////////////// */
+  /* BLUR */
+  --planet-blur: 3px;
+  --planet-blur-mid: 5px;
+
+  /* COLOR */
+  --planet-red: linear-gradient(202.46deg, rgb(0, 0, 0) 15.1%, #f24130 85.37%);
+  --planet-blue: linear-gradient(180deg, #000d99 0%, #3a3f6f 100%);
 }
 
 body {
@@ -9,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./assets/images/space.jpg);
+  /* background-image: url(./assets/images/space.jpg); */
   background-repeat: repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -32,4 +43,21 @@ button:hover {
   background: none;
   border: none;
   outline: none;
+}
+
+/* ////////////////// */
+/* CONTAINERS Z-INDEX */
+/* ////////////////// */
+
+/* CONTENT CONTAINERS */
+.Header_Index {
+  z-index: 9999;
+}
+
+.Container_Content {
+  z-index: 999;
+}
+
+.Container_Background {
+  z-index: 99;
 }
