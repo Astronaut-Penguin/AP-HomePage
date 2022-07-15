@@ -54,7 +54,7 @@ const Home = () => {
   ////////////
   return (
     <section className={styles.Container} id="home">
-      <div className={styles.MiddleContainer}>
+      <div className={`${styles.MiddleContainer} Container_Content`}>
         <div className={styles.PlanetContainer}>
           {/* Planet Image */}
           <img className={styles.Planet} src={Planet} alt="" />

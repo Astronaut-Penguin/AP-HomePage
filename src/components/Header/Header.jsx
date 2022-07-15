@@ -48,7 +48,9 @@ const Header = () => {
   ////////////
   return (
     <header
-      className={`${styles.Container} ${Open ? styles.Black : styles.Deg}`}
+      className={`${styles.Container} ${
+        Open ? styles.Black : styles.Deg
+      } Header_Index`}
     >
       <div className={styles.Header}>
         <a className={styles.Logo} href="#home" />
