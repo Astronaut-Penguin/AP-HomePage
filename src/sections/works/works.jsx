@@ -83,24 +83,24 @@ const WorksSection = () => {
 
   return (
     <section className={styles.Container} id="work">
-      {/* PLANET AND FXS */}
-      <div className={`${styles.Container_Planet} Container_Background`}>
-        <img src={Planet} alt="Pixel Planet" className={styles.Planet} />
-        <div className={styles.Glow} />
-        <div className={styles.FX_Planet_A} />
-        <div className={styles.FX_Planet_B} />
-      </div>
       {/* 88888888888888888888888 */}
       {/* FXs */}
       <div className={`${styles.Container_Background_FX} Container_Background`}>
         <div className={styles.Container_Overflow_Background_FX}>
-          {/* Background Planets */}
+          {/* PLANET AND FXS */}
+          <div className={`${styles.Container_Planet} Container_Background`}>
+            <img src={Planet} alt="Pixel Planet" className={styles.Planet} />
+            <div className={styles.Glow} />
+            <div className={styles.FX_Planet_A} />
+            <div className={styles.FX_Planet_B} />
+          </div>
+
+          {/* Background Balls */}
           <div className={styles.Background_Ball_A} id="Background_Ball_A" />
           <div className={styles.Background_Ball_B} id="Background_Ball_B" />
           <div className={styles.Background_Ball_C} id="Background_Ball_C" />
 
           {/* Background FXs */}
-
           <div className={styles.Background_FX_A} />
           <div className={styles.Background_FX_B} />
           <div className={styles.Background_FX_C} />
