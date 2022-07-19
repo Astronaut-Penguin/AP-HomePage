@@ -27,7 +27,7 @@ const Landing = () => {
       {/* <UsSection /> */}
       {/* <WebSection /> */}
       {/* <NewProjectSection /> */}
-      <FooterSection />
+      {/* <FooterSection /> */}
     </>
   );
 };
