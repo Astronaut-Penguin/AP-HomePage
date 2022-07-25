@@ -11,7 +11,6 @@ import ClientCard from "../../components/clientCard/clientCard";
 
 //- Import Images
 import TribeLogo from "./assets/tribeLogo.png";
-import MiladyLogo from "./assets/miladyLogo.png";
 import APLogo from "./assets/apLogo.png";
 import CapyLogo from "./assets/capyLogo.png";
 import MatchLogo from "./assets/matchLogo.png";
@@ -155,26 +154,6 @@ const WorksSection = () => {
             </div>
             <div className={styles.Card}>
               <ClientCard
-                logo={MiladyLogo}
-                title={"Milady"}
-                text={
-                  "We developed the connections to the smart contracts and solve issues."
-                }
-                leftTitle={"PROFIT"}
-                leftNum={"$1M"}
-                rightTitle={"NFT SOLD"}
-                rightNum={"100%"}
-                enableLine
-                footText={"Contract"}
-                enableSite
-                siteLink={"https://tribetoken.app/#/"}
-                contractLink={"https://tribetoken.app/#/"}
-                s={s}
-                index={1}
-              />
-            </div>
-            <div className={styles.Card}>
-              <ClientCard
                 logo={APLogo}
                 title={"Astronaut Penguin"}
                 text={
@@ -265,27 +244,6 @@ const WorksSection = () => {
               </div>
 
               <div className={styles.Column}>
-                <div className={styles.Card}>
-                  <ClientCard
-                    logo={MiladyLogo}
-                    title={"Milady"}
-                    text={
-                      "We developed the connections to the smart contracts and solve issues."
-                    }
-                    leftTitle={"PROFIT"}
-                    leftNum={"$1M"}
-                    rightTitle={"NFT SOLD"}
-                    rightNum={"100%"}
-                    enableLine
-                    enableFoot
-                    footText={"Contract"}
-                    enableSite
-                    siteLink={"https://tribetoken.app/#/"}
-                    contractLink={"https://tribetoken.app/#/"}
-                    s={s}
-                    index={2}
-                  />
-                </div>
                 <div className={styles.Card}>
                   <ClientCard
                     logo={APLogo}

@@ -59,7 +59,7 @@ const Header = () => {
           <>
             <nav className={styles.Nav}>
               <a href="#work">Work</a>
-              <a href="#process">Process</a>
+              {/* <a href="#process">Process</a> */}
               {/* <a href="#us">Us</a> */}
               {/* <a href="#web3">3.0</a> */}
             </nav>
@@ -100,9 +100,9 @@ const Header = () => {
             <a href="#work" onClick={handleOpen}>
               Work
             </a>
-            <a href="#process" onClick={handleOpen}>
+            {/* <a href="#process" onClick={handleOpen}>
               Process
-            </a>
+            </a> */}
             {/* <a href="#us">Us</a> */}
             {/* <a href="#web3">3.0</a> */}
           </nav>
