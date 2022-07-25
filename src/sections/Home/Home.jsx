@@ -90,12 +90,12 @@ const Home = () => {
         </div>
       </div>
 
-      <a
+      {/* <a
         title="Discord"
         href="https://discord.com/"
         target="_blank"
         className={styles.Discord}
-      />
+      /> */}
     </section>
   );
 };
